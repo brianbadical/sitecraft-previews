@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Nuggets Records | Boston, MA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1512;--cream:#f6ecd9;--orange:#e2572b;--mustard:#f0b429;--teal:#1f6f6b;--muted:#5a4d44}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Work Sans',system-ui,sans-serif;background:var(--cream);color:var(--ink);font-size:18px;line-height:1.6}
+a{color:inherit}
+.banner{background:var(--ink);color:#f6ecd9;font-size:14px;text-align:center;padding:8px 16px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{padding:20px 0}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-family:'Bowlby One',sans-serif;font-size:30px;letter-spacing:1px;text-decoration:none}
+.logo span{color:var(--orange)}
+.pill{background:var(--ink);color:var(--cream);text-decoration:none;padding:10px 20px;border-radius:999px;font-weight:700;font-size:16px}
+.pill:hover{background:var(--orange)}
+.hero{padding:40px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--mustard);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:2px;padding:6px 14px;border-radius:4px;margin-bottom:22px}
+h1{font-family:'Bowlby One',sans-serif;font-size:clamp(44px,8vw,92px);line-height:.95;margin-bottom:22px}
+h1 em{font-style:normal;color:var(--orange)}
+.lead{font-size:20px;color:var(--muted);max-width:540px;margin-bottom:30px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:16px 28px;border-radius:8px;font-weight:700;text-decoration:none;border:3px solid var(--ink);font-size:18px}
+.btn.primary{background:var(--orange);color:#fff;box-shadow:5px 5px 0 var(--ink)}
+.btn.primary:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+.btn.ghost{background:transparent}
+.btn.ghost:hover{background:var(--ink);color:var(--cream)}
+.disc-stage{position:relative;aspect-ratio:1;max-width:420px;width:100%;justify-self:center}
+.sleeve{position:absolute;inset:8% 22% 8% 0;background:var(--teal);border:4px solid var(--ink);border-radius:6px;box-shadow:8px 8px 0 var(--ink);overflow:hidden}
+.sleeve::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 22px,rgba(240,180,41,.35) 22px 44px)}
+.sleeve::after{content:"NUGGETS";position:absolute;left:14px;bottom:10px;font-family:'Bowlby One',sans-serif;color:var(--cream);font-size:26px}
+.disc{position:absolute;width:76%;aspect-ratio:1;right:0;top:12%;border-radius:50%;background:repeating-radial-gradient(circle,#1b1512 0 3px,#2c2420 3px 5px);border:4px solid var(--ink);display:grid;place-items:center}
+.disc::before{content:"";width:34%;aspect-ratio:1;border-radius:50%;background:var(--orange);border:3px solid var(--mustard)}
+.disc::after{content:"";position:absolute;width:5%;aspect-ratio:1;border-radius:50%;background:var(--cream)}
+.marquee{background:var(--ink);color:var(--mustard);font-family:'Bowlby One',sans-serif;font-size:clamp(18px,3vw,26px);padding:16px 0;white-space:nowrap;overflow:hidden;text-align:center;letter-spacing:1px}
+.marquee b{color:var(--cream);margin:0 12px}
+section{padding:80px 0}
+h2{font-family:'Bowlby One',sans-serif;font-size:clamp(32px,5vw,52px);line-height:1.05;margin-bottom:16px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:12px;padding:28px;box-shadow:6px 6px 0 var(--ink)}
+.card h3{font-family:'Bowlby One',sans-serif;font-size:24px;margin:14px 0 6px}
+.card p{color:var(--muted);font-size:17px}
+.icon{width:58px;height:58px;border-radius:50%;border:3px solid var(--ink);position:relative}
+.i1{background:repeating-radial-gradient(circle,#1b1512 0 2px,#3a302a 2px 4px)}
+.i1::after{content:"";position:absolute;inset:36%;border-radius:50%;background:var(--orange)}
+.i2{background:conic-gradient(var(--mustard),#fff,var(--teal),#fff,var(--mustard))}
+.i2::after{content:"";position:absolute;inset:40%;border-radius:50%;background:var(--cream);border:2px solid var(--ink)}
+.i3{border-radius:8px;background:var(--teal)}
+.i3::before,.i3::after{content:"";position:absolute;top:30%;width:22%;aspect-ratio:1;border-radius:50%;background:var(--cream);border:2px solid var(--ink)}
+.i3::before{left:16%}.i3::after{right:16%}
+.i4{border-radius:8px;background:var(--orange)}
+.i4::after{content:"";position:absolute;left:38%;top:26%;border-left:16px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.i5{background:var(--mustard)}
+.i5::after{content:"";position:absolute;inset:18%;border-radius:50%;border:3px dashed var(--ink)}
+.i6{border-radius:8px;background:repeating-linear-gradient(90deg,var(--ink) 0 5px,var(--cream) 5px 10px)}
+.dig{background:var(--teal);color:var(--cream)}
+.dig .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.dig .sub{color:#d8e7e4}
+.crate{display:flex;align-items:flex-end;gap:8px;height:240px;padding:0 10px;border-bottom:10px solid var(--ink)}
+.crate span{flex:1;border:3px solid var(--ink);border-bottom:none;border-radius:4px 4px 0 0}
+.list{list-style:none}
+.list li{padding:12px 0;border-bottom:2px dashed rgba(246,236,217,.35);font-size:19px}
+.list li::before{content:"●";color:var(--mustard);margin-right:12px}
+.contact{text-align:center}
+.contact .sub{margin:0 auto 34px}
+.phone{display:inline-block;font-family:'Bowlby One',sans-serif;font-size:clamp(30px,6vw,56px);text-decoration:none;color:var(--orange);margin-bottom:26px}
+.phone:hover{color:var(--ink)}
+footer{background:var(--ink);color:#cbbfae;padding:30px 0;font-size:15px;text-align:center}
+footer a{color:var(--mustard)}
+@media(max-width:860px){
+.hero .wrap,.dig .wrap{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr 1fr}
+.disc-stage{max-width:320px}
+}
+@media(max-width:560px){
+.grid{grid-template-columns:1fr}
+section{padding:60px 0}
+.hero{padding:20px 0 60px}
+.crate{height:170px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Nuggets.</div>
+
+<header class="top">
+<div class="wrap">
+<a class="logo" href="#">NUGGETS<span>.</span></a>
+<a class="pill" href="tel:+16175360679">Call (617) 536-0679</a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<div>
+<span class="tag">Downtown Boston record store</span>
+<h1>Dig deep.<br>Find your <em>nuggets.</em></h1>
+<p class="lead">Records, CDs, cassettes, imported music, VHS and DVDs, all under one roof in downtown Boston. Come flip through the bins and see what turns up.</p>
+<div class="ctas">
+<a class="btn primary" href="tel:+16175360679">Call the shop</a>
+<a class="btn ghost" href="#formats">What we carry</a>
+</div>
+</div>
+<div class="disc-stage" aria-hidden="true">
+<div class="disc"></div>
+<div class="sleeve"></div>
+</div>
+</div>
+</section>
+
+<div class="marquee" aria-hidden="true">RECORDS <b>✦</b> CDS <b>✦</b> CASSETTES <b>✦</b> IMPORTS <b>✦</b> VHS <b>✦</b> DVDS</div>
+
+<section id="formats">
+<div class="wrap">
+<h2>Every format worth spinning</h2>
+<p class="sub">Whether you collect on wax, still love a jewel case, or keep a tape deck around, there's something here for every kind of music and movie fan.</p>
+<div class="grid">
+<div class="card"><div class="icon i1"></div><h3>Records</h3><p>Vinyl to browse by hand, the way record shopping should be.</p></div>
+<div class="card"><div class="icon i2"></div><h3>CDs</h3><p>Shelves of discs for building out your collection.</p></div>
+<div class="card"><div class="icon i3"></div><h3>Cassettes</h3><p>Tapes for the deck, the car or the shelf.</p></div>
+<div class="card"><div class="icon i5"></div><h3>Imported Music</h3><p>Music from beyond the usual release lists.</p></div>
+<div class="card"><div class="icon i6"></div><h3>VHS</h3><p>Old-school tapes for movie nights and collectors alike.</p></div>
+<div class="card"><div class="icon i4"></div><h3>DVDs</h3><p>Films to take home and watch again and again.</p></div>
+</div>
+</div>
+</section>
+
+<section class="dig">
+<div class="wrap">
+<div>
+<h2>The joy of the crate dig</h2>
+<p class="sub">Some things you can't scroll for. A real record store means stumbling onto the album you didn't know you needed.</p>
+<ul class="list">
+<li>Flip through physical media in person</li>
+<li>Records, tapes, discs and movies together</li>
+<li>Right here in downtown Boston</li>
+<li>Questions? Just give the shop a call</li>
+</ul>
+</div>
+<div class="crate" aria-hidden="true">
+<span style="height:78%;background:var(--orange)"></span>
+<span style="height:92%;background:var(--mustard)"></span>
+<span style="height:70%;background:var(--cream)"></span>
+<span style="height:88%;background:#c9452a"></span>
+<span style="height:80%;background:var(--mustard)"></span>
+<span style="height:95%;background:var(--cream)"></span>
+<span style="height:74%;background:var(--orange)"></span>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Looking for something?</h2>
+<p class="sub">Call ahead to ask about a title or a format, or just stop by and dig in.</p>
+<a class="phone" href="tel:+16175360679">(617) 536-0679</a>
+<div class="ctas" style="justify-content:center">
+<a class="btn primary" href="tel:+16175360679">Call Nuggets</a>
+<a class="btn ghost" href="https://www.nuggetsrecords.com/">Visit current website</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<p>Nuggets · Boston, MA · <a href="tel:+16175360679">(617) 536-0679</a> · <a href="https://www.nuggetsrecords.com/">nuggetsrecords.com</a></p>
+<p style="margin-top:6px">Sample concept by Brainsmith Sitecraft.</p>
+</div>
+</footer>
+</body>
+</html>
