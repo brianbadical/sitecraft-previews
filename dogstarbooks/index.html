@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>DogStar Books | Scholarly, Antiquarian &amp; Better Books in Lancaster, PA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--night:#101a33;--night2:#18264a;--paper:#f7f0e1;--paper2:#efe4cc;--ink:#1f1a14;--gold:#d9a845;--gold2:#b8862a;--muted:#5c5246;--oxblood:#7a2e2a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+a{color:inherit}
+.banner{background:#0a1124;color:#d8d2c2;font-size:13px;text-align:center;padding:8px 14px;letter-spacing:.02em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.nav{background:var(--night);color:var(--paper);border-bottom:1px solid rgba(217,168,69,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;gap:16px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:.01em}
+.logo .st{color:var(--gold);font-size:22px}
+.nav-links{display:flex;gap:24px;font-size:15px}
+.nav-links a{text-decoration:none;opacity:.88}
+.nav-links a:hover{color:var(--gold);opacity:1}
+.hero{background:radial-gradient(ellipse at 75% 20%,#2a3d6e 0%,var(--night2) 35%,var(--night) 75%);color:var(--paper);position:relative;overflow:hidden;padding:96px 0 110px}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 10% 20%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 25% 70%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 40% 35%,#f3dfa8 50%,transparent 51%),radial-gradient(1px 1px at 55% 80%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 65% 15%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 85% 60%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 92% 25%,#f3dfa8 50%,transparent 51%),radial-gradient(1px 1px at 5% 85%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 75% 90%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 33% 10%,#fff 50%,transparent 51%);opacity:.75}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:13px;color:var(--gold);font-weight:600;margin-bottom:18px}
+.hero h1{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(44px,7vw,78px);line-height:1.02;margin-bottom:22px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p.lead{font-size:clamp(17px,2vw,20px);max-width:540px;color:#e3dccb;margin-bottom:34px}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;padding:15px 28px;border-radius:3px;font-weight:600;text-decoration:none;font-size:16px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#1a1307}
+.btn-gold:hover{background:#e7b955}
+.btn-line{border:1.5px solid rgba(247,240,225,.6);color:var(--paper)}
+.btn-line:hover{border-color:var(--gold);color:var(--gold)}
+.sirius{position:relative;width:100%;max-width:360px;aspect-ratio:1;justify-self:center}
+.sirius .glow{position:absolute;inset:18%;border-radius:50%;background:radial-gradient(circle,rgba(255,240,200,.95) 0%,rgba(217,168,69,.55) 22%,rgba(217,168,69,.12) 50%,transparent 70%)}
+.sirius .ray{position:absolute;left:50%;top:50%;width:4px;height:92%;background:linear-gradient(transparent,rgba(255,236,190,.9),transparent);transform:translate(-50%,-50%)}
+.sirius .r2{transform:translate(-50%,-50%) rotate(90deg)}
+.sirius .r3{height:58%;transform:translate(-50%,-50%) rotate(45deg);opacity:.6}
+.sirius .r4{height:58%;transform:translate(-50%,-50%) rotate(-45deg);opacity:.6}
+.sirius .ring{position:absolute;inset:4%;border:1px dashed rgba(217,168,69,.35);border-radius:50%}
+.sirius .cap{position:absolute;bottom:-6px;width:100%;text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;color:#d6c9a8;font-size:18px}
+.shelf{height:28px;background:repeating-linear-gradient(90deg,var(--oxblood) 0 22px,#3d4f7a 22px 38px,var(--gold2) 38px 52px,#2f5a47 52px 78px,#6b4a2e 78px 94px,var(--night2) 94px 118px);border-bottom:6px solid #4a3220}
+section{padding:88px 0}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 52px}
+.sec-head .eyebrow{color:var(--gold2)}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(34px,4.6vw,50px);line-height:1.1;font-weight:600;margin-bottom:16px}
+.sec-head p{color:var(--muted);font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fffaf0;border:1px solid #e3d5b6;padding:34px 28px;border-radius:4px;position:relative;box-shadow:0 2px 0 #e3d5b6}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--gold);border-radius:4px 0 0 4px}
+.card .ic{font-size:26px;color:var(--gold2);margin-bottom:10px}
+.card h3{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:600;margin-bottom:10px}
+.card p{color:var(--muted);font-size:16px}
+.split{background:var(--paper2)}
+.split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.quote{font-family:"Cormorant Garamond",serif;font-size:clamp(28px,3.6vw,40px);font-style:italic;line-height:1.25;color:var(--night);border-left:4px solid var(--gold);padding-left:26px}
+.quote span{display:block;font-family:Inter,sans-serif;font-style:normal;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);margin-top:18px}
+.split p{color:var(--muted);margin-bottom:16px}
+.list{list-style:none;margin:22px 0 28px}
+.list li{padding:10px 0 10px 32px;position:relative;border-bottom:1px dashed #d4c39e}
+.list li::before{content:"✦";position:absolute;left:4px;color:var(--gold2)}
+.btn-dark{background:var(--night);color:var(--paper)}
+.btn-dark:hover{background:var(--night2)}
+.sell{background:var(--oxblood);color:var(--paper);text-align:center}
+.sell h2{color:#fff}
+.sell p{max-width:640px;margin:0 auto 30px;color:#f1dfd6;font-size:18px}
+.contact{background:var(--night);color:var(--paper)}
+.contact .sec-head p{color:#cfc6b2}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:820px;margin:0 auto}
+.cbox{border:1px solid rgba(217,168,69,.4);border-radius:4px;padding:30px;text-align:center;background:rgba(255,255,255,.03)}
+.cbox .lbl{text-transform:uppercase;letter-spacing:.18em;font-size:12px;color:var(--gold);margin-bottom:10px}
+.cbox a{font-family:"Cormorant Garamond",serif;font-size:clamp(24px,3vw,30px);font-weight:600;text-decoration:none;word-break:break-word}
+.cbox a:hover{color:var(--gold)}
+.cbox small{display:block;color:#b9b19f;margin-top:8px;font-size:14px}
+footer{background:#0a1124;color:#a9a291;text-align:center;padding:30px 20px;font-size:14px}
+footer .logo{justify-content:center;font-size:22px;color:var(--paper);margin-bottom:6px}
+@media(max-width:860px){
+.hero{padding:64px 0 76px}
+.hero .wrap,.split .wrap{grid-template-columns:1fr;gap:40px}
+.sirius{max-width:240px;order:-1}
+.cards{grid-template-columns:1fr}
+.nav-links{display:none}
+section{padding:64px 0}
+}
+@media(max-width:600px){
+.cgrid{grid-template-columns:1fr}
+.btn{width:100%;text-align:center}
+.logo{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of DogStar Books.</div>
+
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="#top"><span class="st">✦</span> DogStar Books</a>
+<nav class="nav-links">
+<a href="#books">Our Books</a>
+<a href="#selling">Selling Books</a>
+<a href="#contact">Contact</a>
+</nav>
+<a class="btn btn-gold" href="tel:+17178236605" style="padding:10px 18px;font-size:15px">Call Us</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<div>
+<div class="eyebrow">Lancaster, Pennsylvania</div>
+<h1>Books for the <em>Sirius</em> Reader</h1>
+<p class="lead">DogStar Books buys and sells scholarly, antiquarian and better books. If you love books worth keeping, you'll feel right at home here.</p>
+<div class="btns">
+<a class="btn btn-gold" href="tel:+17178236605">Call 717-823-6605</a>
+<a class="btn btn-line" href="#selling">Have Books to Sell?</a>
+</div>
+</div>
+<div class="sirius" aria-hidden="true">
+<div class="ring"></div>
+<div class="glow"></div>
+<div class="ray"></div><div class="ray r2"></div><div class="ray r3"></div><div class="ray r4"></div>
+<div class="cap">Sirius, the Dog Star</div>
+</div>
+</div>
+</section>
+<div class="shelf" aria-hidden="true"></div>
+
+<section id="books">
+<div class="wrap">
+<div class="sec-head">
+<div class="eyebrow">What We Carry</div>
+<h2>Good books, carefully chosen</h2>
+<p>We focus on the books serious readers and collectors look for: titles with substance, history and lasting value.</p>
+</div>
+<div class="cards">
+<div class="card">
+<div class="ic">✦</div>
+<h3>Scholarly</h3>
+<p>Thoughtful works for the curious mind. These are books for study, research and the kind of reading that stays with you.</p>
+</div>
+<div class="card">
+<div class="ic">✦</div>
+<h3>Antiquarian</h3>
+<p>Older and harder-to-find volumes, valued for their age, their history and their craft.</p>
+</div>
+<div class="card">
+<div class="ic">✦</div>
+<h3>Better Books</h3>
+<p>Quality books in good condition, picked for readers who care about what's on their shelves.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="split">
+<div class="wrap">
+<div class="quote">"For the Sirius Reader"<span>The DogStar Books motto</span></div>
+<div>
+<h2>A bookseller for book people</h2>
+<p>Sirius is the brightest star in the night sky. At DogStar Books we look for the brightest finds on the shelf: books with real content and real character.</p>
+<ul class="list">
+<li>Scholarly, antiquarian and better books</li>
+<li>Buying as well as selling</li>
+<li>Based in Lancaster, PA</li>
+</ul>
+<a class="btn btn-dark" href="tel:+17178236605">Ask About a Title</a>
+</div>
+</div>
+</section>
+
+<section class="sell" id="selling">
+<div class="wrap">
+<div class="eyebrow" style="color:#f0c873">We Buy Books</div>
+<h2>Thinking of parting with a collection?</h2>
+<p>DogStar Books buys scholarly, antiquarian and better books. If you have a library, a collection or just a few special volumes, give us a call to talk it over.</p>
+<a class="btn btn-gold" href="tel:+17178236605">Call 717-823-6605</a>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<div class="sec-head">
+<div class="eyebrow">Get in Touch</div>
+<h2>Talk books with us</h2>
+<p>Looking for something in particular, or have books to sell? We'd be glad to hear from you.</p>
+</div>
+<div class="cgrid">
+<div class="cbox">
+<div class="lbl">Phone</div>
+<a href="tel:+17178236605">717-823-6605</a>
+<small>Lancaster, PA</small>
+</div>
+<div class="cbox">
+<div class="lbl">Website</div>
+<a href="https://www.dogstarbooks.com/">dogstarbooks.com</a>
+<small>Visit our current site</small>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="logo"><span class="st" style="color:var(--gold)">✦</span> DogStar Books</div>
+<p>Scholarly, antiquarian and better books · Lancaster, PA</p>
+</footer>
+</body>
+</html>
