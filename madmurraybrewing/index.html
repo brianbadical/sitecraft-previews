@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Mad Murray Brewery | Helena, Montana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1a16;--malt:#2a221a;--amber:#e09a2b;--gold:#f4c35a;--cream:#fbf4e6;--foam:#fffdf7;--hop:#4f6b3a;--muted:#5d5246}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.65;color:var(--ink);background:var(--cream)}
+h1,h2,h3,.nav a,.btn,.eyebrow{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em}
+a{color:inherit}
+.banner{background:#111;color:#f1e7d3;font:14px/1.4 system-ui,sans-serif;text-align:center;padding:8px 14px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{background:var(--malt);color:var(--foam);border-bottom:4px solid var(--amber)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:Oswald,sans-serif;font-weight:700;font-size:1.35rem;text-transform:uppercase;letter-spacing:.04em}
+.mark{width:42px;height:42px;border-radius:50%;background:var(--amber);border:3px solid var(--gold);position:relative;flex:none}
+.mark:after{content:"";position:absolute;left:9px;right:9px;top:9px;height:8px;background:var(--foam);border-radius:6px}
+.nav{display:flex;gap:20px;flex-wrap:wrap}
+.nav a{text-decoration:none;font-size:.95rem;color:#f1e3c4}
+.nav a:hover,.nav a:focus{color:var(--gold)}
+.hero{background:radial-gradient(circle at 80% 30%,#4a3520 0,transparent 55%),linear-gradient(160deg,#2a221a 0%,#1b1612 100%);color:var(--foam);overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding-top:80px;padding-bottom:90px}
+.eyebrow{color:var(--gold);font-size:1rem;letter-spacing:.18em;margin-bottom:14px;display:block}
+.hero h1{font-size:clamp(2.8rem,8vw,5.4rem);line-height:.98;margin-bottom:22px}
+.hero h1 span{color:var(--amber)}
+.hero p{font-size:1.2rem;max-width:34ch;color:#eadfca;margin-bottom:32px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:6px;text-decoration:none;font-size:1.05rem;font-weight:700;border:2px solid var(--amber)}
+.btn.primary{background:var(--amber);color:#1b1612}
+.btn.primary:hover,.btn.primary:focus{background:var(--gold);border-color:var(--gold)}
+.btn.ghost{color:var(--foam)}
+.btn.ghost:hover,.btn.ghost:focus{background:rgba(224,154,43,.15)}
+.glass{justify-self:center;position:relative;width:220px;height:330px}
+.glass .cup{position:absolute;inset:40px 20px 0;background:linear-gradient(90deg,#c9781c,#f0a93a 40%,#f7c25a 55%,#d88a24);clip-path:polygon(0 0,100% 0,88% 100%,12% 100%);border-radius:0 0 12px 12px}
+.glass .foam{position:absolute;left:12px;right:12px;top:10px;height:56px;background:var(--foam);border-radius:30px 30px 10px 10px;box-shadow:-20px 6px 0 -6px var(--foam),20px 4px 0 -4px var(--foam)}
+.glass .b{position:absolute;width:10px;height:10px;border-radius:50%;background:rgba(255,248,220,.55)}
+.glass .b1{left:80px;top:150px}.glass .b2{left:120px;top:200px;width:7px;height:7px}.glass .b3{left:100px;top:250px;width:12px;height:12px}.glass .b4{left:140px;top:120px;width:6px;height:6px}
+.stripe{height:14px;background:repeating-linear-gradient(45deg,var(--amber) 0 14px,var(--malt) 14px 28px)}
+section{padding:80px 0}
+h2{font-size:clamp(2rem,5vw,3rem);line-height:1.05;margin-bottom:18px;color:var(--malt)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:60ch}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.badge{aspect-ratio:1;max-width:340px;width:100%;justify-self:center;border-radius:50%;background:var(--hop);color:var(--foam);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:10px solid var(--cream);outline:4px solid var(--hop);padding:30px}
+.badge strong{font-family:Oswald,sans-serif;font-size:2.6rem;text-transform:uppercase;line-height:1}
+.badge small{font-family:Oswald,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#dfe9c8;margin-top:8px}
+.bites{background:var(--foam);border-top:1px solid #eadcc0;border-bottom:1px solid #eadcc0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.card{background:var(--cream);border-radius:12px;padding:28px;border-top:6px solid var(--amber)}
+.card:nth-child(2){border-color:var(--hop)}
+.card:nth-child(3){border-color:var(--malt)}
+.card h3{font-size:1.35rem;color:var(--malt);margin-bottom:8px}
+.card p{color:var(--muted)}
+.tap{background:var(--malt);color:var(--foam)}
+.tap h2{color:var(--foam)}
+.tap .lead{color:#e5d8bf}
+.handles{display:flex;gap:14px;margin:36px 0 34px;flex-wrap:wrap}
+.handle{width:54px;height:120px;border-radius:10px 10px 20px 20px;background:linear-gradient(180deg,var(--amber),#a8661a);position:relative}
+.handle:nth-child(2n){background:linear-gradient(180deg,var(--hop),#334626)}
+.handle:nth-child(3n){background:linear-gradient(180deg,#7a3b1d,#4a2311)}
+.handle:after{content:"";position:absolute;left:22px;bottom:-22px;width:10px;height:22px;background:#c9c2b4;border-radius:0 0 4px 4px}
+.visit .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
+.panel{background:var(--foam);border:2px solid var(--malt);border-radius:14px;padding:32px;box-shadow:8px 8px 0 var(--amber)}
+.panel h3{font-size:1.5rem;color:var(--malt);margin-bottom:10px}
+.panel p{color:var(--muted);margin-bottom:20px}
+.panel a.link{font-family:Oswald,sans-serif;font-size:1.2rem;color:#8a4f0e;word-break:break-word}
+.visit ul{list-style:none;margin-top:20px}
+.visit li{padding:10px 0 10px 34px;position:relative;border-bottom:1px dashed #d8c7a6}
+.visit li:before{content:"";position:absolute;left:4px;top:18px;width:14px;height:14px;border-radius:50%;background:var(--amber)}
+footer{background:#14110e;color:#cfc3ad;padding:34px 0;font-size:.95rem;text-align:center}
+footer strong{color:var(--gold);font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+@media(max-width:860px){
+.hero .wrap,.story .wrap,.visit .wrap{grid-template-columns:1fr}
+.glass{width:170px;height:250px}
+.glass .b{display:none}
+.cards{grid-template-columns:1fr}
+section{padding:60px 0}
+.hero .wrap{padding-top:56px;padding-bottom:64px}
+}
+@media(max-width:520px){.nav{gap:14px}.nav a{font-size:.85rem}body{font-size:17px}.btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Mad Murray Brewery.</div>
+
+<header class="top">
+<div class="wrap">
+<a class="logo" href="#top"><span class="mark" aria-hidden="true"></span>Mad Murray Brewery</a>
+<nav class="nav" aria-label="Main">
+<a href="#story">Our Story</a>
+<a href="#bites">Beer &amp; Bites</a>
+<a href="#tap">On Tap</a>
+<a href="#visit">Visit</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+<div class="wrap">
+<div>
+<span class="eyebrow">Helena, Montana Taproom</span>
+<h1>Beer brewed<br>in <span>Helena.</span></h1>
+<p>Pull up a stool, grab a pint and settle in. Mad Murray is your neighborhood spot for fresh local beer and good company.</p>
+<div class="btns">
+<a class="btn primary" href="#visit">Visit the Taproom</a>
+<a class="btn ghost" href="#tap">See What's on Tap</a>
+</div>
+</div>
+<div class="glass" aria-hidden="true">
+<div class="cup"></div><div class="foam"></div>
+<span class="b b1"></span><span class="b b2"></span><span class="b b3"></span><span class="b b4"></span>
+</div>
+</div>
+</section>
+<div class="stripe" aria-hidden="true"></div>
+
+<section class="story" id="story">
+<div class="wrap">
+<div>
+<span class="eyebrow" style="color:#8a4f0e">Our Story</span>
+<h2>Born and brewed in Helena.</h2>
+<p class="lead">Mad Murray is a Helena brewery through and through. We brew our beer right here in town and pour it for friends, neighbors and visitors passing through Montana's capital city.</p>
+<p class="lead" style="margin-top:14px">Whether you're stopping in after work or making a day of it, the taproom is a relaxed place to raise a glass to the place we call home.</p>
+</div>
+<div class="badge" aria-hidden="true">
+<small>Mad Murray</small>
+<strong>Helena<br>Made</strong>
+<small>Montana</small>
+</div>
+</div>
+</section>
+
+<section class="bites" id="bites">
+<div class="wrap">
+<span class="eyebrow" style="color:#8a4f0e">At the Taproom</span>
+<h2>Beer &amp; bites.</h2>
+<p class="lead">Good beer is better with something to snack on and someone to share it with.</p>
+<div class="cards">
+<div class="card"><h3>Fresh Pours</h3><p>Beer served close to where it's brewed, so every glass tastes the way the brewers intended.</p></div>
+<div class="card"><h3>Something to Snack On</h3><p>Pair your pint with a bite and make an afternoon or evening of it.</p></div>
+<div class="card"><h3>Good Company</h3><p>A friendly local gathering place to catch up with friends and meet new ones.</p></div>
+</div>
+</div>
+</section>
+
+<section class="tap" id="tap">
+<div class="wrap">
+<span class="eyebrow">Rotating Lineup</span>
+<h2>Beers on tap</h2>
+<p class="lead">Our tap list changes as new batches are ready. Check the official website for what's pouring right now, then come taste it fresh at the taproom.</p>
+<div class="handles" aria-hidden="true">
+<span class="handle"></span><span class="handle"></span><span class="handle"></span><span class="handle"></span><span class="handle"></span><span class="handle"></span>
+</div>
+<a class="btn primary" href="https://madmurraybrewing.com/">See Current Beers</a>
+</div>
+</section>
+
+<section class="visit" id="visit">
+<div class="wrap">
+<div>
+<span class="eyebrow" style="color:#8a4f0e">Come On In</span>
+<h2>Visit Mad Murray.</h2>
+<p class="lead">We're in Helena, Montana. Stop by the taproom for a pint and see what's new from the brewhouse.</p>
+<ul>
+<li>Taproom hours are posted on our official website</li>
+<li>Find directions to the taproom online</li>
+<li>Check the current beer list before you go</li>
+</ul>
+</div>
+<div class="panel">
+<h3>Contact the taproom.</h3>
+<p>For hours, directions, current beers and ways to get in touch, visit our website.</p>
+<a class="link" href="https://madmurraybrewing.com/">madmurraybrewing.com</a>
+<div class="btns" style="margin-top:24px">
+<a class="btn primary" href="https://madmurraybrewing.com/">Plan Your Visit</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<p><strong>Mad Murray Brewery</strong> · Helena, Montana</p>
+<p style="margin-top:6px"><a href="https://madmurraybrewing.com/">madmurraybrewing.com</a></p>
+<p style="margin-top:10px;font-size:.85rem">Please drink responsibly. Sample concept by Brainsmith Sitecraft.</p>
+</div>
+</footer>
+</body>
+</html>
