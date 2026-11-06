@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Troutman Animal Hospital | Veterinarian in Troutman, NC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1f5c4a;--green-d:#163f33;--sage:#dfeee6;--cream:#fbf6ee;--peach:#f2a46b;--peach-d:#c46a2c;--ink:#1d2a26;--muted:#4b5a55}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);font-size:18px;line-height:1.65}
+a{color:inherit}
+.banner{background:#111;color:#f3f3f3;text-align:center;font-size:14px;padding:8px 14px;line-height:1.4}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{background:var(--cream);border-bottom:1px solid #ebe1d2}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:16px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.paw{position:relative;width:44px;height:44px;border-radius:50%;background:var(--green);flex:none}
+.paw i{position:absolute;background:var(--cream);border-radius:50%}
+.paw i:nth-child(1){width:16px;height:13px;left:14px;top:22px;border-radius:50% 50% 45% 45%}
+.paw i:nth-child(2){width:6px;height:8px;left:10px;top:14px}
+.paw i:nth-child(3){width:6px;height:8px;left:17px;top:9px}
+.paw i:nth-child(4){width:6px;height:8px;left:25px;top:9px}
+.paw i:nth-child(5){width:6px;height:8px;left:31px;top:14px}
+.logo b{font-family:'Fraunces',serif;font-size:21px;color:var(--green-d);line-height:1.1;display:block}
+.logo small{font-size:13px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.navlinks{display:flex;gap:22px;align-items:center;font-weight:700;font-size:16px}
+.navlinks a{text-decoration:none;color:var(--green-d)}
+.navlinks a:hover{text-decoration:underline}
+.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:999px;padding:14px 26px;font-size:17px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.btn-primary{background:var(--peach);color:#2a1606}
+.btn-ghost{border:2px solid #fff;color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.hero{background:var(--green);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-top:80px;padding-bottom:90px;position:relative;z-index:1}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 14px;border-radius:999px;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(38px,6vw,64px);line-height:1.05;margin:20px 0 18px}
+.hero h1 span{color:var(--peach)}
+.hero p.lead{font-size:20px;max-width:560px;color:#e6f1ec}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.art{position:relative;aspect-ratio:1;max-width:380px;width:100%;justify-self:center}
+.art .c1{position:absolute;inset:0;border-radius:50%;background:var(--sage)}
+.art .c2{position:absolute;width:42%;height:42%;right:-6%;top:-4%;border-radius:50%;background:var(--peach)}
+.art .bigpaw{position:absolute;inset:22%}
+.bigpaw i{position:absolute;background:var(--green);border-radius:50%}
+.bigpaw i:nth-child(1){width:52%;height:44%;left:24%;top:48%;border-radius:50% 50% 44% 44%}
+.bigpaw i:nth-child(2){width:18%;height:24%;left:4%;top:28%;transform:rotate(-18deg)}
+.bigpaw i:nth-child(3){width:18%;height:24%;left:26%;top:6%}
+.bigpaw i:nth-child(4){width:18%;height:24%;left:56%;top:6%}
+.bigpaw i:nth-child(5){width:18%;height:24%;left:78%;top:28%;transform:rotate(18deg)}
+.art .tag{position:absolute;left:-4%;bottom:6%;background:#fff;color:var(--green-d);border-radius:18px;padding:12px 18px;font-weight:800;font-size:15px;box-shadow:0 12px 28px rgba(0,0,0,.2)}
+.art .tag em{display:block;font-style:normal;font-family:'Fraunces',serif;font-size:24px;color:var(--peach-d)}
+.hero:after{content:"";position:absolute;left:-120px;bottom:-160px;width:380px;height:380px;border-radius:50%;background:rgba(255,255,255,.05)}
+section{padding:84px 0}
+.kicker{color:var(--peach-d);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:14px}
+h2{font-family:'Fraunces',serif;font-size:clamp(30px,4.2vw,44px);line-height:1.12;color:var(--green-d);margin:10px 0 18px}
+.welcome .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.welcome p{color:var(--muted);margin-bottom:16px}
+.quote{background:#fff;border-radius:26px;padding:40px 34px;box-shadow:0 16px 40px rgba(31,92,74,.1);position:relative;border-top:6px solid var(--peach)}
+.quote blockquote{font-family:'Fraunces',serif;font-size:clamp(26px,3.4vw,34px);line-height:1.2;color:var(--green-d)}
+.quote blockquote:before{content:"\201C";display:block;font-size:72px;line-height:.6;color:var(--peach);margin-bottom:10px}
+.quote p{margin-top:16px;color:var(--muted);font-weight:700;font-size:16px}
+.why{background:var(--sage)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
+.card{background:#fff;border-radius:22px;padding:30px 26px;box-shadow:0 6px 18px rgba(31,92,74,.07)}
+.icon{width:54px;height:54px;border-radius:16px;background:var(--green);margin-bottom:18px;position:relative}
+.icon.h:before,.icon.h:after{content:"";position:absolute;background:#fff;border-radius:3px}
+.icon.h:before{width:24px;height:8px;left:15px;top:23px}
+.icon.h:after{width:8px;height:24px;left:23px;top:15px}
+.icon.p{background:var(--peach)}
+.icon.p:before{content:"";position:absolute;width:20px;height:20px;border-radius:50%;border:6px solid #fff;left:11px;top:11px}
+.icon.m:before{content:"";position:absolute;left:12px;top:16px;width:30px;height:22px;border:5px solid #fff;border-top:none;border-radius:0 0 16px 16px}
+.card h3{font-family:'Fraunces',serif;font-size:23px;color:var(--green-d);margin-bottom:8px}
+.card p{color:var(--muted);font-size:17px}
+.center{text-align:center;max-width:720px;margin:0 auto}
+.center p{color:var(--muted)}
+.more .grid{grid-template-columns:repeat(4,1fr)}
+.pill{background:#fff;border:2px solid #ebe1d2;border-radius:20px;padding:24px 20px;text-align:center}
+.pill strong{display:block;font-family:'Fraunces',serif;font-size:21px;color:var(--green-d);margin-bottom:6px}
+.pill span{font-size:16px;color:var(--muted)}
+.contact{background:var(--green-d);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact p{color:#d6e7df;max-width:600px;margin:0 auto 28px}
+.phone{display:inline-block;font-family:'Fraunces',serif;font-size:clamp(34px,6vw,54px);color:var(--peach);text-decoration:none;margin-bottom:22px}
+.phone:hover{text-decoration:underline}
+.contact .cta{justify-content:center}
+footer{background:#0f2b23;color:#b9cfc6;text-align:center;padding:28px 20px;font-size:15px}
+footer a{color:#fff}
+@media(max-width:880px){
+.hero .wrap,.welcome .wrap{grid-template-columns:1fr}
+.art{max-width:300px}
+.grid{grid-template-columns:1fr}
+.more .grid{grid-template-columns:1fr 1fr}
+.navlinks a:not(.btn){display:none}
+section{padding:64px 0}
+.hero .wrap{padding-top:56px;padding-bottom:70px}
+}
+@media(max-width:480px){
+.more .grid{grid-template-columns:1fr}
+.btn{width:100%;text-align:center}
+.navlinks{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Troutman Animal Hospital.</div>
+
+<header>
+<div class="wrap nav">
+<a class="logo" href="#top"><span class="paw"><i></i><i></i><i></i><i></i><i></i></span><span><b>Troutman Animal Hospital</b><small>Troutman, NC</small></span></a>
+<nav class="navlinks"><a href="#welcome">Welcome</a><a href="#care">Our Care</a><a href="#contact">Contact</a><a class="btn btn-green" href="tel:+17048789904">Call Us</a></nav>
+</div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+<div class="wrap">
+<div>
+<span class="eyebrow">Veterinarian · Troutman, NC</span>
+<h1>Caring for your <span>Best Friend</span> since 1985</h1>
+<p class="lead">We are a veterinary medical facility, servicing Troutman, NC and surrounding areas. Friendly, attentive care for the pets who mean the world to you.</p>
+<div class="cta">
+<a class="btn btn-primary" href="tel:+17048789904">Call (704) 878-9904</a>
+<a class="btn btn-ghost" href="#welcome">Learn More</a>
+</div>
+</div>
+<div class="art" aria-hidden="true">
+<div class="c1"></div><div class="c2"></div>
+<div class="bigpaw"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="tag">Caring since<em>1985</em></div>
+</div>
+</div>
+</section>
+
+<section class="welcome" id="welcome">
+<div class="wrap">
+<div>
+<div class="kicker">Welcome</div>
+<h2>A hometown animal hospital for Troutman families</h2>
+<p>Your pet is part of the family, and they should be treated that way. At Troutman Animal Hospital, we're a veterinary medical facility proudly serving Troutman, NC and the surrounding communities.</p>
+<p>Have a question about your pet's health or want to schedule a visit? The easiest way to reach us is to give our team a call. We're happy to help.</p>
+<a class="btn btn-green" href="tel:+17048789904">Call (704) 878-9904</a>
+</div>
+<div class="quote">
+<blockquote>Caring for your Best Friend since 1985</blockquote>
+<p>Troutman Animal Hospital · Troutman, NC</p>
+</div>
+</div>
+</section>
+
+<section class="why" id="care">
+<div class="wrap">
+<div class="center">
+<div class="kicker">Our Care</div>
+<h2>Good care starts with people who care</h2>
+<p>Every visit is about keeping your companion healthy, comfortable and happy, and keeping you informed along the way.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="icon h"></div><h3>Veterinary Medicine</h3><p>A full veterinary medical facility focused on the health and wellbeing of your pet.</p></div>
+<div class="card"><div class="icon p"></div><h3>Local &amp; Nearby</h3><p>Serving pet owners in Troutman, NC and the surrounding areas, close to home when you need us.</p></div>
+<div class="card"><div class="icon m"></div><h3>Friendly Team</h3><p>A welcoming team ready to answer your questions and help your pet feel at ease.</p></div>
+</div>
+</div>
+</section>
+
+<section class="more">
+<div class="wrap">
+<div class="center">
+<div class="kicker">Stay Connected</div>
+<h2>More from our clinic</h2>
+<p>Ask our team about these when you call. We're always glad to share what's new.</p>
+</div>
+<div class="grid">
+<div class="pill"><strong>Clinic Specials</strong><span>Ask about current offers</span></div>
+<div class="pill"><strong>Our Featured Pet</strong><span>Meet our patients</span></div>
+<div class="pill"><strong>Latest News</strong><span>Updates from the clinic</span></div>
+<div class="pill"><strong>Online Store</strong><span>Pet supplies, ask us how</span></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<div class="kicker" style="color:var(--peach)">Contact</div>
+<h2>Let's take care of your best friend</h2>
+<p>Call Troutman Animal Hospital to ask a question or book a visit for your pet.</p>
+<a class="phone" href="tel:+17048789904">(704) 878-9904</a>
+<div class="cta">
+<a class="btn btn-primary" href="tel:+17048789904">Call Now</a>
+<a class="btn btn-ghost" href="https://www.troutmananimalhospital.com/">Visit Our Website</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>© Troutman Animal Hospital · Troutman, NC · <a href="tel:+17048789904">(704) 878-9904</a></p>
+<p style="margin-top:6px;font-size:13px">Sample concept by Brainsmith Sitecraft.</p>
+</footer>
+</body>
+</html>

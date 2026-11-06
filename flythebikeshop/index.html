@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Flythe's Bike Shop | New Bern, NC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#14233a;--navy2:#1d3354;--orange:#e8642c;--orange2:#c94f1c;--cream:#fbf5ec;--ink:#1c1c1c;--muted:#5a5f68}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+a{color:inherit}
+.banner{background:#000;color:#f2f2f2;font-size:13px;text-align:center;padding:7px 14px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{background:var(--navy);color:#fff}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:14px;flex-wrap:wrap}
+.logo{font-family:'Archivo Black',sans-serif;font-size:22px;letter-spacing:.3px;display:flex;align-items:center;gap:10px}
+.logo span.dot{width:28px;height:28px;border:4px solid var(--orange);border-radius:50%;display:inline-block;position:relative}
+.logo span.dot:after{content:"";position:absolute;inset:6px;background:var(--orange);border-radius:50%}
+.navcall{font-weight:700;text-decoration:none;background:var(--orange);color:#fff;padding:9px 18px;border-radius:999px;font-size:15px}
+.navcall:hover{background:var(--orange2)}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:56px 0 96px}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;color:var(--orange);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:16px}
+h1{font-family:'Archivo Black',sans-serif;font-size:clamp(38px,6.4vw,70px);line-height:1.03;margin-bottom:20px}
+h1 em{font-style:normal;color:var(--orange)}
+.hero p{font-size:19px;color:#d8dfea;max-width:520px;margin-bottom:30px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 26px;border-radius:999px;font-size:17px}
+.btn.primary{background:var(--orange);color:#fff}
+.btn.primary:hover{background:var(--orange2)}
+.btn.ghost{border:2px solid #ffffff66;color:#fff}
+.btn.ghost:hover{border-color:#fff}
+.bike{position:relative;width:100%;max-width:400px;aspect-ratio:1.55;margin:0 auto}
+.wheel{position:absolute;bottom:0;width:42%;aspect-ratio:1;border-radius:50%;border:10px solid #fff;background:repeating-conic-gradient(#ffffff22 0 2deg,transparent 2deg 30deg)}
+.wheel:after{content:"";position:absolute;left:50%;top:50%;width:16px;height:16px;margin:-8px;background:var(--orange);border-radius:50%}
+.wheel.l{left:0}.wheel.r{right:0}
+.bar{position:absolute;height:9px;background:var(--orange);border-radius:6px;transform-origin:left center}
+.b1{left:21%;bottom:21%;width:36%;transform:rotate(-0deg)}
+.b2{left:21%;bottom:21%;width:38%;transform:rotate(-52deg)}
+.b3{left:44%;bottom:51%;width:35%;transform:rotate(0deg)}
+.b4{left:57%;bottom:21%;width:31%;transform:rotate(-64deg)}
+.b5{left:79%;bottom:21%;width:31%;transform:rotate(-112deg);background:#fff}
+.seat{position:absolute;left:36%;top:6%;width:17%;height:10px;background:#fff;border-radius:6px}
+.handle{position:absolute;right:15%;top:2%;width:14%;height:10px;background:#fff;border-radius:6px}
+.road{position:absolute;left:0;right:0;bottom:0;height:46px;background:var(--cream);clip-path:polygon(0 100%,100% 0,100% 100%)}
+section{padding:72px 0}
+h2{font-family:'Archivo Black',sans-serif;font-size:clamp(28px,4vw,40px);line-height:1.15;color:var(--navy);margin-bottom:14px}
+.lead{color:var(--muted);font-size:18px;max-width:640px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 6px 24px #14233a14;border-top:5px solid var(--orange)}
+.card .ic{width:46px;height:46px;border-radius:50%;background:var(--navy);margin-bottom:16px;position:relative}
+.card .ic:after{content:"";position:absolute;inset:13px;border:4px solid var(--orange);border-radius:50%}
+.card h3{font-size:20px;color:var(--navy);margin-bottom:8px}
+.card p{color:var(--muted);font-size:16px}
+.local{background:#fff}
+.local .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.stripe{background:var(--orange);border-radius:22px;padding:40px;color:#fff;position:relative;overflow:hidden}
+.stripe:before{content:"";position:absolute;right:-50px;bottom:-50px;width:190px;height:190px;border:18px solid #ffffff33;border-radius:50%}
+.stripe .big{font-family:'Archivo Black',sans-serif;font-size:clamp(30px,4.4vw,44px);line-height:1.08}
+.stripe p{margin-top:12px;font-size:17px;max-width:300px}
+.contact{background:var(--navy);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .lead{color:#d8dfea;margin:0 auto 30px}
+.phone{display:inline-block;font-family:'Archivo Black',sans-serif;font-size:clamp(30px,6vw,52px);color:var(--orange);text-decoration:none;margin-bottom:24px}
+.phone:hover{color:#ff8a57}
+.site{display:block;color:#d8dfea;font-size:16px;word-break:break-all}
+footer{background:#0d1828;color:#9aa6b8;text-align:center;font-size:14px;padding:24px 16px}
+@media(max-width:820px){
+.hero .grid,.local .grid{grid-template-columns:1fr}
+.bike{max-width:300px;margin-top:10px}
+.cards{grid-template-columns:1fr}
+section{padding:56px 0}
+.hero{padding:36px 0 80px}
+}
+@media(max-width:420px){.logo{font-size:18px}.navcall{padding:8px 14px;font-size:14px}.btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Flythe's Bike Shop.</div>
+<header>
+<div class="wrap nav">
+<div class="logo"><span class="dot"></span>Flythe's Bike Shop</div>
+<a class="navcall" href="tel:+12526381544">Call (252) 638-1544</a>
+</div>
+</header>
+<div class="hero">
+<div class="wrap grid">
+<div>
+<span class="eyebrow">New Bern, North Carolina</span>
+<h1>Your local <em>bike shop</em> in New Bern.</h1>
+<p>Flythe's Bike Shop is here for New Bern riders, whether you're out on a weekend cruise, riding to work or rolling around the neighborhood with the kids.</p>
+<div class="btns">
+<a class="btn primary" href="tel:+12526381544">Call the Shop</a>
+<a class="btn ghost" href="https://flythebikeshop.com/index.html">Visit Our Website</a>
+</div>
+</div>
+<div class="bike" aria-hidden="true">
+<div class="wheel l"></div><div class="wheel r"></div>
+<div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div><div class="bar b5"></div>
+<div class="seat"></div><div class="handle"></div>
+</div>
+</div>
+<div class="road"></div>
+</div>
+<main>
+<section>
+<div class="wrap">
+<h2>Made for people who love to ride</h2>
+<p class="lead">A good bike shop is more than a store. It's where riders come for honest advice, a friendly chat and help getting where they want to go.</p>
+<div class="cards">
+<div class="card"><div class="ic"></div><h3>Every kind of rider</h3><p>Beginners, regulars and folks getting back in the saddle after a few years are all welcome here.</p></div>
+<div class="card"><div class="ic"></div><h3>Real bike talk</h3><p>Got a question about your bike or your riding? Give us a call and talk to someone who knows bikes.</p></div>
+<div class="card"><div class="ic"></div><h3>Rooted in New Bern</h3><p>We're a local shop for the local riding community, and we're here to keep New Bern rolling.</p></div>
+</div>
+</div>
+</section>
+<section class="local">
+<div class="wrap grid">
+<div>
+<h2>Ready to ride? Let's talk.</h2>
+<p class="lead">A quick phone call is the easiest way to see how we can help. Ask us anything about bikes, gear or getting out on the road, and we'll point you in the right direction.</p>
+<div class="btns" style="margin-top:26px"><a class="btn primary" href="tel:+12526381544">(252) 638-1544</a></div>
+</div>
+<div class="stripe">
+<div class="big">Life's better on two wheels.</div>
+<p>Fresh air, a little exercise and the open road, right here in New Bern.</p>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Get in touch</h2>
+<p class="lead">Call Flythe's Bike Shop in New Bern, NC.</p>
+<a class="phone" href="tel:+12526381544">(252) 638-1544</a>
+<a class="site" href="https://flythebikeshop.com/index.html">flythebikeshop.com</a>
+</div>
+</section>
+</main>
+<footer>&copy; Flythe's Bike Shop · New Bern, NC · Sample concept by Brainsmith Sitecraft</footer>
+</body>
+</html>
