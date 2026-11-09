@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Yiasou Estiatorio | Greek Cuisine in Brooklyn, NY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0f3d6e;--deep:#0a2a4d;--sea:#2f7fb8;--sand:#f7f2e8;--terra:#c0603a;--ink:#1d2433;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--sand);line-height:1.65;font-size:17px}
+a{color:inherit}
+.banner{background:#111;color:#f1f1f1;text-align:center;font-size:13px;padding:8px 14px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+header.nav{background:var(--white);border-bottom:1px solid #e6dfd0}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;gap:14px;flex-wrap:wrap}
+.logo{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:700;color:var(--blue);text-decoration:none;letter-spacing:.5px}
+.logo span{color:var(--terra)}
+nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:22px;color:var(--ink)}
+nav a:hover{color:var(--terra)}
+.btn{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;font-weight:600;padding:14px 28px;border-radius:40px;transition:transform .15s,background .15s}
+.btn:hover{background:#a64e2c;transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:2px solid #fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--deep) 0%,var(--blue) 55%,var(--sea) 100%);color:#fff;padding:110px 0 150px}
+.hero .sun{position:absolute;right:-80px;top:-80px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,#f3c77b 0%,#e9a456 60%,transparent 61%);opacity:.85}
+.hero .wave{position:absolute;left:0;right:0;bottom:0;height:90px;background:radial-gradient(60px 40px at 60px 0,transparent 98%,var(--sand) 100%) 0 0/120px 90px repeat-x}
+.hero .wave2{position:absolute;left:0;right:0;bottom:0;height:40px;background:var(--sand)}
+.hero-inner{position:relative;max-width:700px}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:600;color:#f3c77b;margin-bottom:16px}
+h1{font-family:"Cormorant Garamond",serif;font-size:clamp(46px,8vw,86px);line-height:1.02;font-weight:700;margin-bottom:20px}
+h1 em{font-style:italic;font-weight:500;color:#f3c77b}
+.hero p{font-size:19px;max-width:560px;margin-bottom:34px;color:#e4edf7}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.key{height:18px;background:repeating-linear-gradient(90deg,var(--blue) 0 6px,transparent 6px 18px),linear-gradient(var(--blue),var(--blue)) 0 0/100% 3px no-repeat,linear-gradient(var(--blue),var(--blue)) 0 100%/100% 3px no-repeat;opacity:.85;margin:0 auto;max-width:260px}
+section{padding:90px 0}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(36px,5vw,52px);color:var(--blue);line-height:1.1;margin:18px 0}
+.center{text-align:center}
+.lead{max-width:680px;margin:0 auto;font-size:18px;color:#3b4456}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:50px}
+.card{background:#fff;border-radius:18px;padding:34px 28px;box-shadow:0 10px 30px rgba(15,61,110,.08);border-top:5px solid var(--sea)}
+.card:nth-child(2){border-top-color:var(--terra)}
+.card:nth-child(3){border-top-color:#e9a456}
+.icon{width:54px;height:54px;border-radius:50%;background:var(--sand);display:grid;place-items:center;margin-bottom:18px;font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:700;color:var(--blue)}
+.card h3{font-family:"Cormorant Garamond",serif;font-size:27px;color:var(--blue);margin-bottom:8px}
+.card p{color:#4a5366;font-size:16px}
+.greet{background:var(--blue);color:#fff}
+.greet .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.greet h2{color:#fff}
+.greet p{color:#dce6f2;margin-bottom:16px}
+.word{font-family:"Cormorant Garamond",serif;font-size:clamp(70px,13vw,150px);font-weight:700;color:#f3c77b;line-height:.9;text-align:center}
+.word small{display:block;font-family:Inter,sans-serif;font-size:15px;letter-spacing:3px;color:#cfe0f1;font-weight:500;margin-top:18px;text-transform:uppercase}
+.contact{text-align:center}
+.contact-box{background:#fff;max-width:720px;margin:40px auto 0;border-radius:24px;padding:50px 30px;box-shadow:0 14px 40px rgba(15,61,110,.1)}
+.phone{display:block;font-family:"Cormorant Garamond",serif;font-size:clamp(36px,6vw,54px);font-weight:700;color:var(--terra);text-decoration:none;margin:10px 0 24px}
+.phone:hover{text-decoration:underline}
+.site{display:inline-block;margin-top:22px;color:var(--blue);font-weight:600}
+footer{background:var(--deep);color:#c7d5e6;text-align:center;padding:36px 20px;font-size:14px}
+footer strong{color:#fff;font-family:"Cormorant Garamond",serif;font-size:22px;display:block;margin-bottom:6px}
+@media(max-width:760px){
+nav{display:none}
+.hero{padding:70px 0 120px}
+.hero .sun{width:220px;height:220px;right:-70px;top:-60px}
+section{padding:64px 0}
+.greet .wrap{grid-template-columns:1fr;gap:30px}
+.btn{width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Yiasou Estiatorio.</div>
+
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="#top">Yiasou <span>Estiatorio</span></a>
+<nav><a href="#welcome">Welcome</a><a href="#yiasou">Our Name</a><a href="#visit">Contact</a></nav>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="sun"></div>
+<div class="wrap hero-inner">
+<p class="eyebrow">Greek Cuisine &middot; Brooklyn, NY</p>
+<h1>Yiasou <em>on the Bay</em></h1>
+<p>A Greek table in Brooklyn, where every meal is a reason to gather, share and raise a glass with the people you love.</p>
+<div class="cta">
+<a class="btn" href="tel:+17183326064">Call to Reserve</a>
+<a class="btn ghost" href="#welcome">Discover More</a>
+</div>
+</div>
+<div class="wave"></div><div class="wave2"></div>
+</section>
+
+<section id="welcome" class="center">
+<div class="wrap">
+<div class="key"></div>
+<h2>Welcome to the Table</h2>
+<p class="lead">Greek dining has always been about more than food. It is about hospitality, generous plates passed around the table, and conversation that lingers long after dinner. That spirit is what Yiasou Estiatorio brings to Brooklyn.</p>
+<div class="cards">
+<div class="card"><div class="icon">&Alpha;</div><h3>Greek Cuisine</h3><p>Flavours rooted in Greek cooking traditions, prepared to be savoured and shared.</p></div>
+<div class="card"><div class="icon">&Phi;</div><h3>Warm Hospitality</h3><p>In Greek, a guest is treated like family. Come in hungry and leave feeling at home.</p></div>
+<div class="card"><div class="icon">&Omega;</div><h3>Gather Together</h3><p>A relaxed spot for a dinner for two, a night out with friends or a family meal.</p></div>
+</div>
+</div>
+</section>
+
+<section id="yiasou" class="greet">
+<div class="wrap">
+<div class="word">Yiasou!<small>Hello &middot; Cheers &middot; To your health</small></div>
+<div>
+<h2>A Greeting Worth Sharing</h2>
+<p>&ldquo;Yiasou&rdquo; is how Greeks say hello, and it is also what they say when glasses clink together. It is a wish for good health and good company.</p>
+<p>An <em>estiatorio</em> is a Greek restaurant, a place to sit down, slow down and enjoy a proper meal. Put them together and you have our invitation to you.</p>
+<a class="btn" href="tel:+17183326064">Call Us Today</a>
+</div>
+</div>
+</section>
+
+<section id="visit" class="contact">
+<div class="wrap">
+<div class="key"></div>
+<h2>Join Us in Brooklyn</h2>
+<p class="lead">To ask about a table or anything else, give us a call. We look forward to welcoming you.</p>
+<div class="contact-box">
+<p class="eyebrow" style="color:var(--sea)">Call Yiasou Estiatorio</p>
+<a class="phone" href="tel:+17183326064">(718) 332-6064</a>
+<a class="btn" href="tel:+17183326064">Tap to Call</a><br>
+<a class="site" href="https://www.yiasouonthebay.com/">www.yiasouonthebay.com</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<strong>Yiasou Estiatorio</strong>
+Greek Cuisine &middot; Brooklyn, NY &middot; <a href="tel:+17183326064">(718) 332-6064</a>
+</footer>
+</body>
+</html>
