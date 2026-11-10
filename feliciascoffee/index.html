@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Felicia's Coffee | East Greenwich, RI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--espresso:#2b1a12;--roast:#4a2c1d;--crema:#c98a4b;--terra:#b5532f;--cream:#f8f1e6;--paper:#fffaf2;--ink:#2a211c;--muted:#6b5a4e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+a{color:inherit}
+.banner{background:var(--espresso);color:#f3e6d4;text-align:center;font-size:13px;padding:8px 14px;letter-spacing:.02em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.nav{background:var(--cream);border-bottom:1px solid #eadcc6}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;gap:16px}
+.logo{font-family:Fraunces,serif;font-weight:700;font-size:24px;color:var(--roast);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo span.dot{width:26px;height:26px;border-radius:50%;background:var(--roast);position:relative;display:inline-block}
+.logo span.dot:after{content:"";position:absolute;left:11px;top:4px;width:4px;height:18px;border-radius:50%;background:var(--crema);transform:rotate(18deg)}
+.nav-call{text-decoration:none;font-weight:600;font-size:15px;color:var(--terra);border:2px solid var(--terra);padding:8px 16px;border-radius:999px}
+.nav-call:hover{background:var(--terra);color:#fff}
+.hero{background:radial-gradient(circle at 80% 30%,#5e3826 0,var(--roast) 40%,var(--espresso) 100%);color:var(--cream);padding:84px 0 96px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:600;color:var(--crema)}
+h1,h2,h3{font-family:Fraunces,serif;line-height:1.12}
+.hero h1{font-size:clamp(40px,6vw,68px);margin:14px 0 20px}
+.hero h1 em{font-style:normal;color:var(--crema)}
+.hero p.lead{font-size:19px;max-width:520px;color:#ecdcc6}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:15px 26px;border-radius:999px;font-size:16px}
+.btn-primary{background:var(--crema);color:var(--espresso)}
+.btn-primary:hover{background:#dba064}
+.btn-ghost{border:2px solid #d9c3a5;color:var(--cream)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.cup-art{position:relative;height:340px}
+.steam{position:absolute;left:50%;top:6px;width:120px;margin-left:-70px;display:flex;justify-content:space-between}
+.steam i{display:block;width:12px;height:70px;border-radius:50%;border-left:4px solid rgba(248,241,230,.45);transform:skewX(-12deg)}
+.steam i:nth-child(2){height:90px;margin-top:-16px}
+.cup{position:absolute;left:50%;top:100px;width:200px;height:150px;margin-left:-110px;background:var(--cream);border-radius:0 0 90px 90px}
+.cup:before{content:"";position:absolute;left:0;top:-14px;width:200px;height:30px;border-radius:50%;background:#e9d8bf}
+.cup:after{content:"";position:absolute;left:14px;top:-8px;width:172px;height:20px;border-radius:50%;background:var(--crema)}
+.handle{position:absolute;left:50%;top:128px;margin-left:72px;width:64px;height:70px;border:16px solid var(--cream);border-left:none;border-radius:0 40px 40px 0}
+.saucer{position:absolute;left:50%;top:244px;width:290px;height:36px;margin-left:-155px;border-radius:50%;background:#d9c3a5;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+.bean{position:absolute;width:30px;height:42px;border-radius:50%;background:var(--crema);opacity:.85}
+.bean:after{content:"";position:absolute;left:13px;top:6px;width:4px;height:30px;border-radius:50%;background:var(--roast)}
+.b1{right:10px;top:40px;transform:rotate(30deg)}.b2{left:4px;top:210px;transform:rotate(-25deg);opacity:.6}.b3{right:40px;bottom:10px;transform:rotate(70deg);opacity:.5}
+section{padding:84px 0}
+.intro{background:var(--paper)}
+.intro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+h2{font-size:clamp(30px,4vw,44px);color:var(--roast);margin-bottom:18px}
+.intro p{color:var(--muted);margin-bottom:14px}
+.quote{background:var(--cream);border-radius:28px;padding:40px;position:relative;border:1px solid #eadcc6}
+.quote p{font-family:Fraunces,serif;font-size:26px;line-height:1.35;color:var(--roast)}
+.quote small{display:block;margin-top:16px;color:var(--terra);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+.expect{background:var(--cream)}
+.center{text-align:center;max-width:640px;margin:0 auto 46px}
+.center p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--paper);border-radius:22px;padding:32px 28px;border:1px solid #eadcc6;box-shadow:0 8px 24px rgba(74,44,29,.06)}
+.icon{width:54px;height:54px;border-radius:16px;background:var(--roast);margin-bottom:20px;position:relative}
+.icon:after{content:"";position:absolute;left:15px;top:15px;width:24px;height:24px;border-radius:50%;background:var(--crema)}
+.card:nth-child(2) .icon{background:var(--terra)}
+.card:nth-child(2) .icon:after{border-radius:6px;background:var(--cream)}
+.card:nth-child(3) .icon{background:var(--crema)}
+.card:nth-child(3) .icon:after{background:var(--roast);width:24px;height:12px;top:21px;border-radius:12px 12px 0 0}
+.card h3{font-size:22px;color:var(--roast);margin-bottom:8px}
+.card p{color:var(--muted);font-size:16px}
+.cta{background:var(--terra);color:#fff;text-align:center}
+.cta h2{color:#fff}
+.cta p{max-width:560px;margin:0 auto;color:#fbe7dc;font-size:18px}
+.cta .btns{justify-content:center}
+.cta .btn-primary{background:var(--cream);color:var(--espresso)}
+.cta .btn-ghost{border-color:#f6cdb9;color:#fff}
+.contact .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cbox{border-radius:22px;padding:30px;background:var(--cream);border:1px solid #eadcc6}
+.cbox .label{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--terra);margin-bottom:8px}
+.cbox a,.cbox strong{font-family:Fraunces,serif;font-size:22px;color:var(--roast);text-decoration:none;word-break:break-word}
+.cbox a:hover{text-decoration:underline}
+footer{background:var(--espresso);color:#cdb9a2;text-align:center;padding:32px 20px;font-size:14px}
+footer strong{color:var(--cream);font-family:Fraunces,serif;font-size:18px;display:block;margin-bottom:4px}
+@media(max-width:860px){
+.hero{padding:56px 0 64px}
+.hero .wrap,.intro .wrap{grid-template-columns:1fr}
+.cup-art{height:300px;max-width:340px;margin:0 auto;width:100%}
+.cards,.contact .grid{grid-template-columns:1fr}
+section{padding:60px 0}
+.quote p{font-size:22px}
+}
+@media(max-width:420px){.logo{font-size:20px}.nav-call{padding:7px 12px;font-size:14px}.btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Felicia's Coffee.</div>
+
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="#top"><span class="dot"></span>Felicia's Coffee</a>
+<a class="nav-call" href="tel:+14018864141">Call (401) 886-4141</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<div>
+<div class="eyebrow">Cafe · East Greenwich, RI</div>
+<h1>Your neighborhood cup at <em>Felicia's Coffee</em></h1>
+<p class="lead">A warm, friendly cafe in East Greenwich, Rhode Island. Come in for a good cup of coffee, a comfortable seat and a friendly hello.</p>
+<div class="btns">
+<a class="btn btn-primary" href="tel:+14018864141">Call (401) 886-4141</a>
+<a class="btn btn-ghost" href="https://www.feliciascoffee.com/">Visit our website</a>
+</div>
+</div>
+<div class="cup-art" aria-hidden="true">
+<div class="steam"><i></i><i></i><i></i></div>
+<div class="handle"></div>
+<div class="cup"></div>
+<div class="saucer"></div>
+<span class="bean b1"></span><span class="bean b2"></span><span class="bean b3"></span>
+</div>
+</div>
+</section>
+
+<section class="intro">
+<div class="wrap">
+<div>
+<div class="eyebrow">Welcome</div>
+<h2>A cozy coffee stop in East Greenwich</h2>
+<p>Some mornings call for a quick cup on the way out. Others call for slowing down and staying a while. A neighborhood cafe is a good place for both.</p>
+<p>At Felicia's Coffee, you can meet a friend, take a break from your day or just enjoy a cup made for you. Want to know what's on offer today? Give us a call.</p>
+</div>
+<div class="quote">
+<p>"Good coffee tastes better when it comes with a friendly face."</p>
+<small>Felicia's Coffee · East Greenwich</small>
+</div>
+</div>
+</section>
+
+<section class="expect">
+<div class="wrap">
+<div class="center">
+<div class="eyebrow">Why stop in</div>
+<h2>Made for everyday moments</h2>
+<p>Whatever kind of day you're having, a local cafe is a good place to start it or take a break.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="icon"></div><h3>A good cup</h3><p>Coffee made with care, whether you drink it right away or take it with you.</p></div>
+<div class="card"><div class="icon"></div><h3>A place to pause</h3><p>A relaxed spot to catch up with friends, read a little or just sit and enjoy your drink.</p></div>
+<div class="card"><div class="icon"></div><h3>Truly local</h3><p>Part of the East Greenwich community, and glad to welcome neighbors and visitors alike.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="wrap">
+<h2>Ready for your next cup?</h2>
+<p>Call Felicia's Coffee or visit the website to see what's brewing.</p>
+<div class="btns">
+<a class="btn btn-primary" href="tel:+14018864141">Call (401) 886-4141</a>
+<a class="btn btn-ghost" href="https://www.feliciascoffee.com/">feliciascoffee.com</a>
+</div>
+</div>
+</section>
+
+<section class="contact">
+<div class="wrap">
+<div class="center">
+<div class="eyebrow">Get in touch</div>
+<h2>Contact Felicia's Coffee</h2>
+</div>
+<div class="grid">
+<div class="cbox"><div class="label">Phone</div><a href="tel:+14018864141">(401) 886-4141</a></div>
+<div class="cbox"><div class="label">Website</div><a href="https://www.feliciascoffee.com/">feliciascoffee.com</a></div>
+<div class="cbox"><div class="label">Location</div><strong>East Greenwich, RI</strong></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<strong>Felicia's Coffee</strong>
+Cafe in East Greenwich, Rhode Island · <a href="tel:+14018864141">(401) 886-4141</a><br>
+Sample concept by Brainsmith Sitecraft
+</footer>
+</body>
+</html>

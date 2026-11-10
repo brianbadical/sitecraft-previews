@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Thyme Kitchen + Craft Beer | Downtown Peoria, IL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#24382b;--green2:#2f4a38;--sage:#8aa77c;--cream:#f7f1e6;--paper:#fffaf1;--amber:#d9902b;--amber2:#f0b955;--brick:#9a4a32;--ink:#1d211e;--muted:#55605a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;font-weight:700}
+.banner{background:#111;color:#f3f3f3;text-align:center;font-size:13px;padding:7px 14px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{background:var(--green);color:var(--cream);position:sticky;top:0;z-index:10;border-bottom:3px solid var(--amber)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.logo{font-family:Fraunces,serif;font-size:22px;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:10px}
+.leaf{width:22px;height:22px;background:var(--sage);border-radius:0 70% 0 70%;transform:rotate(-10deg);display:inline-block}
+.logo small{font-family:Inter,sans-serif;font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber2);display:block}
+.links{display:flex;gap:22px;font-size:15px;font-weight:500}
+.links a{text-decoration:none;opacity:.9}
+.links a:hover{color:var(--amber2)}
+.btn{display:inline-block;background:var(--amber);color:#1d1408;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:999px;transition:transform .15s,background .15s;border:2px solid var(--amber)}
+.btn:hover{background:var(--amber2);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--cream);border-color:rgba(247,241,230,.55)}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.sm{padding:9px 18px;font-size:14px}
+.hero{background:radial-gradient(circle at 85% 20%,rgba(217,144,43,.28),transparent 45%),linear-gradient(160deg,var(--green) 0%,#17241c 100%);color:var(--cream);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:60px;background:repeating-linear-gradient(90deg,var(--brick) 0 58px,#86402b 58px 60px),var(--brick);opacity:.9;
+-webkit-mask:repeating-linear-gradient(0deg,#000 0 18px,transparent 18px 20px);mask:repeating-linear-gradient(0deg,#000 0 18px,transparent 18px 20px)}
+.hero-in{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding:90px 0 130px}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:13px;font-weight:600;color:var(--amber2)}
+.hero h1{font-size:clamp(40px,6.4vw,74px);margin:14px 0 18px}
+.hero h1 em{font-style:italic;color:var(--amber2)}
+.hero p.lead{font-size:19px;max-width:540px;color:#e7e1d4}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.glass{position:relative;width:220px;height:330px;margin:0 auto}
+.pint{position:absolute;left:30px;top:30px;width:160px;height:280px;border:5px solid rgba(255,250,240,.75);border-top:none;border-radius:0 0 26px 26px;clip-path:polygon(0 0,100% 0,90% 100%,10% 100%);background:linear-gradient(180deg,#fffaf0 0 16%,var(--amber2) 16% 30%,var(--amber) 70%,#b06a17 100%)}
+.pint::before{content:"";position:absolute;left:22%;top:24%;width:10px;height:58%;background:rgba(255,255,255,.35);border-radius:10px}
+.sprig{position:absolute;right:-6px;top:0;width:60px;height:200px}
+.sprig i{position:absolute;width:24px;height:24px;background:var(--sage);border-radius:0 70% 0 70%}
+.sprig b{position:absolute;left:28px;top:10px;width:3px;height:190px;background:#6c8a5f;border-radius:3px;transform:rotate(8deg)}
+.sprig i:nth-of-type(1){left:6px;top:20px}.sprig i:nth-of-type(2){left:34px;top:46px;transform:scaleX(-1)}
+.sprig i:nth-of-type(3){left:8px;top:80px}.sprig i:nth-of-type(4){left:38px;top:110px;transform:scaleX(-1)}
+.sprig i:nth-of-type(5){left:12px;top:142px}
+section{padding:88px 0}
+.sec-h{max-width:680px;margin-bottom:40px}
+.sec-h h2{font-size:clamp(32px,4.4vw,48px);color:var(--green);margin:8px 0 14px}
+.sec-h .eyebrow{color:var(--brick)}
+.sec-h p{color:var(--muted);font-size:18px}
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about p{margin-bottom:16px;color:#333a35}
+.bricks{aspect-ratio:4/3;border-radius:18px;background:repeating-linear-gradient(0deg,transparent 0 30px,#e9dccb 30px 33px),repeating-linear-gradient(90deg,var(--brick) 0 70px,#e9dccb 70px 73px);position:relative;overflow:hidden;box-shadow:0 20px 40px rgba(36,56,43,.18)}
+.bricks .tag{position:absolute;left:24px;bottom:24px;right:24px;background:var(--paper);border-radius:12px;padding:18px 20px}
+.bricks .tag strong{font-family:Fraunces,serif;font-size:22px;color:var(--green);display:block}
+.bricks .tag span{color:var(--muted);font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #eadfcc;border-radius:16px;padding:28px;box-shadow:0 6px 18px rgba(0,0,0,.04)}
+.card .ic{width:46px;height:46px;border-radius:12px;background:var(--green);margin-bottom:16px;position:relative}
+.card .ic::after{content:"";position:absolute;inset:12px;border-radius:0 70% 0 70%;background:var(--sage)}
+.card h3{font-size:22px;color:var(--green);margin-bottom:8px}
+.card p{color:var(--muted);font-size:16px}
+.beer{background:var(--green);color:var(--cream)}
+.beer .sec-h h2{color:var(--cream)}
+.beer .sec-h p{color:#d6d0c2}
+.beer .sec-h .eyebrow{color:var(--amber2)}
+.taps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tap{background:var(--green2);border-radius:16px;padding:26px 22px;border:1px solid rgba(255,255,255,.08)}
+.tap .dot{width:54px;height:54px;border-radius:50%;margin-bottom:16px;box-shadow:inset 0 -8px 0 rgba(0,0,0,.15)}
+.tap h3{font-size:20px;margin-bottom:6px}
+.tap p{font-size:15px;color:#cfc9bb}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px}
+.gallery div{border-radius:14px}
+.g1{grid-column:span 2;grid-row:span 2;background:radial-gradient(circle at 30% 30%,var(--amber2),var(--amber) 40%,var(--brick))}
+.g2{background:repeating-linear-gradient(45deg,var(--green) 0 14px,var(--green2) 14px 28px)}
+.g3{background:var(--sage);position:relative}
+.g3::after{content:"";position:absolute;inset:35%;border-radius:0 70% 0 70%;background:var(--green)}
+.g4{grid-column:span 2;background:repeating-linear-gradient(0deg,transparent 0 22px,#e9dccb 22px 24px),repeating-linear-gradient(90deg,var(--brick) 0 50px,#e9dccb 50px 52px)}
+.events{background:var(--cream)}
+.ev{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:var(--paper);border-radius:20px;padding:36px;border-left:8px solid var(--amber)}
+.ev h3{font-size:26px;color:var(--green);margin-bottom:8px}
+.ev p{color:var(--muted)}
+.visit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.visit .card{border-top:5px solid var(--green)}
+.visit .card a{color:var(--brick);font-weight:600}
+.res{background:linear-gradient(135deg,var(--brick),#7a3826);color:#fff;text-align:center}
+.res h2{font-size:clamp(34px,5vw,54px);margin:10px 0 14px}
+.res p{max-width:600px;margin:0 auto 28px;color:#f6e7de;font-size:18px}
+.res .eyebrow{color:var(--amber2)}
+.phone{font-family:Fraunces,serif;font-size:clamp(30px,5vw,44px);display:block;margin-bottom:24px;text-decoration:none;color:#fff}
+.res .btn.ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+footer{background:#141c17;color:#bdb8ad;padding:44px 0;font-size:15px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}
+footer a{color:var(--amber2)}
+footer .logo{color:var(--cream)}
+@media(max-width:900px){
+.hero-in,.about-grid{grid-template-columns:1fr}
+.glass{display:none}
+.cards,.visit-grid{grid-template-columns:1fr}
+.taps{grid-template-columns:1fr 1fr}
+.links{display:none}
+.ev{grid-template-columns:1fr}
+.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:120px}
+}
+@media(max-width:520px){
+body{font-size:16px}
+section{padding:64px 0}
+.hero-in{padding:60px 0 110px}
+.taps{grid-template-columns:1fr}
+.logo small{display:none}
+.cta .btn{width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Thyme Kitchen + Craft Beer.</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#top"><span class="leaf"></span><span>Thyme<small>Kitchen + Craft Beer</small></span></a>
+<nav class="links"><a href="#food">Food</a><a href="#drinks">Craft Beer &amp; Spirits</a><a href="#gallery">Gallery</a><a href="#events">Events</a><a href="#visit">Visit</a></nav>
+<a class="btn sm" href="tel:+13097132619">Call to Reserve</a>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="wrap hero-in">
+<div>
+<span class="eyebrow">Warehouse District · Downtown Peoria, IL</span>
+<h1>Unique food.<br><em>Great pours.</em><br>Choices for all.</h1>
+<p class="lead">Thyme Kitchen + Craft Beer serves a variety of unique food items alongside an extensive bar menu, right in the heart of downtown Peoria.</p>
+<div class="cta">
+<a class="btn" href="tel:+13097132619">Call (309) 713-2619</a>
+<a class="btn ghost" href="#food">Explore the Menu</a>
+</div>
+</div>
+<div class="glass" aria-hidden="true"><div class="pint"></div><div class="sprig"><b></b><i></i><i></i><i></i><i></i><i></i></div></div>
+</div>
+</section>
+
+<section class="about">
+<div class="wrap about-grid">
+<div>
+<div class="sec-h" style="margin-bottom:20px">
+<span class="eyebrow">Our Neighborhood</span>
+<h2>Located in the Warehouse District of Downtown Peoria</h2>
+</div>
+<p>Thyme brings together two good things: a kitchen that loves to cook something a little different, and a bar with plenty to explore.</p>
+<p>Come in for a relaxed meal, meet up with friends over a drink, or stop by before a night out downtown. Whatever brings you in, there's a seat and a choice for everyone.</p>
+</div>
+<div class="bricks" aria-hidden="true"><div class="tag"><strong>Thyme Kitchen + Craft Beer</strong><span>Downtown Peoria, Illinois</span></div></div>
+</div>
+</section>
+
+<section id="food">
+<div class="wrap">
+<div class="sec-h">
+<span class="eyebrow">Food</span>
+<h2>A kitchen with personality</h2>
+<p>Our menu offers a variety of unique food items. It's made for sharing, savoring, and pairing with something good from the bar.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="ic"></div><h3>Something Different</h3><p>Unique dishes you won't find on every menu in town, made for curious eaters and regulars alike.</p></div>
+<div class="card"><div class="ic"></div><h3>Made to Pair</h3><p>Food that goes great with a cold beer or a well-made drink. Ask your server what pairs best.</p></div>
+<div class="card"><div class="ic"></div><h3>Good Company</h3><p>Easy for date nights, friends, family, or a quick bite downtown. Bring whoever you like.</p></div>
+</div>
+</div>
+</section>
+
+<section id="drinks" class="beer">
+<div class="wrap">
+<div class="sec-h">
+<span class="eyebrow">Craft Beer &amp; Spirits</span>
+<h2>An extensive bar menu with choices for all</h2>
+<p>Whether you're a hop hunter, a cocktail fan, or just want something easy and cold, our bar has you covered.</p>
+</div>
+<div class="taps">
+<div class="tap"><div class="dot" style="background:#f0c766"></div><h3>Light &amp; Crisp</h3><p>Easy-drinking options for a relaxed evening.</p></div>
+<div class="tap"><div class="dot" style="background:#d9902b"></div><h3>Hoppy &amp; Bold</h3><p>For anyone who likes their craft beer with character.</p></div>
+<div class="tap"><div class="dot" style="background:#7a3d1e"></div><h3>Dark &amp; Rich</h3><p>Deeper, roastier pours for slow sipping.</p></div>
+<div class="tap"><div class="dot" style="background:#8aa77c"></div><h3>Spirits</h3><p>A bar stocked with choices beyond the taps.</p></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="wrap">
+<div class="sec-h">
+<span class="eyebrow">Gallery</span>
+<h2>Warm, welcoming, downtown</h2>
+<p>Exposed-brick charm, good food on the table, and a glass in hand. Come see it for yourself.</p>
+</div>
+<div class="gallery" aria-hidden="true"><div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div></div>
+</div>
+</section>
+
+<section id="events" class="events">
+<div class="wrap">
+<div class="sec-h">
+<span class="eyebrow">Upcoming Events</span>
+<h2>There's always a reason to stop by</h2>
+</div>
+<div class="ev">
+<div><h3>Ask about what's coming up</h3><p>For the latest events at Thyme, give us a call or check our official website.</p></div>
+<a class="btn" href="https://thymepeoria.com/">Visit thymepeoria.com</a>
+</div>
+</div>
+</section>
+
+<section id="visit" class="visit">
+<div class="wrap">
+<div class="sec-h">
+<span class="eyebrow">Plan Your Visit</span>
+<h2>Hours &amp; Location</h2>
+</div>
+<div class="visit-grid">
+<div class="card"><h3>Location</h3><p>In the Warehouse District of downtown Peoria, Illinois.</p></div>
+<div class="card"><h3>Hours</h3><p>For today's hours, call <a href="tel:+13097132619">(309) 713-2619</a> or check <a href="https://thymepeoria.com/">thymepeoria.com</a>.</p></div>
+<div class="card"><h3>Contact</h3><p>Phone: <a href="tel:+13097132619">(309) 713-2619</a><br>Web: <a href="https://thymepeoria.com/">thymepeoria.com</a></p></div>
+</div>
+</div>
+</section>
+
+<section class="res" id="reservations">
+<div class="wrap">
+<span class="eyebrow">Reservations</span>
+<h2>Save yourself a seat</h2>
+<p>Planning a dinner, a get-together, or a night out downtown? Give us a call and we'll help you get set up.</p>
+<a class="phone" href="tel:+13097132619">(309) 713-2619</a>
+<div class="cta" style="justify-content:center">
+<a class="btn" href="tel:+13097132619">Call Now</a>
+<a class="btn ghost" href="https://thymepeoria.com/">Official Website</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap foot">
+<a class="logo" href="#top"><span class="leaf"></span><span>Thyme Kitchen + Craft Beer</span></a>
+<div>Downtown Peoria, IL · <a href="tel:+13097132619">(309) 713-2619</a> · <a href="https://thymepeoria.com/">thymepeoria.com</a></div>
+</div>
+</footer>
+</body>
+</html>
