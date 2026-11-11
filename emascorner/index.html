@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ema's Corner Pizza | Baltimore, MD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--red:#b8321f;--red-d:#8e2414;--cream:#fbf3e4;--dough:#f1d9a8;--crust:#d9a25b;--green:#2f5d3a;--ink:#2a1d17;--muted:#5e4a3f}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1}
+a{color:inherit}
+.banner{background:var(--ink);color:#f4e9d8;text-align:center;font-size:13px;padding:7px 14px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:Fraunces,serif;font-weight:800;font-size:24px;color:var(--red);text-decoration:none}
+.logo span{color:var(--green)}
+.navcall{background:var(--green);color:#fff;text-decoration:none;padding:9px 16px;border-radius:30px;font-weight:700;font-size:15px}
+.hero{position:relative;overflow:hidden;padding:40px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--dough);color:var(--red-d);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:18px}
+.hero h1{font-size:clamp(42px,7vw,76px);font-weight:800;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{font-size:19px;color:var(--muted);margin:20px 0 30px;max-width:30em}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 26px;border-radius:40px;font-size:17px}
+.btn.primary{background:var(--red);color:#fff;box-shadow:0 6px 0 var(--red-d)}
+.btn.primary:hover{transform:translateY(2px);box-shadow:0 4px 0 var(--red-d)}
+.btn.ghost{border:2px solid var(--ink);color:var(--ink)}
+.pizza{position:relative;width:min(380px,80vw);aspect-ratio:1;margin:0 auto;border-radius:50%;background:var(--crust);box-shadow:0 25px 50px rgba(90,40,10,.25),inset 0 0 0 10px #c98d45}
+.pizza:before{content:"";position:absolute;inset:7%;border-radius:50%;background:radial-gradient(circle at 30% 30%,#e0553c,#b8321f 70%)}
+.pizza:after{content:"";position:absolute;inset:11%;border-radius:50%;background:radial-gradient(circle at 25% 40%,#fff3cf 0 9%,transparent 10%),radial-gradient(circle at 65% 30%,#fff3cf 0 11%,transparent 12%),radial-gradient(circle at 55% 70%,#fff3cf 0 10%,transparent 11%),radial-gradient(circle at 25% 72%,#fff3cf 0 7%,transparent 8%),radial-gradient(circle at 80% 58%,#fff3cf 0 7%,transparent 8%)}
+.pep{position:absolute;width:13%;aspect-ratio:1;border-radius:50%;background:#7e1d10;z-index:2;box-shadow:inset -3px -3px 0 rgba(0,0,0,.2)}
+.leaf{position:absolute;width:9%;height:5%;background:var(--green);border-radius:0 100% 0 100%;z-index:3}
+.slice-line{position:absolute;inset:7%;border-radius:50%;z-index:4;background:linear-gradient(0deg,transparent 49.6%,rgba(120,60,20,.35) 50%,transparent 50.4%),linear-gradient(60deg,transparent 49.6%,rgba(120,60,20,.35) 50%,transparent 50.4%),linear-gradient(120deg,transparent 49.6%,rgba(120,60,20,.35) 50%,transparent 50.4%)}
+.blob{position:absolute;border-radius:50%;z-index:-1}
+.b1{width:520px;height:520px;background:var(--dough);right:-140px;top:-60px;opacity:.6}
+.stripe{height:18px;background:repeating-linear-gradient(90deg,var(--red) 0 30px,var(--cream) 30px 60px)}
+section{padding:80px 0}
+.center{text-align:center}
+h2{font-size:clamp(32px,4.5vw,46px);margin-bottom:16px}
+.lead{color:var(--muted);max-width:38em;margin:0 auto 44px;font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border-radius:20px;padding:30px 26px;border:2px solid #efe0c4}
+.card .ico{width:54px;height:54px;border-radius:50%;margin-bottom:18px;display:grid;place-items:center;font-family:Fraunces,serif;font-weight:800;font-size:24px;color:#fff}
+.card h3{font-size:23px;margin-bottom:8px}
+.card p{color:var(--muted)}
+.soon{background:var(--green);color:#f6efe0}
+.soon .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.soon h2{color:#fff}
+.soon p{color:#dfe8dc;font-size:18px}
+.big{font-family:Fraunces,serif;font-weight:800;font-size:clamp(60px,11vw,120px);line-height:.9;color:var(--dough);text-align:center}
+.big small{display:block;font-size:22px;letter-spacing:.2em;text-transform:uppercase;color:#cfe0cb;margin-top:12px;font-family:Inter,sans-serif}
+.contact{background:var(--red);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact p{color:#fde3dc;font-size:18px;margin-bottom:30px}
+.phone{display:inline-block;font-family:Fraunces,serif;font-weight:800;font-size:clamp(34px,6vw,56px);color:#fff;text-decoration:none;border-bottom:4px solid var(--dough)}
+.contact .btn{background:#fff;color:var(--red-d);margin-top:34px}
+.site{display:block;margin-top:20px;color:#fff;font-weight:500}
+footer{background:var(--ink);color:#d9cbb8;text-align:center;padding:28px 20px;font-size:14px}
+footer strong{color:#fff}
+@media(max-width:800px){
+.hero .wrap,.soon .wrap{grid-template-columns:1fr}
+.hero{padding:20px 0 60px;text-align:center}
+.hero p{margin-left:auto;margin-right:auto}
+.btns{justify-content:center}
+.cards{grid-template-columns:1fr}
+section{padding:60px 0}
+.navcall{font-size:14px;padding:8px 13px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Ema's Corner.</div>
+
+<header class="hero">
+<div class="blob b1"></div>
+<div class="wrap">
+<nav style="grid-column:1/-1">
+<a class="logo" href="#">Ema's <span>Corner</span></a>
+<a class="navcall" href="tel:+14438352261">Call (443) 835-2261</a>
+</nav>
+<div>
+<span class="tag">Coming Soon &middot; Baltimore, MD</span>
+<h1>Ema's Corner <em>Pizza</em></h1>
+<p>A neighborhood pizza spot is on its way to Baltimore. Fresh from the oven, made for sharing, and ready to become your new corner favorite.</p>
+<div class="btns">
+<a class="btn primary" href="tel:+14438352261">Call Us</a>
+<a class="btn ghost" href="#about">Learn More</a>
+</div>
+</div>
+<div class="pizza" aria-hidden="true">
+<span class="pep" style="top:22%;left:30%"></span>
+<span class="pep" style="top:30%;left:58%"></span>
+<span class="pep" style="top:52%;left:22%"></span>
+<span class="pep" style="top:58%;left:52%"></span>
+<span class="pep" style="top:42%;left:70%"></span>
+<span class="pep" style="top:72%;left:36%"></span>
+<span class="leaf" style="top:40%;left:42%;transform:rotate(20deg)"></span>
+<span class="leaf" style="top:68%;left:66%;transform:rotate(-30deg)"></span>
+<span class="leaf" style="top:20%;left:48%;transform:rotate(60deg)"></span>
+<span class="slice-line"></span>
+</div>
+</div>
+</header>
+
+<div class="stripe"></div>
+
+<section id="about" class="center">
+<div class="wrap">
+<h2>Pizza, the neighborhood way</h2>
+<p class="lead">At Ema's Corner, it's all about the simple joy of a good pizza: something you can grab with friends, bring home to the family, or share at the end of a long day.</p>
+<div class="cards">
+<div class="card"><div class="ico" style="background:var(--red)">1</div><h3>Made to Share</h3><p>Pizza brings people together. Grab a pie for game night, a family dinner or a get-together with friends.</p></div>
+<div class="card"><div class="ico" style="background:var(--green)">2</div><h3>Local to Baltimore</h3><p>A friendly corner spot for the neighborhood, where folks know they'll get a warm welcome.</p></div>
+<div class="card"><div class="ico" style="background:var(--crust)">3</div><h3>Easy to Order</h3><p>Hungry? Just pick up the phone and give us a call. We'll take it from there.</p></div>
+</div>
+</div>
+</section>
+
+<section class="soon">
+<div class="wrap">
+<div>
+<h2>Something delicious is coming</h2>
+<p>Ema's Corner Pizza is getting ready. Keep an eye on our website for news, or call us to find out more about what's on the way.</p>
+</div>
+<div class="big">Coming<br>Soon<small>Baltimore, MD</small></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Give us a call</h2>
+<p>Questions or orders? We'd love to hear from you.</p>
+<a class="phone" href="tel:+14438352261">(443) 835-2261</a><br>
+<a class="btn" href="tel:+14438352261">Tap to Call</a>
+<a class="site" href="https://emascorner.com/">emascorner.com</a>
+</div>
+</section>
+
+<footer>
+<p><strong>Ema's Corner Pizza</strong> &middot; Baltimore, MD</p>
+<p>Free sample concept by Brainsmith Sitecraft.</p>
+</footer>
+</body>
+</html>

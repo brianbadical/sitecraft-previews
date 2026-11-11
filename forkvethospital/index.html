@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Fork Veterinary Hospital | Fork, MD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#1f5f5b;--teal-d:#163f3c;--sage:#e6efe9;--cream:#fbf7f0;--coral:#e0794f;--coral-d:#b9552d;--ink:#1e2a28;--muted:#4c5c59}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Nunito Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);font-size:18px;line-height:1.65}
+a{color:inherit}
+.banner{background:var(--ink);color:#f3efe6;text-align:center;font-size:14px;padding:8px 16px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{background:var(--cream);border-bottom:1px solid #e7dfd1}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:Fraunces,serif;font-weight:700;font-size:22px;color:var(--teal-d)}
+.mark{width:42px;height:42px;border-radius:50%;background:var(--teal);position:relative;flex:none}
+.mark::before,.mark::after{content:"";position:absolute;background:#fff;border-radius:2px}
+.mark::before{width:20px;height:6px;left:11px;top:18px}
+.mark::after{width:6px;height:20px;left:18px;top:11px}
+.nav-links{display:flex;gap:22px;align-items:center;font-weight:700;font-size:16px}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--teal)}
+.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:999px;padding:14px 28px;font-size:17px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--coral-d);color:#fff}
+.btn-primary:hover{background:#a2471f}
+.btn-ghost{border:2px solid var(--teal);color:var(--teal)}
+.btn-ghost:hover{background:var(--teal);color:#fff}
+.nav .btn{padding:10px 20px;font-size:15px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--sage) 0%,var(--cream) 70%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:80px 0 96px}
+.eyebrow{display:inline-block;background:#fff;color:var(--teal);font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:22px;box-shadow:0 2px 0 #d8e4dd}
+h1,h2,h3{font-family:Fraunces,serif;color:var(--teal-d);line-height:1.15}
+h1{font-size:clamp(36px,5.4vw,60px);margin-bottom:22px}
+h1 em{font-style:normal;color:var(--coral-d)}
+.lead{font-size:20px;color:var(--muted);max-width:34ch;margin-bottom:32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.art{position:relative;aspect-ratio:1;max-width:400px;margin-left:auto;width:100%}
+.circle{position:absolute;inset:0;border-radius:50%;background:var(--teal)}
+.circle::after{content:"";position:absolute;inset:-18px;border-radius:50%;border:3px dashed #9cc2b8}
+.paw{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:46%;aspect-ratio:1}
+.pad{position:absolute;left:18%;top:42%;width:64%;height:52%;background:var(--cream);border-radius:50% 50% 46% 46%/58% 58% 42% 42%}
+.toe{position:absolute;width:22%;height:28%;background:var(--cream);border-radius:50%}
+.t1{left:0;top:18%;transform:rotate(-20deg)}
+.t2{left:24%;top:0}
+.t3{right:24%;top:0}
+.t4{right:0;top:18%;transform:rotate(20deg)}
+.heart{position:absolute;right:4%;top:6%;width:70px;height:70px;background:var(--coral);transform:rotate(-45deg);border-radius:0 0 0 8px;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.heart::before,.heart::after{content:"";position:absolute;width:70px;height:70px;background:var(--coral);border-radius:50%}
+.heart::before{top:-35px;left:0}
+.heart::after{left:35px;top:0}
+section{padding:88px 0}
+.center{text-align:center;max-width:720px;margin:0 auto}
+h2{font-size:clamp(30px,4vw,44px);margin-bottom:16px}
+.sub{color:var(--muted);font-size:19px}
+.quote{background:var(--teal);color:#fff}
+.quote blockquote{font-family:Fraunces,serif;font-size:clamp(28px,4.2vw,46px);line-height:1.25;text-align:center;max-width:900px;margin:0 auto}
+.quote blockquote::before{content:"\201C";display:block;font-size:90px;line-height:.6;color:var(--coral);margin-bottom:12px}
+.quote p{text-align:center;margin-top:20px;color:#cfe3dd;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.card{background:#fff;border-radius:22px;padding:34px 28px;box-shadow:0 1px 0 #e7dfd1,0 14px 34px rgba(31,95,91,.07)}
+.ico{width:54px;height:54px;border-radius:16px;background:var(--sage);margin-bottom:20px;position:relative}
+.ico span{position:absolute;inset:16px;border-radius:50%;background:var(--teal)}
+.card:nth-child(2) .ico span{border-radius:4px;background:var(--coral)}
+.card:nth-child(3) .ico span{border-radius:50% 50% 4px 4px}
+h3{font-size:23px;margin-bottom:10px}
+.card p{color:var(--muted)}
+.local{background:var(--sage)}
+.local-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.pin{width:120px;height:120px;background:var(--coral);border-radius:50% 50% 50% 0;transform:rotate(-45deg);margin:20px auto;position:relative}
+.pin::after{content:"";position:absolute;width:44px;height:44px;border-radius:50%;background:var(--sage);left:38px;top:38px}
+.place{text-align:center;font-family:Fraunces,serif;font-size:30px;color:var(--teal-d);margin-top:28px}
+.contact{background:var(--teal-d);color:#fff}
+.contact h2{color:#fff}
+.contact .sub{color:#cfe3dd}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px;margin:40px auto 0}
+.cbox{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:28px;text-align:center;text-decoration:none;display:block;transition:background .15s}
+.cbox:hover{background:rgba(255,255,255,.15)}
+.cbox small{display:block;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:#f2a483;font-size:13px;margin-bottom:6px}
+.cbox strong{font-size:24px;word-break:break-word}
+footer{background:var(--ink);color:#b9c4c1;text-align:center;font-size:15px;padding:28px 24px}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+@media (max-width:860px){
+.hero-grid,.local-grid{grid-template-columns:1fr}
+.hero-grid{padding:56px 0 72px;gap:40px}
+.art{max-width:280px;margin:0 auto}
+.heart{width:48px;height:48px}
+.heart::before,.heart::after{width:48px;height:48px}
+.heart::before{top:-24px}.heart::after{left:24px}
+.cards{grid-template-columns:1fr}
+.contact-box{grid-template-columns:1fr}
+.nav-links a:not(.btn){display:none}
+section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Fork Veterinary Hospital.</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#top"><span class="mark" aria-hidden="true"></span>Fork Veterinary Hospital</a>
+<nav class="nav-links">
+<a href="#care">Our Care</a>
+<a href="#local">Location</a>
+<a href="#contact">Contact</a>
+<a class="btn btn-primary" href="tel:+14105927569">Call (410) 592-7569</a>
+</nav>
+</div>
+</header>
+<main id="top">
+<section class="hero" style="padding:0">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Veterinary Hospital &middot; Fork, MD</span>
+<h1>Caring for the pets who are <em>part of your family.</em></h1>
+<p class="lead">Fork Veterinary Hospital is your neighborhood veterinary team in Fork, Maryland, here to help your companion live a happy, healthy life.</p>
+<div class="cta">
+<a class="btn btn-primary" href="tel:+14105927569">Call to Schedule a Visit</a>
+<a class="btn btn-ghost" href="#care">Learn More</a>
+</div>
+</div>
+<div class="art" aria-hidden="true">
+<div class="circle"></div>
+<div class="paw"><div class="toe t1"></div><div class="toe t2"></div><div class="toe t3"></div><div class="toe t4"></div><div class="pad"></div></div>
+<div class="heart"></div>
+</div>
+</div>
+</section>
+
+<section class="quote">
+<div class="wrap">
+<blockquote>Because they're not just a pet, they're your family.</blockquote>
+<p>That's the heart of everything we do at Fork Veterinary Hospital.</p>
+</div>
+</section>
+
+<section id="care">
+<div class="wrap">
+<div class="center">
+<h2>Care that feels like family</h2>
+<p class="sub">Every visit is about your pet's health and your peace of mind.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="ico" aria-hidden="true"><span></span></div><h3>Gentle, attentive care</h3><p>We know a trip to the vet can feel big for a pet. We aim to make each visit calm, kind and as comfortable as possible.</p></div>
+<div class="card"><div class="ico" aria-hidden="true"><span></span></div><h3>Clear communication</h3><p>We take time to explain what's going on and answer your questions, so you can make confident choices for your pet.</p></div>
+<div class="card"><div class="ico" aria-hidden="true"><span></span></div><h3>A partner for life</h3><p>From the early days through the golden years, we're here to help your companion stay healthy at every stage.</p></div>
+</div>
+</div>
+</section>
+
+<section class="local" id="local">
+<div class="wrap local-grid">
+<div>
+<h2>Proudly serving Fork, Maryland</h2>
+<p class="sub">As a local veterinary hospital, we care about the pets and families in our own community. Have a question or need to book an appointment? The quickest way to reach us is by phone.</p>
+<p style="margin-top:28px"><a class="btn btn-primary" href="tel:+14105927569">Call (410) 592-7569</a></p>
+</div>
+<div aria-hidden="false">
+<div class="pin" aria-hidden="true"></div>
+<p class="place">Fork, MD</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<div class="center">
+<h2>Let's take care of your family member</h2>
+<p class="sub">Give us a call to schedule a visit or ask a question. We'd love to hear from you.</p>
+</div>
+<div class="contact-box">
+<a class="cbox" href="tel:+14105927569"><small>Phone</small><strong>(410) 592-7569</strong></a>
+<a class="cbox" href="https://www.forkvethospital.com/"><small>Website</small><strong>forkvethospital.com</strong></a>
+</div>
+</div>
+</section>
+</main>
+<footer>&copy; Fork Veterinary Hospital &middot; Fork, MD &middot; Sample concept by Brainsmith Sitecraft</footer>
+</body>
+</html>

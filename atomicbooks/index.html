@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Atomic Books | Independent Bookstore in Baltimore, MD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16130f;--paper:#fbf4e4;--red:#e2372b;--yel:#ffd23f;--teal:#1f7a78;--mute:#4a443b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Space Grotesk",system-ui,sans-serif;background:var(--paper);color:var(--ink);font-size:18px;line-height:1.6}
+a{color:inherit}
+.banner{background:var(--ink);color:#f3ead6;font-size:14px;text-align:center;padding:8px 14px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.nav{border-bottom:3px solid var(--ink);background:var(--paper)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font-family:Bungee,sans-serif;font-size:26px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.atom{width:34px;height:34px;border-radius:50%;background:var(--red);border:3px solid var(--ink);position:relative;flex:none}
+.atom:after{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--yel)}
+.nav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap}
+.nav ul a{text-decoration:none;font-weight:700}
+.nav ul a:hover{color:var(--red)}
+.btn{display:inline-block;font-weight:700;text-decoration:none;padding:14px 26px;border:3px solid var(--ink);border-radius:6px;box-shadow:5px 5px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+.btn.red{background:var(--red);color:#fff}
+.btn.yel{background:var(--yel);color:var(--ink)}
+.hero{position:relative;overflow:hidden;border-bottom:3px solid var(--ink);background:var(--yel)}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--ink) 1.4px,transparent 1.6px);background-size:16px 16px;opacity:.13}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:80px}
+.kicker{display:inline-block;background:var(--ink);color:var(--yel);font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:4px;margin-bottom:20px}
+h1{font-family:Bungee,sans-serif;font-weight:400;font-size:clamp(46px,8vw,92px);line-height:.98;margin-bottom:22px}
+h1 span{color:var(--red);-webkit-text-stroke:2px var(--ink)}
+.lead{font-size:clamp(18px,2.2vw,22px);max-width:34ch;margin-bottom:30px}
+.ctas{display:flex;gap:16px;flex-wrap:wrap}
+.panel{position:relative;height:380px}
+.book{position:absolute;border:3px solid var(--ink);border-radius:4px;box-shadow:8px 8px 0 var(--ink);display:flex;align-items:flex-end;padding:16px;font-family:Bungee,sans-serif;font-size:20px;line-height:1.05}
+.b1{width:200px;height:280px;background:var(--red);color:#fff;left:4%;top:40px;transform:rotate(-7deg)}
+.b2{width:190px;height:270px;background:var(--teal);color:#fff;left:34%;top:10px;transform:rotate(4deg)}
+.b3{width:180px;height:250px;background:var(--paper);right:0;top:100px;transform:rotate(-2deg)}
+.b3:before{content:"";position:absolute;top:18px;left:18px;width:60px;height:60px;border-radius:50%;background:var(--yel);border:3px solid var(--ink)}
+.b1:before{content:"";position:absolute;top:0;bottom:0;left:16px;width:6px;background:var(--yel)}
+.burst{position:absolute;right:6%;top:-6px;width:110px;height:110px;background:var(--paper);border:3px solid var(--ink);clip-path:polygon(50% 0,61% 30%,95% 20%,72% 47%,100% 70%,64% 69%,58% 100%,43% 72%,10% 88%,28% 58%,0 35%,36% 33%);z-index:2}
+section{padding:84px 0}
+h2{font-family:Bungee,sans-serif;font-weight:400;font-size:clamp(32px,5vw,50px);line-height:1.05;margin-bottom:16px}
+.sub{color:var(--mute);max-width:60ch;margin-bottom:40px;font-size:19px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:8px;padding:28px;box-shadow:6px 6px 0 var(--ink)}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{color:var(--mute)}
+.icon{width:54px;height:54px;border:3px solid var(--ink);border-radius:50%;margin-bottom:18px}
+.i1{background:var(--red)}.i2{background:var(--yel);border-radius:8px}.i3{background:var(--teal);border-radius:50% 50% 8px 8px}
+.shelf{background:var(--ink);color:var(--paper)}
+.shelf .sub{color:#d8cfbc}
+.shelf h2{color:var(--yel)}
+.titles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px}
+.title{border:3px solid var(--paper);border-radius:6px;padding:22px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.title:nth-child(1){background:var(--red)}
+.title:nth-child(2){background:var(--teal)}
+.title:nth-child(3){background:var(--yel);color:var(--ink);border-color:var(--yel)}
+.title:nth-child(4){background:#2b2620}
+.title:nth-child(5){background:var(--paper);color:var(--ink)}
+.title small{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.85}
+.title strong{font-size:20px;line-height:1.25}
+.note{margin-top:28px;color:#d8cfbc;font-size:16px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.quote{font-family:Bungee,sans-serif;font-size:clamp(26px,4vw,40px);line-height:1.15;background:var(--red);color:#fff;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:40px;border-radius:8px;transform:rotate(-1.5deg)}
+.split p{margin-bottom:16px}
+.gift{background:var(--teal);color:#fff;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.gift .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.gift h2{margin-bottom:8px}
+.gift p{max-width:52ch;font-size:19px}
+.contact{text-align:center}
+.contact .sub{margin-left:auto;margin-right:auto}
+.phone{display:block;font-family:Bungee,sans-serif;font-size:clamp(30px,6vw,56px);text-decoration:none;margin:10px 0 30px;color:var(--red)}
+.phone:hover{text-decoration:underline}
+footer{background:var(--ink);color:#d8cfbc;text-align:center;padding:30px 20px;font-size:15px}
+footer a{color:var(--yel)}
+@media (max-width:860px){
+.hero .wrap,.split{grid-template-columns:1fr}
+.panel{height:320px;max-width:440px}
+.b1{width:160px;height:230px}.b2{width:150px;height:220px}.b3{width:140px;height:200px;top:90px}
+.grid3{grid-template-columns:1fr}
+section{padding:64px 0}
+.nav ul{gap:16px;font-size:16px}
+}
+@media (max-width:480px){
+.hero .wrap{padding-top:48px;padding-bottom:56px}
+.b2{left:30%}.b3{display:none}
+.btn{width:100%;text-align:center}
+.quote{padding:28px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Atomic Books.</div>
+
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="#top"><span class="atom"></span>Atomic Books</a>
+<ul>
+<li><a href="#browse">Browse</a></li>
+<li><a href="#shelf">Highlights</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#visit">Contact</a></li>
+</ul>
+</div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+<div class="wrap">
+<div>
+<span class="kicker">Baltimore, MD · Independent</span>
+<h1>Indie comics. <span>Small press.</span> Big ideas.</h1>
+<p class="lead">Atomic Books is an independent bookstore in Baltimore focused on indie comics and small press. Come find something you won't see anywhere else.</p>
+<div class="ctas">
+<a class="btn red" href="tel:+14106624444">Call (410) 662-4444</a>
+<a class="btn yel" href="https://atomicbooks.com/">Shop the official site</a>
+</div>
+</div>
+<div class="panel" aria-hidden="true">
+<div class="burst"></div>
+<div class="book b1">INDIE<br>COMICS</div>
+<div class="book b2">SMALL<br>PRESS</div>
+<div class="book b3">NEW<br>ARRIVALS</div>
+</div>
+</div>
+</section>
+
+<section id="browse">
+<div class="wrap">
+<h2>What's on the shelves</h2>
+<p class="sub">An independent shop is all about the picks. Here's what Atomic Books is known for.</p>
+<div class="grid3">
+<div class="card"><div class="icon i1"></div><h3>Indie Comics</h3><p>Comics and graphic work from independent creators, the kind of books that reward a slow browse.</p></div>
+<div class="card"><div class="icon i2"></div><h3>Small Press</h3><p>Books from smaller publishers with a strong point of view, picked for curious readers.</p></div>
+<div class="card"><div class="icon i3"></div><h3>New Arrivals</h3><p>Fresh titles keep landing. Check the official site to see what's just come in.</p></div>
+</div>
+</div>
+</section>
+
+<section class="shelf" id="shelf">
+<div class="wrap">
+<h2>Highlights</h2>
+<p class="sub">A few titles recently featured on the Atomic Books website.</p>
+<div class="titles">
+<div class="title"><small>Music writing</small><strong>33 1/3 Volume 209: Moss Icon's Lyburnum Wits End Liberation Fly</strong></div>
+<div class="title"><small>Comics</small><strong>Acme Novelty Library #21</strong></div>
+<div class="title"><small>Featured</small><strong>Barbed Wire</strong></div>
+<div class="title"><small>Featured</small><strong>Encyclopedia of Movie Cats</strong></div>
+<div class="title"><small>Gift idea</small><strong>Atomic Books Digital Gift Card</strong></div>
+</div>
+<p class="note">Availability changes. For current stock, visit <a href="https://atomicbooks.com/" style="color:var(--yel)">atomicbooks.com</a> or give the shop a call.</p>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap split">
+<div class="quote">Weird, wonderful &amp; independent. Made in Baltimore.</div>
+<div>
+<h2>A real bookstore for real readers</h2>
+<p>Atomic Books is an independent bookstore in Baltimore, Maryland. The focus is indie comics and small press, so the shelves are full of work from independent artists, writers and publishers.</p>
+<p>When you shop independent, your money stays local and helps keep that kind of work in print. And it's a great way to find your next favorite book.</p>
+<a class="btn red" href="https://atomicbooks.com/">Visit atomicbooks.com</a>
+</div>
+</div>
+</section>
+
+<section class="gift">
+<div class="wrap">
+<div>
+<h2>Give the gift of good books</h2>
+<p>Not sure what they're reading? An Atomic Books Digital Gift Card lets them pick their own.</p>
+</div>
+<a class="btn yel" href="https://atomicbooks.com/">Get a gift card</a>
+</div>
+</section>
+
+<section class="contact" id="visit">
+<div class="wrap">
+<h2>Get in touch</h2>
+<p class="sub">Have a question about a title or want to check if something's in stock? Give Atomic Books a call.</p>
+<a class="phone" href="tel:+14106624444">(410) 662-4444</a>
+<a class="btn yel" href="https://atomicbooks.com/">atomicbooks.com</a>
+</div>
+</section>
+</main>
+
+<footer>
+<p>Atomic Books · Baltimore, MD · <a href="tel:+14106624444">(410) 662-4444</a> · <a href="https://atomicbooks.com/">atomicbooks.com</a></p>
+<p style="margin-top:8px;font-size:13px">Sample concept by Brainsmith Sitecraft. Not the official website of Atomic Books.</p>
+</footer>
+</body>
+</html>
