@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Creative Hub | A Gathering Place in Anacortes, WA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a1f1a;--cream:#fbf4ea;--terra:#c8553d;--terra-d:#9e3b26;--teal:#2c6e6a;--sun:#f2b134;--plum:#6b3a5b;--muted:#5b4a40}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Nunito Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);font-size:18px;line-height:1.65}
+a{color:inherit}
+.banner{background:var(--ink);color:#f5e9da;text-align:center;font-size:14px;padding:8px 16px;line-height:1.4}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header.nav{padding:20px 0}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-family:Fraunces,serif;font-weight:800;font-size:26px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.dot{width:28px;height:28px;border-radius:50%;background:conic-gradient(var(--terra) 0 25%,var(--sun) 0 50%,var(--teal) 0 75%,var(--plum) 0)}
+.nav a.call{font-weight:800;text-decoration:none;border:2px solid var(--ink);padding:8px 18px;border-radius:999px}
+.nav a.call:hover{background:var(--ink);color:var(--cream)}
+.hero{position:relative;overflow:hidden;padding:56px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:4px 14px;font-size:14px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px}
+h1{font-family:Fraunces,serif;font-weight:800;font-size:clamp(42px,7vw,78px);line-height:1.02;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--terra)}
+.lead{font-size:20px;color:var(--muted);margin:22px 0 32px;max-width:34ch}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:800;padding:15px 28px;border-radius:999px;font-size:18px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--terra);color:#fff;box-shadow:0 6px 0 var(--terra-d)}
+.btn.ghost{background:#fff;border:2px solid var(--ink)}
+.art{position:relative;aspect-ratio:1;max-width:440px;width:100%;justify-self:center}
+.art span{position:absolute;display:block}
+.a1{inset:8% 8% 8% 8%;border-radius:50%;background:var(--sun)}
+.a2{width:46%;height:46%;left:0;bottom:4%;border-radius:40% 60% 55% 45%/50% 40% 60% 50%;background:var(--teal)}
+.a3{width:38%;height:38%;right:2%;top:2%;border-radius:24px;background:var(--plum);transform:rotate(14deg)}
+.a4{width:44%;height:30%;left:30%;top:36%;background:#fff;border:3px solid var(--ink);border-radius:0 0 50% 50%/0 0 70% 70%}
+.a4:after{content:"";position:absolute;right:-22%;top:12%;width:26%;height:50%;border:3px solid var(--ink);border-left:none;border-radius:0 50% 50% 0}
+.a5{left:42%;top:18%;width:6%;height:16%;border-radius:50%;border-left:3px solid var(--ink);transform:rotate(8deg)}
+.a6{left:52%;top:16%;width:6%;height:18%;border-radius:50%;border-left:3px solid var(--ink);transform:rotate(-6deg)}
+.a7{width:14%;height:14%;right:6%;bottom:10%;border-radius:50%;background:var(--terra)}
+.stripe{height:18px;background:repeating-linear-gradient(90deg,var(--terra) 0 60px,var(--sun) 60px 120px,var(--teal) 120px 180px,var(--plum) 180px 240px)}
+section{padding:88px 0}
+h2{font-family:Fraunces,serif;font-weight:800;font-size:clamp(32px,4.5vw,48px);line-height:1.1;margin-bottom:18px}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.intro p{color:var(--muted);margin-bottom:16px}
+.quote{background:#fff;border:3px solid var(--ink);border-radius:24px;padding:32px;box-shadow:10px 10px 0 var(--sun)}
+.quote p{font-family:Fraunces,serif;font-size:28px;line-height:1.25;color:var(--ink);margin:0}
+.quote small{display:block;margin-top:14px;font-weight:800;color:var(--terra);letter-spacing:.06em;text-transform:uppercase;font-size:14px}
+.why{background:var(--teal);color:#fff}
+.why h2{color:#fff}
+.why .sub{color:#d9ece9;max-width:52ch;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;color:var(--ink);border-radius:22px;padding:30px}
+.card i{display:block;width:48px;height:48px;margin-bottom:18px;border-radius:14px}
+.card:nth-child(1) i{background:var(--terra);border-radius:50%}
+.card:nth-child(2) i{background:var(--sun);transform:rotate(45deg) scale(.82)}
+.card:nth-child(3) i{background:var(--plum);border-radius:50% 50% 8px 8px}
+.card h3{font-family:Fraunces,serif;font-size:24px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:17px}
+.visit{text-align:center}
+.visit .box{background:var(--terra);color:#fff;border-radius:32px;padding:64px 28px;position:relative;overflow:hidden}
+.visit .box:before,.visit .box:after{content:"";position:absolute;border-radius:50%;opacity:.25}
+.visit .box:before{width:220px;height:220px;background:var(--sun);left:-60px;top:-60px}
+.visit .box:after{width:180px;height:180px;background:var(--plum);right:-40px;bottom:-60px;opacity:.45}
+.visit h2,.visit p,.visit .btns{position:relative;z-index:1}
+.visit p{font-size:20px;max-width:46ch;margin:0 auto 30px;color:#fff3ea}
+.visit .btns{justify-content:center}
+.visit .btn.primary{background:#fff;color:var(--terra-d);box-shadow:0 6px 0 var(--ink)}
+.visit .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.phone{font-family:Fraunces,serif;font-size:clamp(30px,5vw,44px);font-weight:800;display:block;margin-bottom:26px;text-decoration:none;position:relative;z-index:1}
+footer{padding:36px 0 48px;text-align:center;color:var(--muted);font-size:15px}
+footer strong{color:var(--ink)}
+@media(max-width:860px){
+.hero .wrap,.intro{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr}
+.art{max-width:320px}
+.hero{padding:32px 0 64px}
+section{padding:64px 0}
+}
+@media(max-width:480px){
+body{font-size:17px}
+.btn{width:100%;text-align:center}
+.nav a.call{font-size:15px;padding:7px 14px}
+.quote p{font-size:23px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Creative Hub.</div>
+
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="#top"><span class="dot" aria-hidden="true"></span>Creative Hub</a>
+<a class="call" href="tel:+13602992755">Call (360) 299-2755</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<div>
+<span class="eyebrow">Anacortes, WA</span>
+<h1>A cozy cafe &amp; <em>a gathering place.</em></h1>
+<p class="lead">Grab a cup, settle in and spend some time with friends, family and neighbors at Creative Hub, home of Johnny Picasso's.</p>
+<div class="btns">
+<a class="btn primary" href="tel:+13602992755">Call us</a>
+<a class="btn ghost" href="https://johnnypicasso.com/">Visit our website</a>
+</div>
+</div>
+<div class="art" aria-hidden="true">
+<span class="a1"></span><span class="a2"></span><span class="a3"></span><span class="a7"></span><span class="a5"></span><span class="a6"></span><span class="a4"></span>
+</div>
+</div>
+</section>
+
+<div class="stripe" aria-hidden="true"></div>
+
+<section>
+<div class="wrap intro">
+<div>
+<h2>Johnny Picasso's</h2>
+<p>Some places are simply for passing through. Others are made for staying a while. Creative Hub is a local Anacortes cafe meant to be a gathering place, a spot to slow down, catch up and feel at home.</p>
+<p>Come by for a quiet moment on your own, or bring the people you love and make an afternoon of it. Everyone's welcome.</p>
+</div>
+<div class="quote">
+<p>"Good company, a warm welcome and a place to gather."</p>
+<small>Creative Hub · Anacortes</small>
+</div>
+</div>
+</section>
+
+<section class="why">
+<div class="wrap">
+<h2>Why people gather here</h2>
+<p class="sub">A neighborhood cafe is about more than what's in your cup. It's a place where the community comes together.</p>
+<div class="cards">
+<div class="card"><i aria-hidden="true"></i><h3>Come together</h3><p>Plenty of reasons to meet up with friends, family and neighbors in a relaxed, welcoming space.</p></div>
+<div class="card"><i aria-hidden="true"></i><h3>Slow down</h3><p>Take a break from the busy day, settle in and enjoy some unhurried time.</p></div>
+<div class="card"><i aria-hidden="true"></i><h3>Proudly local</h3><p>A part of the Anacortes community, right here in Washington.</p></div>
+</div>
+</div>
+</section>
+
+<section class="visit" id="contact">
+<div class="wrap">
+<div class="box">
+<h2>Come say hello</h2>
+<p>Got a question, or planning a visit? Give us a call. We'd love to hear from you.</p>
+<a class="phone" href="tel:+13602992755">(360) 299-2755</a>
+<div class="btns">
+<a class="btn primary" href="tel:+13602992755">Call now</a>
+<a class="btn ghost" href="https://johnnypicasso.com/">johnnypicasso.com</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<p><strong>Creative Hub</strong> · Anacortes, WA · <a href="tel:+13602992755">(360) 299-2755</a></p>
+<p>Sample concept by Brainsmith Sitecraft.</p>
+</div>
+</footer>
+</body>
+</html>
