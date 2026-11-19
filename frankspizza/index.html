@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Frank's Pizza | Downtown Houston, TX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#b8261b;--deep:#7a1610;--cream:#fbf3e4;--dough:#f1d9a7;--crust:#d9a25a;--basil:#2f6b3a;--ink:#2a1a14;--muted:#5e4a40}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);font-size:18px;line-height:1.6}
+a{color:inherit}
+.banner{background:var(--ink);color:#f6e9d2;font-size:14px;text-align:center;padding:8px 16px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{background:var(--cream);border-bottom:4px solid var(--red)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:16px;flex-wrap:wrap}
+.logo{font-family:'Alfa Slab One',serif;font-size:28px;color:var(--red);text-decoration:none;letter-spacing:.5px}
+.logo span{color:var(--basil)}
+.nav nav{display:flex;gap:22px;flex-wrap:wrap}
+.nav nav a{text-decoration:none;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:1px}
+.nav nav a:hover{color:var(--red)}
+.hero{background:var(--red);color:#fff;position:relative;overflow:hidden;
+background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.06) 0 28px,transparent 28px 56px)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:84px}
+.eyebrow{display:inline-block;background:var(--cream);color:var(--red);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:2px;padding:6px 14px;border-radius:40px;margin-bottom:22px}
+h1{font-family:'Alfa Slab One',serif;font-weight:400;font-size:clamp(46px,8vw,86px);line-height:1.02;margin-bottom:20px}
+.hero p{font-size:20px;max-width:520px;color:#ffeee6;margin-bottom:32px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:16px 28px;border-radius:50px;font-size:18px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--cream);color:var(--red);box-shadow:0 6px 0 var(--deep)}
+.btn-ghost{border:2px solid #fff;color:#fff}
+.pizza{width:min(380px,80vw);aspect-ratio:1;border-radius:50%;margin:0 auto;position:relative;
+background:radial-gradient(circle,#e8b04a 0 60%,#d24a2a 61% 82%,var(--crust) 83% 100%);box-shadow:0 20px 40px rgba(0,0,0,.3);transform:rotate(-12deg)}
+.pizza::before{content:"";position:absolute;inset:0;border-radius:50%;
+background:radial-gradient(circle at 30% 30%,#9c1d14 0 7%,transparent 7.5%),radial-gradient(circle at 66% 28%,#9c1d14 0 7%,transparent 7.5%),radial-gradient(circle at 50% 55%,#9c1d14 0 7%,transparent 7.5%),radial-gradient(circle at 28% 68%,#9c1d14 0 7%,transparent 7.5%),radial-gradient(circle at 72% 66%,#9c1d14 0 7%,transparent 7.5%),radial-gradient(circle at 45% 32%,var(--basil) 0 3%,transparent 3.5%),radial-gradient(circle at 60% 78%,var(--basil) 0 3%,transparent 3.5%),radial-gradient(circle at 38% 48%,var(--basil) 0 3%,transparent 3.5%)}
+.pizza::after{content:"";position:absolute;inset:0;border-radius:50%;
+background:conic-gradient(from 0deg,transparent 0 59deg,rgba(122,22,16,.35) 59deg 60deg,transparent 60deg 119deg,rgba(122,22,16,.35) 119deg 120deg,transparent 120deg 179deg,rgba(122,22,16,.35) 179deg 180deg,transparent 180deg 239deg,rgba(122,22,16,.35) 239deg 240deg,transparent 240deg 299deg,rgba(122,22,16,.35) 299deg 300deg,transparent 300deg 359deg,rgba(122,22,16,.35) 359deg)}
+.strip{background:var(--basil);color:#fff;font-family:'Alfa Slab One',serif;text-align:center;padding:16px 22px;font-size:clamp(18px,3vw,24px);letter-spacing:1px}
+.strip span{color:var(--dough);margin:0 12px}
+section{padding:84px 0}
+h2{font-family:'Alfa Slab One',serif;font-weight:400;font-size:clamp(32px,5vw,48px);line-height:1.1;color:var(--red);margin-bottom:18px}
+.lead{font-size:20px;color:var(--muted);max-width:680px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.card{background:#fff;border-radius:20px;padding:34px 28px;border:2px solid var(--dough);box-shadow:0 8px 0 var(--dough)}
+.icon{width:62px;height:62px;border-radius:50%;background:var(--red);margin-bottom:20px;position:relative}
+.icon.t{background:var(--basil)}
+.icon.d{background:var(--crust)}
+.icon::after{content:"";position:absolute;inset:16px;border-radius:50%;border:4px solid var(--cream)}
+.card h3{font-size:24px;margin-bottom:8px}
+.card p{color:var(--muted)}
+.about{background:var(--dough)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.checker{aspect-ratio:4/3;border-radius:24px;border:8px solid #fff;box-shadow:0 14px 30px rgba(42,26,20,.18);
+background:conic-gradient(var(--red) 25%,var(--cream) 0 50%,var(--red) 0 75%,var(--cream) 0) 0 0/64px 64px;display:grid;place-items:center}
+.checker div{background:var(--cream);color:var(--red);font-family:'Alfa Slab One',serif;font-size:clamp(24px,4vw,36px);padding:18px 30px;border-radius:14px;text-align:center;line-height:1.15;box-shadow:0 6px 0 var(--deep)}
+.about p{font-size:19px;margin-bottom:16px}
+.cta{background:var(--ink);color:#fff;text-align:center}
+.cta h2{color:var(--dough)}
+.cta .lead{color:#e6d6c8;margin:0 auto 34px}
+.phone{font-family:'Alfa Slab One',serif;font-size:clamp(32px,7vw,58px);color:#fff;text-decoration:none;display:inline-block;margin-bottom:28px;border-bottom:4px solid var(--red)}
+.cta .btns{justify-content:center}
+.cta .btn-main{background:var(--red);color:#fff;box-shadow:0 6px 0 #4d0e0a}
+footer{background:#1a100c;color:#cdb9a8;text-align:center;padding:30px 22px;font-size:15px}
+footer strong{color:#fff}
+@media(max-width:860px){
+.hero .wrap,.about .wrap{grid-template-columns:1fr}
+.hero .wrap{padding-top:48px;padding-bottom:60px;text-align:center}
+.hero p{margin-left:auto;margin-right:auto}
+.btns{justify-content:center}
+.pizza{width:min(280px,70vw)}
+.cards{grid-template-columns:1fr}
+section{padding:60px 0}
+.nav{justify-content:center}
+.nav nav{justify-content:center;gap:16px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Frank's Pizza.</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#top">Frank's <span>Pizza</span></a>
+<nav><a href="#order">Order</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</div>
+</header>
+<main id="top">
+<section class="hero" style="padding:0">
+<div class="wrap">
+<div>
+<span class="eyebrow">Downtown Houston, TX</span>
+<h1>Frank's Pizza</h1>
+<p>Hot, fresh pizza in the heart of Downtown Houston. Come in to dine, grab it to go, or have it brought right to you. We're open 7 days a week.</p>
+<div class="btns">
+<a class="btn btn-main" href="tel:+17132255656">Call to Order</a>
+<a class="btn btn-ghost" href="#order">Ways to Eat</a>
+</div>
+</div>
+<div class="pizza" aria-hidden="true"></div>
+</div>
+</section>
+<div class="strip">Dine-In <span>&#9679;</span> Take-Out <span>&#9679;</span> Delivery</div>
+<section id="order">
+<div class="wrap">
+<h2>Your pizza, your way</h2>
+<p class="lead">Sit down with friends, swing by on your lunch break, or stay put and let the pizza come to you. You choose how to enjoy it.</p>
+<div class="cards">
+<div class="card"><div class="icon"></div><h3>Dine-In</h3><p>Pull up a seat and enjoy your pie fresh from the oven, right in Downtown Houston.</p></div>
+<div class="card"><div class="icon t"></div><h3>Take-Out</h3><p>Call ahead, place your order and pick it up hot and ready to go.</p></div>
+<div class="card"><div class="icon d"></div><h3>Delivery</h3><p>Hungry at home or at the office? Give us a call and we'll handle the rest.</p></div>
+</div>
+</div>
+</section>
+<section class="about" id="about">
+<div class="wrap">
+<div class="checker" aria-hidden="true"><div>Open<br>7 Days<br>a Week</div></div>
+<div>
+<h2>A slice of Downtown</h2>
+<p>Frank's Pizza is located in the heart of Downtown Houston, a handy stop whether you work nearby, live in the neighborhood or are out exploring the city.</p>
+<p>A good pizza place makes it easy to share a meal, and that's what we're here for. We're open every day of the week. Call us for today's hours and specials.</p>
+<a class="btn btn-main" style="background:var(--red);color:#fff;box-shadow:0 6px 0 var(--deep)" href="tel:+17132255656">Call (713) 225-5656</a>
+</div>
+</div>
+</section>
+<section class="cta" id="contact">
+<div class="wrap">
+<h2>Hungry? Give Frank's a call.</h2>
+<p class="lead">For orders, specials and hours, the quickest way to reach us is by phone.</p>
+<a class="phone" href="tel:+17132255656">(713) 225-5656</a>
+<div class="btns">
+<a class="btn btn-main" href="tel:+17132255656">Call Now</a>
+<a class="btn btn-ghost" href="https://www.frankspizza.com/">Visit frankspizza.com</a>
+</div>
+</div>
+</section>
+</main>
+<footer><strong>Frank's Pizza</strong> &middot; Downtown Houston, TX &middot; <a href="tel:+17132255656">(713) 225-5656</a></footer>
+</body>
+</html>
