@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bicycle Stop | Bicycle Sales in Springfield, OH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1f24;--paper:#fbf7f0;--orange:#e8531d;--orange-d:#b93d0f;--teal:#0f5e63;--sand:#f1e7d6;--muted:#4a5159}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+a{color:inherit}
+.banner{background:var(--ink);color:#f3f3f3;text-align:center;font-size:13px;padding:8px 14px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;gap:16px;flex-wrap:wrap}
+.logo{font-family:'Archivo Black',sans-serif;font-size:24px;letter-spacing:.5px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo .dot{width:30px;height:30px;border-radius:50%;border:5px solid var(--orange);position:relative}
+.logo .dot::after{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--teal)}
+.nav ul{list-style:none;display:flex;gap:22px;font-weight:600;font-size:15px}
+.nav ul a{text-decoration:none}
+.nav ul a:hover{color:var(--orange-d)}
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;padding:15px 26px;border-radius:999px;transition:background .2s,transform .2s}
+.btn:hover{background:var(--orange-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.hero{padding:40px 0 80px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;background:var(--sand);color:var(--teal);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+h1{font-family:'Archivo Black',sans-serif;font-size:clamp(40px,6.5vw,72px);line-height:1.02;margin-bottom:20px}
+h1 span{color:var(--orange)}
+.lead{font-size:19px;color:var(--muted);max-width:520px;margin-bottom:30px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.art{position:relative;aspect-ratio:1/1;background:var(--teal);border-radius:50% 50% 24px 50%;overflow:hidden}
+.art .sun{position:absolute;width:38%;aspect-ratio:1;border-radius:50%;background:#f6b23c;top:12%;right:12%}
+.art .road{position:absolute;left:0;right:0;bottom:0;height:26%;background:#0a4448}
+.art .road::after{content:"";position:absolute;left:0;right:0;top:45%;height:6px;background:repeating-linear-gradient(90deg,#f1e7d6 0 34px,transparent 34px 60px)}
+.bike{position:absolute;left:12%;right:12%;bottom:22%;height:38%}
+.wheel{position:absolute;bottom:0;width:40%;aspect-ratio:1;border-radius:50%;border:9px solid var(--ink);background:radial-gradient(circle,var(--ink) 0 9%,transparent 10%)}
+.wheel.l{left:0}.wheel.r{right:0}
+.frame{position:absolute;left:20%;right:20%;bottom:20%;height:46%;border-bottom:8px solid var(--orange);border-left:8px solid var(--orange);transform:skewX(-20deg)}
+.seat{position:absolute;left:24%;top:4%;width:18%;height:8px;border-radius:6px;background:var(--ink)}
+.bar{position:absolute;right:22%;top:0;width:8px;height:40%;background:var(--ink);border-radius:4px}
+.bar::before{content:"";position:absolute;top:0;left:-8px;width:28px;height:8px;border-radius:4px;background:var(--ink)}
+section{padding:80px 0}
+h2{font-family:'Archivo Black',sans-serif;font-size:clamp(30px,4.5vw,46px);line-height:1.1;margin-bottom:18px}
+.kicker{color:var(--orange-d);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:10px}
+.exp{background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.two p{color:var(--muted);margin-bottom:14px}
+.cards{display:grid;gap:16px}
+.card{background:var(--paper);border-left:6px solid var(--orange);padding:20px 22px;border-radius:12px}
+.card h3{font-size:18px;margin-bottom:4px}
+.card p{margin:0;font-size:16px}
+.brands{background:var(--ink);color:#fff}
+.brands .kicker{color:#f6b23c}
+.brands p.sub{color:#c9cdd2;max-width:620px;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.brand{border:2px solid #3a4048;border-radius:16px;padding:30px 20px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:24px;letter-spacing:.5px;transition:border-color .2s,background .2s}
+.brand:hover{border-color:var(--orange);background:#252a31}
+.brand small{display:block;font-family:Inter,sans-serif;font-size:13px;font-weight:500;color:#aab0b7;letter-spacing:1px;text-transform:uppercase;margin-top:6px}
+.more{margin-top:24px;color:#c9cdd2;font-style:italic}
+.phil{background:var(--sand)}
+.phil .quote{font-family:'Archivo Black',sans-serif;font-size:clamp(24px,3.4vw,34px);line-height:1.25;color:var(--teal);margin-bottom:24px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.pillar{background:#fff;border-radius:18px;padding:28px}
+.pillar .n{width:46px;height:46px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-weight:700;margin-bottom:14px}
+.pillar h3{font-size:19px;margin-bottom:6px}
+.pillar p{color:var(--muted);font-size:16px}
+.contact{background:var(--orange);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact p{font-size:19px;max-width:560px;margin:0 auto 30px}
+.contact .btn{background:var(--ink)}
+.contact .btn:hover{background:#000}
+.contact .btn.ghost{background:transparent;border-color:#fff;color:#fff}
+.contact .btn.ghost:hover{background:#fff;color:var(--ink)}
+.contact .ctas{justify-content:center}
+.phone{font-family:'Archivo Black',sans-serif;font-size:clamp(30px,6vw,52px);display:block;text-decoration:none;margin-bottom:26px}
+footer{background:var(--ink);color:#c9cdd2;text-align:center;padding:28px 20px;font-size:14px}
+@media (max-width:860px){
+.hero,.two{grid-template-columns:1fr}
+.art{max-width:420px;width:100%;margin:0 auto}
+.grid{grid-template-columns:repeat(2,1fr)}
+.pillars{grid-template-columns:1fr}
+.nav ul{display:none}
+section{padding:60px 0}
+}
+@media (max-width:440px){
+.grid{grid-template-columns:1fr}
+.btn{width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Bicycle Stop.</div>
+<div class="wrap">
+<header class="nav">
+<a class="logo" href="#top"><span class="dot"></span>Bicycle Stop</a>
+<ul>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#brands">Brands</a></li>
+<li><a href="#philosophy">Philosophy</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a class="btn" href="tel:+19373424780">Call (937) 342-4780</a>
+</header>
+<main id="top">
+<div class="hero">
+<div>
+<span class="eyebrow">Springfield, Ohio</span>
+<h1>Your next ride <span>starts here.</span></h1>
+<p class="lead">Bicycle sales in Springfield, featuring Trek, Raleigh, Jamis, Catrike, Terratrike, Sun and more. Stop in and find the bike that fits the way you ride.</p>
+<div class="ctas">
+<a class="btn" href="tel:+19373424780">Call the shop</a>
+<a class="btn ghost" href="#brands">See our brands</a>
+</div>
+</div>
+<div class="art" aria-hidden="true">
+<div class="sun"></div>
+<div class="road"></div>
+<div class="bike"><div class="wheel l"></div><div class="wheel r"></div><div class="frame"></div><div class="seat"></div><div class="bar"></div></div>
+</div>
+</div>
+</main>
+</div>
+
+<section class="exp" id="experience">
+<div class="wrap two">
+<div>
+<p class="kicker">Our experience</p>
+<h2>Bikes are what we know.</h2>
+<p>Choosing a bicycle is personal. Whether you're getting back on two wheels, looking for something new to explore Springfield with, or curious about a comfortable three-wheeled recumbent, the right fit makes every ride better.</p>
+<p>At Bicycle Stop, we're happy to talk through your options, answer your questions and help you compare models in person, so you can ride away confident in your choice.</p>
+</div>
+<div class="cards">
+<div class="card"><h3>Upright bikes</h3><p>Trusted names like Trek, Raleigh and Jamis.</p></div>
+<div class="card"><h3>Recumbent trikes</h3><p>Low, comfortable three-wheelers from Catrike and Terratrike.</p></div>
+<div class="card"><h3>Easygoing rides</h3><p>Sun bicycles and more for relaxed, everyday cycling.</p></div>
+</div>
+</div>
+</section>
+
+<section class="brands" id="brands">
+<div class="wrap">
+<p class="kicker">Brands</p>
+<h2>Names riders trust.</h2>
+<p class="sub">We carry a lineup of well-known bicycle makers, so there's something for many kinds of riders under one roof.</p>
+<div class="grid">
+<div class="brand">Trek<small>Bicycles</small></div>
+<div class="brand">Raleigh<small>Bicycles</small></div>
+<div class="brand">Jamis<small>Bicycles</small></div>
+<div class="brand">Catrike<small>Recumbent trikes</small></div>
+<div class="brand">Terratrike<small>Recumbent trikes</small></div>
+<div class="brand">Sun<small>Bicycles</small></div>
+</div>
+<p class="more">…and more. Call to ask about a particular brand or model.</p>
+</div>
+</section>
+
+<section class="phil" id="philosophy">
+<div class="wrap">
+<p class="kicker">Our philosophy</p>
+<p class="quote">The best bike is the one you'll actually love to ride.</p>
+<p style="color:var(--muted);max-width:680px">We think buying a bike should feel easy and enjoyable. No pressure, just honest conversation and a focus on what works for you.</p>
+<div class="pillars">
+<div class="pillar"><div class="n">1</div><h3>Listen first</h3><p>We start with how and where you like to ride.</p></div>
+<div class="pillar"><div class="n">2</div><h3>Find the fit</h3><p>Comfort and fit matter as much as the name on the frame.</p></div>
+<div class="pillar"><div class="n">3</div><h3>Ride happy</h3><p>Our goal is simple: get more people out enjoying the ride.</p></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Stop by Bicycle Stop</h2>
+<p>Have a question about a bike or a brand? Give us a call. We'd love to help you find your next ride in Springfield, OH.</p>
+<a class="phone" href="tel:+19373424780">(937) 342-4780</a>
+<div class="ctas">
+<a class="btn" href="tel:+19373424780">Call now</a>
+<a class="btn ghost" href="https://www.bicyclestop.com/">Visit bicyclestop.com</a>
+</div>
+</div>
+</section>
+
+<footer>&copy; Bicycle Stop &middot; Springfield, OH &middot; <a href="tel:+19373424780">(937) 342-4780</a><br>Sample concept by Brainsmith Sitecraft</footer>
+</body>
+</html>

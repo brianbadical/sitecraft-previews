@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Buffalo Mountain Furniture | Alpine, WY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bark:#3b2a1e;--walnut:#5a3e2b;--cedar:#a8552e;--cedar-d:#8a4322;--cream:#f7f1e6;--sand:#ebe0cc;--pine:#2f4a3c;--sky:#d9e3e2;--ink:#2a211b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.125rem;line-height:1.65;color:var(--ink);background:var(--cream)}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;line-height:1.15;color:var(--bark)}
+a{color:inherit}
+.banner{background:var(--ink);color:#f3e9d8;font-size:.875rem;text-align:center;padding:.5rem 1rem}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+header.top{background:var(--cream);border-bottom:1px solid var(--sand)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.mark{width:44px;height:44px;background:var(--cedar);clip-path:polygon(0 100%,32% 30%,48% 55%,68% 10%,100% 100%);flex-shrink:0}
+.logo b{font-family:"Zilla Slab",serif;font-size:1.3rem;color:var(--bark);line-height:1.1}
+.logo small{display:block;font-size:.8rem;color:var(--walnut);letter-spacing:.12em;text-transform:uppercase;font-family:"Source Sans 3",sans-serif;font-weight:600}
+.nav nav{display:flex;gap:1.4rem;font-weight:600}
+.nav nav a{text-decoration:none;color:var(--walnut)}
+.nav nav a:hover{color:var(--cedar)}
+.btn{display:inline-block;background:var(--cedar);color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.6rem;border-radius:6px;transition:background .2s}
+.btn:hover{background:var(--cedar-d)}
+.btn.ghost{background:transparent;border:2px solid var(--bark);color:var(--bark)}
+.btn.ghost:hover{background:var(--bark);color:#fff}
+.hero{position:relative;background:linear-gradient(180deg,var(--sky) 0%,#eef0e8 70%,var(--cream) 100%);overflow:hidden;padding:5rem 0 11rem}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;color:var(--pine);margin-bottom:1rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);max-width:15ch;margin-bottom:1.2rem}
+.hero p{max-width:40rem;font-size:1.2rem;color:#3d3128;margin-bottom:2rem}
+.ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.mtn{position:absolute;left:0;right:0;bottom:0}
+.m1{height:230px;background:#8fa59c;clip-path:polygon(0 70%,12% 35%,22% 55%,38% 10%,52% 50%,64% 25%,78% 55%,90% 20%,100% 45%,100% 100%,0 100%)}
+.m2{height:170px;background:var(--pine);clip-path:polygon(0 60%,10% 40%,20% 65%,33% 30%,46% 70%,58% 45%,70% 75%,84% 35%,100% 65%,100% 100%,0 100%)}
+.m3{height:60px;background:var(--cream);clip-path:polygon(0 60%,25% 30%,50% 55%,75% 25%,100% 50%,100% 100%,0 100%)}
+section{padding:4.5rem 0}
+.sec-head{max-width:42rem;margin-bottom:2.5rem}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:.8rem}
+.sec-head p{color:#4a3d33}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.card{background:#fff;border:1px solid var(--sand);border-radius:10px;padding:2rem 1.6rem;box-shadow:0 6px 18px rgba(59,42,30,.06)}
+.card h3{font-size:1.35rem;margin:1rem 0 .5rem}
+.card p{color:#4a3d33;font-size:1.05rem}
+.ico{width:52px;height:52px;border-radius:50%;background:var(--sand);position:relative}
+.ico::after{content:"";position:absolute;inset:14px;background:var(--cedar)}
+.i1::after{clip-path:polygon(0 100%,35% 20%,55% 60%,75% 30%,100% 100%)}
+.i2::after{border-radius:3px;clip-path:polygon(0 30%,100% 30%,100% 50%,85% 50%,85% 100%,72% 100%,72% 50%,28% 50%,28% 100%,15% 100%,15% 50%,0 50%)}
+.i3::after{border-radius:50%;background:radial-gradient(circle,var(--cream) 30%,var(--cedar) 32%)}
+.wood{background:repeating-linear-gradient(95deg,#4a3324 0 14px,#523928 14px 22px,#47301f 22px 40px);color:#f7efe2}
+.wood h2{color:#fff}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.split p{color:#ecdfcc;margin-bottom:1rem}
+.panel{background:rgba(247,241,230,.08);border:1px solid rgba(247,241,230,.25);border-radius:10px;padding:2rem}
+.panel ul{list-style:none}
+.panel li{padding:.7rem 0 .7rem 1.8rem;position:relative;border-bottom:1px solid rgba(247,241,230,.15)}
+.panel li:last-child{border-bottom:0}
+.panel li::before{content:"";position:absolute;left:0;top:1.1rem;width:12px;height:12px;background:#e08a5a;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.contact{text-align:center}
+.contact .box{background:#fff;border:1px solid var(--sand);border-radius:14px;padding:3rem 1.5rem;max-width:720px;margin:0 auto;box-shadow:0 10px 30px rgba(59,42,30,.08)}
+.contact h2{font-size:clamp(1.9rem,4vw,2.5rem);margin-bottom:.7rem}
+.contact p{color:#4a3d33;margin-bottom:1.8rem}
+.phone{display:block;font-family:"Zilla Slab",serif;font-size:clamp(1.8rem,5vw,2.6rem);font-weight:700;color:var(--cedar-d);text-decoration:none;margin-bottom:1.4rem}
+.phone:hover{text-decoration:underline}
+.site{display:inline-block;margin-top:1.2rem;color:var(--pine);font-weight:600}
+footer{background:var(--bark);color:#e6d9c4;padding:2rem 0;font-size:.95rem;text-align:center}
+footer p+p{margin-top:.4rem;opacity:.8}
+@media(max-width:760px){
+.nav nav{display:none}
+.hero{padding:3.5rem 0 9rem}
+.split{grid-template-columns:1fr;gap:2rem}
+section{padding:3.5rem 0}
+.m1{height:160px}.m2{height:120px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Buffalo Mountain Furniture.</div>
+
+<header class="top">
+<div class="wrap nav">
+<a class="logo" href="#top"><span class="mark" aria-hidden="true"></span><span><b>Buffalo Mountain Furniture</b><small>Alpine, Wyoming</small></span></a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#why">Why Local</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="tel:+13076540077">Call Us</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<span class="eyebrow">Furniture &middot; Alpine, WY</span>
+<h1>Furniture made for mountain living</h1>
+<p>Buffalo Mountain Furniture serves Alpine and the surrounding Wyoming area. Pieces that make a home feel warm, comfortable and ready for everyday life. Give us a call to talk about what you're looking for.</p>
+<div class="ctas">
+<a class="btn" href="tel:+13076540077">Call (307) 654-0077</a>
+<a class="btn ghost" href="#about">Learn More</a>
+</div>
+</div>
+<div class="mtn" aria-hidden="true"><div class="m1"></div></div>
+<div class="mtn" aria-hidden="true"><div class="m2"></div></div>
+<div class="mtn" aria-hidden="true"><div class="m3"></div></div>
+</section>
+
+<section id="about">
+<div class="wrap">
+<div class="sec-head">
+<h2>Furniture for the way you live</h2>
+<p>A good piece of furniture is something you use every day: a place to gather, rest and make memories. We're here to help you find pieces that fit your space and your style.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="ico i1" aria-hidden="true"></div><h3>Rooted in Alpine</h3><p>A local furniture business in Alpine, Wyoming, serving neighbors who love life in the mountains.</p></div>
+<div class="card"><div class="ico i2" aria-hidden="true"></div><h3>Pieces for every room</h3><p>From the living room to the cabin, furniture helps turn a house into a home. Tell us what you need.</p></div>
+<div class="card"><div class="ico i3" aria-hidden="true"></div><h3>Real conversation</h3><p>Questions about a piece or a project? Pick up the phone and talk with someone who knows furniture.</p></div>
+</div>
+</div>
+</section>
+
+<section class="wood" id="why">
+<div class="wrap split">
+<div>
+<h2 style="font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:1rem">Why shop local for furniture?</h2>
+<p>When you work with a local furniture business, you get people who know the area, the homes and the way folks live here.</p>
+<p>It's easy to ask questions, talk through ideas and get honest guidance before you decide.</p>
+</div>
+<div class="panel">
+<ul>
+<li>A neighbor right here in Alpine, WY</li>
+<li>Friendly help with choosing the right piece</li>
+<li>Furniture that suits mountain homes</li>
+<li>Just a phone call away</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<div class="box">
+<h2>Let's talk furniture</h2>
+<p>Call Buffalo Mountain Furniture in Alpine, Wyoming. We'll be glad to hear from you.</p>
+<a class="phone" href="tel:+13076540077">(307) 654-0077</a>
+<a class="btn" href="tel:+13076540077">Tap to Call</a><br>
+<a class="site" href="https://www.westernwoodprojects.com/">Visit westernwoodprojects.com</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<p>&copy; Buffalo Mountain Furniture &middot; Alpine, WY &middot; <a href="tel:+13076540077">(307) 654-0077</a></p>
+<p>Free sample concept by Brainsmith Sitecraft.</p>
+</div>
+</footer>
+</body>
+</html>
