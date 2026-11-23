@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Maine Bike Works | New England's Adventure Bike Shop in Saco, ME</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--pine:#1f3d33;--pine2:#2c5446;--rust:#c4572a;--rust2:#a8461f;--cream:#f7f1e5;--sand:#ece2cf;--ink:#1c2420;--muted:#4b5650}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:Bitter,Georgia,serif;line-height:1.15}
+a{color:inherit}
+.banner{background:#111;color:#f1f1f1;font-size:13px;text-align:center;padding:7px 14px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+header.nav{background:var(--pine);color:var(--cream)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font-family:Bitter,serif;font-weight:800;font-size:22px;letter-spacing:.5px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{display:inline-block;width:22px;height:22px;border:3px solid var(--rust);border-radius:50%;position:relative}
+.logo i:after{content:"";position:absolute;left:5px;top:5px;width:6px;height:6px;background:var(--rust);border-radius:50%}
+.navlinks{display:flex;gap:20px;font-size:15px}
+.navlinks a{text-decoration:none;opacity:.9}
+.navlinks a:hover{opacity:1;text-decoration:underline}
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#2c5446 0%,#3f6b58 55%,#e9b87a 100%);color:#fff;padding:90px 0 210px}
+.sun{position:absolute;right:12%;top:70px;width:150px;height:150px;border-radius:50%;background:#f4c27a;opacity:.85}
+.mtn{position:absolute;left:0;right:0;bottom:0}
+.m1{height:220px;background:#24463a;clip-path:polygon(0 100%,0 55%,14% 20%,28% 60%,42% 10%,58% 58%,72% 25%,86% 55%,100% 30%,100% 100%)}
+.m2{height:130px;background:var(--pine);clip-path:polygon(0 100%,0 50%,20% 15%,38% 60%,55% 25%,75% 65%,90% 30%,100% 45%,100% 100%)}
+.road{height:34px;background:var(--cream);clip-path:polygon(0 100%,0 60%,50% 0,100% 60%,100% 100%)}
+.hero .wrap{position:relative;z-index:2}
+.kicker{display:inline-block;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:30px;font-size:14px;letter-spacing:.6px;text-transform:uppercase;margin-bottom:20px}
+.hero h1{font-size:clamp(38px,7vw,70px);max-width:760px;text-shadow:0 2px 14px rgba(0,0,0,.25)}
+.hero h1 span{color:#ffd9a8}
+.hero p{font-size:clamp(17px,2.3vw,21px);max-width:600px;margin:20px 0 32px;color:#f4efe4}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 28px;border-radius:40px;font-weight:700;text-decoration:none;font-size:17px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--rust);color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.btn.primary:hover{background:var(--rust2)}
+.btn.ghost{border:2px solid #fff;color:#fff}
+section{padding:80px 0}
+.eyebrow{color:var(--rust2);font-weight:700;text-transform:uppercase;letter-spacing:1.4px;font-size:13px;margin-bottom:10px}
+h2{font-size:clamp(30px,4.5vw,44px);color:var(--pine);margin-bottom:18px}
+.lead{font-size:19px;color:var(--muted);max-width:680px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:44px}
+.card{background:#fff;border-radius:18px;padding:30px 26px;box-shadow:0 4px 22px rgba(31,61,51,.08);border-top:5px solid var(--rust)}
+.card h3{font-size:23px;color:var(--pine);margin:16px 0 8px}
+.card p{color:var(--muted)}
+.ico{width:58px;height:58px;border-radius:50%;background:var(--sand);position:relative}
+.ico.tour:before,.ico.tour:after{content:"";position:absolute;width:20px;height:20px;border:3px solid var(--pine);border-radius:50%;top:22px}
+.ico.tour:before{left:6px}.ico.tour:after{right:6px}
+.ico.tandem:before{content:"";position:absolute;left:6px;right:6px;top:27px;height:4px;background:var(--pine);border-radius:3px;box-shadow:0 -10px 0 -0px var(--rust)}
+.ico.tandem:after{content:"";position:absolute;left:8px;right:8px;top:35px;height:12px;border-left:12px solid var(--pine);border-right:12px solid var(--pine);border-radius:50%}
+.ico.trike:before{content:"";position:absolute;left:13px;top:14px;border-left:16px solid transparent;border-right:16px solid transparent;border-bottom:28px solid var(--pine)}
+.ico.trike:after{content:"";position:absolute;left:24px;top:24px;width:10px;height:10px;background:var(--rust);border-radius:50%}
+.analog{background:var(--pine);color:var(--cream);position:relative;overflow:hidden}
+.analog h2{color:#fff}
+.analog .lead{color:#d9e3dc}
+.analog .eyebrow{color:#f4b98c}
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center}
+.badge{aspect-ratio:1;max-width:340px;margin:0 auto;border-radius:50%;border:4px dashed rgba(247,241,229,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;background:radial-gradient(circle,#2c5446 0 55%,transparent 56%)}
+.badge b{font-family:Bitter,serif;font-size:56px;color:#ffd9a8;letter-spacing:3px}
+.badge span{font-size:14px;text-transform:uppercase;letter-spacing:2px}
+.quote{font-family:Bitter,serif;font-size:24px;color:#fff;border-left:4px solid var(--rust);padding-left:18px;margin-top:28px}
+.rent{background:var(--sand)}
+.rentgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin:36px 0 34px}
+.rentitem{background:var(--cream);border-radius:16px;padding:26px;text-align:center;border:2px solid #dccfb5}
+.rentitem h3{color:var(--pine);font-size:22px;margin-top:12px}
+.shape{height:60px;display:flex;align-items:center;justify-content:center}
+.wheel{width:34px;height:34px;border:4px solid var(--rust);border-radius:50%;margin:0 6px}
+.kayak{width:130px;height:22px;background:var(--rust);border-radius:50%}
+.board{width:120px;height:16px;background:var(--pine2);border-radius:10px;position:relative}
+.board:after{content:"";position:absolute;left:50%;top:-40px;width:4px;height:44px;background:var(--rust);transform:rotate(15deg)}
+.note{color:var(--muted);font-size:16px}
+.contact{background:var(--rust);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact p{max-width:620px;margin:0 auto 30px;font-size:19px}
+.phone{font-family:Bitter,serif;font-size:clamp(32px,6vw,52px);font-weight:800;text-decoration:none;display:inline-block;margin-bottom:24px}
+.contact .btn.primary{background:var(--pine)}
+.contact .btn.primary:hover{background:#163027}
+footer{background:#14271f;color:#b9c7bf;text-align:center;padding:28px 20px;font-size:14px}
+footer a{color:#ffd9a8}
+@media(max-width:760px){
+.split{grid-template-columns:1fr}
+.navlinks{display:none}
+.hero{padding:60px 0 180px}
+.sun{width:100px;height:100px;top:40px;right:6%}
+section{padding:60px 0}
+.btn{width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Maine Bike Works.</div>
+
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="#top"><i></i>Maine Bike Works</a>
+<nav class="navlinks"><a href="#bikes">Bikes</a><a href="#analog">Analog Adventuring</a><a href="#rentals">Rentals</a><a href="#contact">Contact</a></nav>
+</div>
+</header>
+
+<section class="hero" id="top">
+<div class="sun"></div>
+<div class="wrap">
+<div class="kicker">Saco, Maine</div>
+<h1>New England's <span>Adventure Bike</span> HQ</h1>
+<p>Your touring, tandem and trike folks in Saco. We know you have lots of options for your next bike and gear, so give us a shot and let us surprise you.</p>
+<div class="btns">
+<a class="btn primary" href="tel:+12075908903">Call 207-590-8903</a>
+<a class="btn ghost" href="#bikes">Explore the shop</a>
+</div>
+</div>
+<div class="mtn m1"></div>
+<div class="mtn m2"></div>
+<div class="mtn road"></div>
+</section>
+
+<section id="bikes">
+<div class="wrap">
+<div class="eyebrow">Built for the long way around</div>
+<h2>Touring, tandem &amp; trike specialists</h2>
+<p class="lead">Whether you're planning a long ride across New England, riding together, or looking for a stable ride on three wheels, we're the shop that speaks your language.</p>
+<div class="grid3">
+<div class="card"><div class="ico tour"></div><h3>Touring</h3><p>Bikes and gear made for loaded miles, back roads and multi-day adventures. Talk to us about the trip you're dreaming up.</p></div>
+<div class="card"><div class="ico tandem"></div><h3>Tandem</h3><p>Twice the riders, one bike. Getting a tandem right takes care, and we're happy to help you and your partner find a good fit.</p></div>
+<div class="card"><div class="ico trike"></div><h3>Trike</h3><p>Three wheels open up riding for a lot of people. Come see what makes trikes so comfortable and so much fun.</p></div>
+</div>
+</div>
+</section>
+
+<section class="analog" id="analog">
+<div class="wrap split">
+<div>
+<div class="eyebrow">Our way of riding</div>
+<h2>Home of Analog Adventuring</h2>
+<p class="lead">Unplug, slow down and see the country at the speed of a bicycle. Analog Adventuring is all about the open road, fresh air and the simple joy of getting somewhere under your own power.</p>
+<p class="quote">“Give us a shot and let us surprise you.”</p>
+</div>
+<div class="badge"><span>Analog Adventuring</span><b>MMXV</b><span>Since</span></div>
+</div>
+</section>
+
+<section class="rent" id="rentals">
+<div class="wrap">
+<div class="eyebrow">Get out on land &amp; water</div>
+<h2>Rent bikes, kayaks &amp; paddle boards</h2>
+<p class="lead">Explore Saco and the Maine coast your way. Call us to rent:</p>
+<div class="rentgrid">
+<div class="rentitem"><div class="shape"><div class="wheel"></div><div class="wheel"></div></div><h3>Bikes</h3></div>
+<div class="rentitem"><div class="shape"><div class="kayak"></div></div><h3>Kayaks</h3></div>
+<div class="rentitem"><div class="shape"><div class="board"></div></div><h3>Stand Up Paddle Boards</h3></div>
+</div>
+<a class="btn primary" href="tel:+12075908903">Call to rent</a>
+<p class="note" style="margin-top:16px">Hours change with the seasons, so please call ahead to check when we're open.</p>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Ready for your next adventure?</h2>
+<p>Questions about touring, tandems, trikes or rentals? Give Maine Bike Works a call.</p>
+<a class="phone" href="tel:+12075908903">+1 207-590-8903</a><br>
+<a class="btn primary" href="https://www.mainebikeworks.com/">Visit mainebikeworks.com</a>
+</div>
+</section>
+
+<footer>
+<p>Maine Bike Works · Saco, ME · <a href="tel:+12075908903">207-590-8903</a> · <a href="https://www.mainebikeworks.com/">mainebikeworks.com</a></p>
+<p style="margin-top:8px">Free sample concept by Brainsmith Sitecraft. Not the official website of Maine Bike Works.</p>
+</footer>
+</body>
+</html>

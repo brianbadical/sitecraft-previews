@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Enoteca Athena | Rustic Mediterranean in Brunswick, ME</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#5a1f2b;--wine-d:#3d141d;--olive:#5d6b3a;--terra:#c0623f;--cream:#f8f1e5;--sand:#efe2cc;--ink:#2a1f1a;--gold:#d9a85b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);font-size:17px;line-height:1.65}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1}
+a{color:inherit}
+.banner{background:var(--ink);color:#f3e9d8;font-size:13px;text-align:center;padding:8px 14px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+nav{background:var(--cream);border-bottom:1px solid #e2d3b8}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;gap:12px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:700;color:var(--wine);text-decoration:none;letter-spacing:.04em}
+.logo span{color:var(--terra)}
+.navlinks{display:flex;gap:22px;align-items:center}
+.navlinks a{text-decoration:none;font-size:15px;font-weight:500}
+.navlinks a:hover{color:var(--terra)}
+.btn{display:inline-block;text-decoration:none;font-weight:600;border-radius:40px;padding:14px 28px;font-size:16px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--wine-d)}
+.btn-gold:hover{background:#e6b96d}
+.btn-line{border:2px solid #f3e9d8;color:#f3e9d8}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-wine{background:var(--wine);color:#fff}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,#7a2c3a 0,var(--wine) 45%,var(--wine-d) 100%);color:#f8eedd;padding:100px 0 110px}
+.hero:before{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border-radius:50%;border:2px solid rgba(217,168,91,.35)}
+.hero:after{content:"";position:absolute;right:40px;bottom:-160px;width:340px;height:340px;border-radius:50%;background:rgba(93,107,58,.35)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:13px;color:var(--gold);font-weight:600;margin-bottom:18px}
+.hero h1{font-size:clamp(46px,8vw,92px);margin-bottom:20px}
+.hero h1 em{color:var(--gold);font-style:italic;font-weight:500}
+.hero p.lead{font-size:clamp(18px,2.2vw,21px);max-width:600px;margin-bottom:34px;color:#f0e2cc}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.meander{height:14px;background:repeating-linear-gradient(90deg,var(--gold) 0 14px,transparent 14px 20px,var(--gold) 20px 22px,transparent 22px 28px);opacity:.85}
+section{padding:84px 0}
+.label{color:var(--terra);text-transform:uppercase;letter-spacing:.2em;font-size:13px;font-weight:600;margin-bottom:12px}
+h2{font-size:clamp(36px,5vw,54px);color:var(--wine);margin-bottom:20px}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.about p{margin-bottom:16px;font-size:18px}
+.plate{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--cream) 0 38%,var(--sand) 38% 52%,#fff 52% 60%,var(--olive) 60% 62%,var(--sand) 62%);box-shadow:0 30px 60px -20px rgba(90,31,43,.35);position:relative;max-width:380px;margin:0 auto;width:100%}
+.plate:after{content:"Since 2013";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;color:var(--wine)}
+.pillars{background:var(--sand)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
+.card{background:#fffaf2;border-radius:18px;padding:34px 28px;border-top:5px solid var(--terra)}
+.card:nth-child(2){border-color:var(--olive)}
+.card:nth-child(3){border-color:var(--wine)}
+.card h3{font-size:30px;color:var(--wine);margin-bottom:10px}
+.dot{width:46px;height:46px;border-radius:50%;margin-bottom:18px;background:var(--terra)}
+.card:nth-child(2) .dot{background:var(--olive)}
+.card:nth-child(3) .dot{background:var(--wine)}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}
+.info{background:#fff;border:1px solid #e6d6bb;border-radius:18px;padding:32px}
+.info h3{font-size:28px;color:var(--wine);margin-bottom:8px}
+.info p{font-size:18px}
+.note{font-size:14px;color:#6b5a4d;margin-top:10px}
+.contact{background:var(--wine-d);color:#f6ead6;text-align:center}
+.contact h2{color:#fff}
+.contact p{max-width:620px;margin:0 auto 30px;font-size:18px;color:#e9d9bf}
+.phone{display:block;font-family:"Cormorant Garamond",serif;font-size:clamp(40px,7vw,64px);color:var(--gold);text-decoration:none;margin-bottom:26px}
+.phone:hover{color:#f0c47c}
+footer{background:var(--ink);color:#cbbba3;text-align:center;font-size:14px;padding:28px 20px}
+footer a{color:var(--gold)}
+@media(max-width:820px){
+.about,.visit{grid-template-columns:1fr}
+.grid3{grid-template-columns:1fr}
+.navlinks a.hide{display:none}
+.hero{padding:70px 0 80px}
+section{padding:64px 0}
+.plate{max-width:280px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Enoteca Athena.</div>
+<nav><div class="wrap">
+<a class="logo" href="#top">Enoteca <span>Athena</span></a>
+<div class="navlinks"><a class="hide" href="#about">About</a><a class="hide" href="#visit">Visit</a><a class="btn btn-wine" style="padding:10px 20px;font-size:15px" href="tel:+12077210100">Call</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<p class="eyebrow">Brunswick, Maine &middot; Since 2013</p>
+<h1>Rustic Mediterranean,<br><em>made with heart.</em></h1>
+<p class="lead">Greek and Italian cooking with an American accent, served on Maine Street in Brunswick. Come hungry, stay a while.</p>
+<div class="ctas"><a class="btn btn-gold" href="tel:+12077210100">Call 207.721.0100</a><a class="btn btn-line" href="#visit">Hours &amp; Location</a></div>
+</div></header>
+<div class="meander"></div>
+
+<section id="about"><div class="wrap about">
+<div>
+<p class="label">Our Story</p>
+<h2>A Brunswick table since 2013</h2>
+<p>Enoteca Athena opened in Brunswick in 2013 and has earned a name for high-quality, rustic Mediterranean food.</p>
+<p>The cooking shows the American influence on Greek and Italian cuisines, keeping the warmth and character of those traditions alive. It's a place for good food, good company and an unhurried evening.</p>
+</div>
+<div class="plate" aria-hidden="true"></div>
+</div></section>
+
+<section class="pillars"><div class="wrap">
+<p class="label">The Experience</p>
+<h2>What to expect</h2>
+<div class="grid3">
+<div class="card"><div class="dot"></div><h3>Greek roots</h3><p>Bright, generous Mediterranean flavors inspired by the Greek table.</p></div>
+<div class="card"><div class="dot"></div><h3>Italian soul</h3><p>Rustic Italian traditions, cooked with care and served to share.</p></div>
+<div class="card"><div class="dot"></div><h3>American spirit</h3><p>An American point of view that ties it all together, right here in Maine.</p></div>
+</div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+<p class="label">Plan Your Visit</p>
+<h2>Join us for dinner</h2>
+<div class="visit">
+<div class="info"><h3>Location</h3><p>97 Maine St.<br>Brunswick, ME 04011</p></div>
+<div class="info"><h3>Dining Hours</h3><p>Wednesday &ndash; Saturday<br>4:30 &ndash; 8 (ish)</p><p class="note">Hours can change, so please call ahead to confirm.</p></div>
+</div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<p class="label" style="color:var(--gold)">Get in Touch</p>
+<h2>Reservations, events &amp; feedback</h2>
+<p>Planning a visit, asking about an event or sharing your thoughts? Give us a call and we'll be glad to help.</p>
+<a class="phone" href="tel:+12077210100">207.721.0100</a>
+<a class="btn btn-line" href="https://www.enotecaathena.com/">Visit enotecaathena.com</a>
+</div></section>
+
+<footer>&copy; Enoteca Athena &middot; Brunswick, ME &middot; <a href="https://www.enotecaathena.com/">enotecaathena.com</a><br>Sample concept by Brainsmith Sitecraft</footer>
+</body>
+</html>
