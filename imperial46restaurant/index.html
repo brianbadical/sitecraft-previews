@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Imperial 46 Restaurant | Asian Restaurant in Woodland Park, NJ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1210;--lac:#7a1a16;--red:#a8241c;--gold:#d9a84e;--cream:#faf4ea;--paper:#fffaf2;--muted:#5d4f47}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+a{color:inherit}
+.banner{background:#111;color:#f1e6d4;font-size:13px;text-align:center;padding:8px 14px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{background:var(--ink);color:var(--cream);position:sticky;top:0;z-index:5;border-bottom:1px solid rgba(217,168,78,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1120px;margin:0 auto;gap:16px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:700;text-decoration:none;letter-spacing:.5px}
+.logo span{color:var(--gold)}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:15px}
+.nav ul a{text-decoration:none;opacity:.88}
+.nav ul a:hover{color:var(--gold)}
+.callbtn{background:var(--gold);color:var(--ink);text-decoration:none;font-weight:600;padding:9px 18px;border-radius:40px;font-size:15px;white-space:nowrap}
+.hero{position:relative;overflow:hidden;color:var(--cream);background:radial-gradient(circle at 78% 30%,#b52e22 0,#7a1a16 38%,#2a0d0b 100%);padding:110px 0 120px}
+.hero:before{content:"";position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:560px;height:560px;border-radius:50%;border:2px solid rgba(217,168,78,.35);box-shadow:0 0 0 40px rgba(217,168,78,.06),0 0 0 90px rgba(217,168,78,.04)}
+.hero:after{content:"";position:absolute;right:60px;top:50%;transform:translateY(-50%);width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,#e8bf6a,#b8862f);opacity:.9}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{display:inline-block;color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:600;margin-bottom:18px}
+.hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(46px,8vw,86px);line-height:1.02;font-weight:700;max-width:680px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{font-size:clamp(18px,2.2vw,21px);max-width:540px;margin:22px 0 34px;color:#f3e3cf}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;padding:15px 28px;border-radius:44px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.gold:hover{background:#ecc06a}
+.btn.line{border:1.5px solid rgba(250,244,234,.7);color:var(--cream)}
+.btn.line:hover{background:rgba(255,255,255,.08)}
+.btn.red{background:var(--red);color:#fff}
+.btn.red:hover{background:var(--lac)}
+.strip{background:var(--ink);color:var(--gold);text-align:center;padding:16px;font-family:"Cormorant Garamond",serif;font-size:21px;letter-spacing:4px}
+section{padding:90px 0}
+.kicker{color:var(--red);text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:600}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(34px,5vw,52px);line-height:1.1;margin:10px 0 18px}
+.lead{color:var(--muted);max-width:620px;font-size:18px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.plate{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 50%,#fff 0 30%,#f0e4d2 31% 46%,var(--red) 47% 49%,#f6ecdd 50% 100%);box-shadow:0 30px 60px -20px rgba(122,26,22,.35);position:relative;max-width:400px;margin:0 auto;width:100%}
+.plate:after{content:"";position:absolute;inset:36%;border-radius:50%;background:conic-gradient(var(--gold) 0 25%,#c84b2f 0 50%,#6d8f3a 0 75%,#e7d3a8 0)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:46px}
+.card{background:#fff;border:1px solid #eadcc6;border-radius:18px;padding:32px 28px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--red),var(--gold))}
+.card h3{font-family:"Cormorant Garamond",serif;font-size:28px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:16px}
+.dot{width:46px;height:46px;border-radius:50%;background:var(--cream);border:2px solid var(--gold);margin-bottom:18px;display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-weight:700;color:var(--red);font-size:20px}
+.order{background:var(--cream)}
+.order .box{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;background:var(--ink);color:var(--cream);border-radius:26px;padding:56px;position:relative;overflow:hidden}
+.order .box:after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;border:30px solid rgba(217,168,78,.12)}
+.order h2{color:#fff}
+.order .lead{color:#e6d6c0}
+.order .btns{position:relative;z-index:2}
+.poke{background:linear-gradient(135deg,#fff6e8,#fbe7cf)}
+.poke .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.bowl{position:relative;max-width:380px;margin:0 auto;width:100%;aspect-ratio:1.4}
+.bowl .b{position:absolute;bottom:0;left:0;right:0;height:62%;background:linear-gradient(180deg,#2b2b2b,#111);border-radius:0 0 50% 50%/0 0 100% 100%}
+.bowl .t{position:absolute;top:22%;left:4%;right:4%;height:30%;border-radius:50%;background:conic-gradient(#e86a4f 0 22%,#9bc24f 0 40%,#f5d36b 0 58%,#f3a3a0 0 78%,#fffaf0 0)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-weight:600;letter-spacing:3px;font-size:13px;padding:7px 16px;border-radius:30px;margin-bottom:14px}
+.cater{text-align:center}
+.cater .lead{margin:0 auto 32px}
+.contact{background:var(--lac);color:var(--cream);text-align:center}
+.contact h2{color:#fff}
+.phone{font-family:"Cormorant Garamond",serif;font-size:clamp(36px,6vw,58px);font-weight:700;color:var(--gold);text-decoration:none;display:inline-block;margin:6px 0 22px}
+.contact p{color:#f1ddd0}
+.contact .btns{justify-content:center;margin-top:24px}
+footer{background:var(--ink);color:#bfae9b;text-align:center;font-size:14px;padding:30px 20px}
+footer a{color:var(--gold)}
+@media(max-width:860px){
+.nav ul{display:none}
+.about,.poke .grid,.order .box{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr}
+.order .box{padding:38px 26px}
+.hero{padding:80px 0 90px}
+.hero:after{width:120px;height:120px;right:-30px;top:18%;opacity:.5}
+.hero:before{width:340px;height:340px;right:-170px;top:20%}
+section{padding:68px 0}
+.plate{max-width:280px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Imperial 46 Restaurant.</div>
+<header>
+<nav class="nav">
+<a class="logo" href="#top">Imperial <span>46</span></a>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#order">Order</a></li>
+<li><a href="#catering">Catering</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a class="callbtn" href="tel:+19732568468">Call Us</a>
+</nav>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<span class="eyebrow">Asian Restaurant &middot; Woodland Park, NJ</span>
+<h1>Imperial 46 <em>Restaurant</em></h1>
+<p>Authentic flavors, unforgettable dining. A must-visit Asian restaurant for the Woodland Park community.</p>
+<div class="btns">
+<a class="btn gold" href="https://imperial46restaurant.com/">Order Your Way</a>
+<a class="btn line" href="tel:+19732568468">Call 973-256-8468</a>
+</div>
+</div>
+</section>
+<div class="strip">AUTHENTIC &nbsp;&middot;&nbsp; FRESH &nbsp;&middot;&nbsp; WELCOMING</div>
+
+<section id="about">
+<div class="wrap about">
+<div>
+<span class="kicker">Welcome</span>
+<h2>Authentic flavors, unforgettable dining</h2>
+<p class="lead">At Imperial 46, a good meal is about more than food. It is the aroma when a dish arrives, the shared plates passed around the table, and the feeling of leaving happy. Whether you are stopping in for a casual bite or gathering family and friends, we would love to have you at our table in Woodland Park.</p>
+</div>
+<div class="plate" aria-hidden="true"></div>
+</div>
+<div class="wrap">
+<div class="cards">
+<div class="card"><div class="dot">01</div><h3>Dine With Us</h3><p>Pull up a chair and enjoy Asian cooking full of flavor, served with warm hospitality.</p></div>
+<div class="card"><div class="dot">02</div><h3>Order Anytime</h3><p>Craving your favorites at home? Ordering is just a click away.</p></div>
+<div class="card"><div class="dot">03</div><h3>Catering</h3><p>Planning a gathering? Let us cater your next event and feed your guests well.</p></div>
+</div>
+</div>
+</section>
+
+<section class="order" id="order">
+<div class="wrap">
+<div class="box">
+<div>
+<span class="kicker" style="color:var(--gold)">Takeout &amp; More</span>
+<h2>Order Your Way, Anytime</h2>
+<p class="lead">Your favorites, just a click away! Visit our website to place your order, or give us a call.</p>
+</div>
+<div class="btns">
+<a class="btn gold" href="https://imperial46restaurant.com/">Order Online</a>
+<a class="btn line" href="tel:+19732568468">Call to Order</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="poke">
+<div class="wrap grid">
+<div class="bowl" aria-hidden="true"><div class="t"></div><div class="b"></div></div>
+<div>
+<span class="badge">COMING SOON</span>
+<h2>Poke Bowl</h2>
+<p class="lead">Something fresh is on the way. Poke bowls are coming soon to Imperial 46. Keep an eye on our website for the latest news.</p>
+</div>
+</div>
+</section>
+
+<section class="cater" id="catering">
+<div class="wrap">
+<span class="kicker">Catering</span>
+<h2>Let us cater your next event</h2>
+<p class="lead">From office lunches to family celebrations, sharing great food makes any occasion better. Call us to talk about your event and how we can help.</p>
+<a class="btn red" href="tel:+19732568468">Ask About Catering</a>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<span class="kicker" style="color:var(--gold)">Get in Touch</span>
+<h2>We'd love to hear from you</h2>
+<a class="phone" href="tel:+19732568468">973-256-8468</a>
+<p>Imperial 46 Restaurant &middot; Woodland Park, NJ</p>
+<div class="btns">
+<a class="btn gold" href="tel:+19732568468">Call Now</a>
+<a class="btn line" href="https://imperial46restaurant.com/">imperial46restaurant.com</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>&copy; Imperial 46 Restaurant &middot; Woodland Park, NJ &middot; <a href="tel:+19732568468">973-256-8468</a></p>
+<p style="margin-top:6px">Sample concept by Brainsmith Sitecraft. Official site: <a href="https://imperial46restaurant.com/">imperial46restaurant.com</a></p>
+</footer>
+</body>
+</html>
