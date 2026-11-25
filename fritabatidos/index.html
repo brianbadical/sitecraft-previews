@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Frita Batidos | Downtown Ann Arbor, MI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1a2b;--cream:#fff7ea;--coral:#ff5a4e;--teal:#0f8b8d;--sun:#ffc23d;--pink:#ff9fb4;--mint:#bfe8d6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--cream);color:var(--ink);font-size:18px;line-height:1.6}
+a{color:inherit}
+.banner{background:var(--ink);color:#fff;text-align:center;font-size:14px;padding:8px 16px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{padding:20px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-family:'Bowlby One',sans-serif;font-size:26px;text-decoration:none;letter-spacing:.5px}
+.logo span{color:var(--coral)}
+nav a{text-decoration:none;font-weight:700;margin-left:20px;font-size:16px}
+nav a:hover{color:var(--coral)}
+.btn{display:inline-block;font-weight:700;text-decoration:none;padding:15px 28px;border-radius:999px;border:3px solid var(--ink);transition:transform .15s,box-shadow .15s}
+.btn-main{background:var(--coral);color:#fff;box-shadow:5px 5px 0 var(--ink)}
+.btn-alt{background:#fff;color:var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.hero{position:relative;overflow:hidden;padding:60px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--sun);border:2px solid var(--ink);border-radius:999px;padding:5px 14px;font-weight:700;font-size:15px;margin-bottom:20px}
+h1{font-family:'Bowlby One',sans-serif;font-size:clamp(46px,8vw,92px);line-height:.98;margin-bottom:22px}
+h1 em{font-style:normal;color:var(--coral)}
+h1 i{font-style:normal;color:var(--teal)}
+.hero p{font-size:20px;max-width:520px;margin-bottom:32px}
+.ctas{display:flex;gap:16px;flex-wrap:wrap}
+.art{position:relative;aspect-ratio:1;max-width:420px;width:100%;justify-self:center}
+.sun{position:absolute;inset:6%;border-radius:50%;background:repeating-conic-gradient(var(--sun) 0 15deg,#ffd76e 15deg 30deg);border:4px solid var(--ink)}
+.cup{position:absolute;left:30%;bottom:8%;width:40%;height:62%;background:linear-gradient(var(--pink) 0 55%,#fff 55% 62%,var(--pink) 62%);border:4px solid var(--ink);border-radius:8px 8px 38px 38px;clip-path:polygon(0 0,100% 0,88% 100%,12% 100%)}
+.lid{position:absolute;left:26%;bottom:68%;width:48%;height:9%;background:var(--teal);border:4px solid var(--ink);border-radius:30px 30px 6px 6px}
+.straw{position:absolute;left:52%;bottom:74%;width:5%;height:24%;background:repeating-linear-gradient(45deg,var(--coral) 0 8px,#fff 8px 16px);border:3px solid var(--ink);transform:rotate(14deg);border-radius:4px}
+.dot{position:absolute;border-radius:50%;border:3px solid var(--ink)}
+.d1{width:56px;height:56px;background:var(--mint);top:2%;right:4%}
+.d2{width:34px;height:34px;background:var(--coral);bottom:10%;left:2%}
+.stripe{height:26px;background:repeating-linear-gradient(90deg,var(--coral) 0 40px,var(--sun) 40px 80px,var(--teal) 80px 120px,var(--pink) 120px 160px);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+section{padding:80px 0}
+h2{font-family:'Bowlby One',sans-serif;font-size:clamp(32px,5vw,50px);line-height:1.08;margin-bottom:18px}
+.lead{font-size:20px;max-width:640px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:30px;box-shadow:6px 6px 0 var(--ink)}
+.card:nth-child(1){background:var(--mint)}
+.card:nth-child(2){background:#ffe2e8}
+.card:nth-child(3){background:#ffeeb8}
+.ico{width:54px;height:54px;border-radius:50%;border:3px solid var(--ink);background:#fff;display:grid;place-items:center;font-family:'Bowlby One',sans-serif;font-size:22px;margin-bottom:18px}
+.card h3{font-size:22px;margin-bottom:8px}
+.visit{background:var(--teal);color:#fff}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.visit .lead{color:#e9fbf8}
+.board{background:var(--cream);color:var(--ink);border:3px solid var(--ink);border-radius:26px;padding:36px;box-shadow:8px 8px 0 var(--ink)}
+.board h3{font-family:'Bowlby One',sans-serif;font-size:26px;margin-bottom:8px}
+.board p{margin-bottom:22px}
+.row{display:flex;flex-direction:column;gap:14px}
+.row .btn{text-align:center}
+.phone{font-family:'Bowlby One',sans-serif;font-size:clamp(26px,4vw,34px);text-decoration:none;color:var(--coral);display:block;margin-bottom:18px}
+footer{background:var(--ink);color:#ddd;text-align:center;padding:34px 20px;font-size:15px}
+footer strong{color:#fff}
+@media(max-width:860px){
+.hero .wrap,.visit .wrap{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr}
+.art{max-width:300px}
+nav{display:none}
+section{padding:60px 0}
+.hero{padding:30px 0 60px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Frita Batidos.</div>
+
+<header>
+<div class="wrap">
+<a href="#top" class="logo">Frita <span>Batidos</span></a>
+<nav><a href="#about">About</a><a href="#visit">Visit</a><a href="tel:+17347612882">Call</a></nav>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<div>
+<span class="tag">Downtown Ann Arbor, MI</span>
+<h1>Bright <em>flavors.</em><br>Good <i>times.</i></h1>
+<p>Frita Batidos is a restaurant right in Downtown Ann Arbor. Bring your appetite, bring your friends, and come see us.</p>
+<div class="ctas">
+<a class="btn btn-main" href="tel:+17347612882">Call 734-761-2882</a>
+<a class="btn btn-alt" href="https://fritabatidos.com/ann-arbor/">See the Menu &amp; More</a>
+</div>
+</div>
+<div class="art" aria-hidden="true">
+<div class="sun"></div>
+<div class="straw"></div>
+<div class="lid"></div>
+<div class="cup"></div>
+<div class="dot d1"></div>
+<div class="dot d2"></div>
+</div>
+</div>
+</section>
+
+<div class="stripe" aria-hidden="true"></div>
+
+<section id="about">
+<div class="wrap">
+<h2>Your downtown spot to eat &amp; unwind</h2>
+<p class="lead">Whether you're grabbing a bite between errands, meeting up with friends, or treating yourself after a long day, Frita Batidos is a welcoming place to slow down and enjoy a great meal in the heart of Ann Arbor.</p>
+<div class="cards">
+<div class="card"><div class="ico">1</div><h3>Right downtown</h3><p>Easy to find in Downtown Ann Arbor, perfect to pair with a stroll around town.</p></div>
+<div class="card"><div class="ico">2</div><h3>Made to enjoy</h3><p>Food and drinks meant to be savored, whether you're dining solo or with a crowd.</p></div>
+<div class="card"><div class="ico">3</div><h3>Questions? Just call</h3><p>Our team is happy to help. Give us a ring and we'll point you in the right direction.</p></div>
+</div>
+</div>
+</section>
+
+<section class="visit" id="visit">
+<div class="wrap">
+<div>
+<h2>Come hungry. Leave happy.</h2>
+<p class="lead">For the latest menu, hours and details, check out our website or give us a call. We'd love to see you in Downtown Ann Arbor.</p>
+</div>
+<div class="board">
+<h3>Get in touch</h3>
+<p>Frita Batidos &middot; Downtown Ann Arbor, MI</p>
+<a class="phone" href="tel:+17347612882">(734) 761-2882</a>
+<div class="row">
+<a class="btn btn-main" href="tel:+17347612882">Call Now</a>
+<a class="btn btn-alt" href="https://fritabatidos.com/ann-arbor/">Visit fritabatidos.com</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p><strong>Frita Batidos</strong> &middot; Downtown Ann Arbor, MI &middot; <a href="tel:+17347612882">(734) 761-2882</a></p>
+<p style="margin-top:8px">Sample concept by Brainsmith Sitecraft. Not the official website.</p>
+</footer>
+</body>
+</html>

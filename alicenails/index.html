@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Alice Nails | Nail Salon in Hudsonville, MI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#4a1d3f;--plum2:#6b2a5a;--rose:#e8a0b4;--blush:#fbeef1;--cream:#fffaf7;--ink:#2a1a25;--muted:#6a5562;--gold:#c8956b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);font-size:17px;line-height:1.65}
+a{color:inherit}
+.banner{background:var(--ink);color:#f5e6ec;text-align:center;font-size:13px;padding:7px 14px;letter-spacing:.02em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{padding:18px 0;border-bottom:1px solid #f0dde3;background:var(--cream)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:26px;color:var(--plum);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:14px;height:22px;border-radius:50% 50% 45% 45%/60% 60% 40% 40%;background:linear-gradient(160deg,var(--rose),var(--plum2));display:inline-block}
+nav{display:flex;gap:22px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--plum)}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 28px;font-size:16px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:var(--plum);color:#fff;box-shadow:0 8px 22px rgba(74,29,63,.25)}
+.btn-o{border:2px solid var(--plum);color:var(--plum)}
+.hero{background:radial-gradient(circle at 85% 20%,#f7cdd8 0,transparent 45%),linear-gradient(180deg,var(--blush),var(--cream));padding:80px 0 90px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:13px;font-weight:700;color:var(--plum2)}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(40px,6.5vw,72px);line-height:1.04;color:var(--plum);margin:14px 0 20px}
+h1 em{font-weight:500;color:var(--gold)}
+.lead{font-size:19px;color:var(--muted);max-width:520px;margin-bottom:30px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.art{position:relative;height:380px}
+.polish{position:absolute;border-radius:50% 50% 44% 44%/62% 62% 38% 38%;box-shadow:0 18px 40px rgba(74,29,63,.18)}
+.p1{width:110px;height:170px;left:10%;top:40px;background:linear-gradient(160deg,#f3b6c6,#c75d84);transform:rotate(-14deg)}
+.p2{width:120px;height:190px;left:40%;top:0;background:linear-gradient(160deg,#8e3d78,var(--plum))}
+.p3{width:100px;height:160px;left:66%;top:70px;background:linear-gradient(160deg,#f2d4b8,var(--gold));transform:rotate(12deg)}
+.p4{width:90px;height:140px;left:28%;top:210px;background:linear-gradient(160deg,#fde5ea,var(--rose));transform:rotate(8deg)}
+.p5{width:84px;height:130px;left:56%;top:225px;background:linear-gradient(160deg,#d98aa5,#9b3b63);transform:rotate(-8deg)}
+.polish:after{content:"";position:absolute;left:22%;top:14%;width:18%;height:34%;border-radius:50%;background:rgba(255,255,255,.45)}
+section{padding:80px 0}
+h2{font-family:'Fraunces',serif;font-size:clamp(30px,4.2vw,44px);color:var(--plum);line-height:1.15;margin-bottom:14px}
+.sub{color:var(--muted);max-width:620px;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #f1e0e6;border-radius:22px;padding:30px 26px}
+.dot{width:46px;height:46px;border-radius:50%;margin-bottom:18px;background:linear-gradient(140deg,var(--rose),var(--plum2))}
+.card:nth-child(2) .dot{background:linear-gradient(140deg,#f2d4b8,var(--gold))}
+.card:nth-child(3) .dot{background:linear-gradient(140deg,#fde5ea,#c75d84)}
+.card h3{font-family:'Fraunces',serif;font-size:22px;color:var(--plum);margin-bottom:8px}
+.card p{color:var(--muted);font-size:16px}
+.split{background:var(--blush)}
+.split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:#fff;border-radius:24px;padding:38px 34px;border:1px solid #f0d6de}
+.panel.dark{background:var(--plum);color:#fbe9ef;border:0}
+.panel.dark h2{color:#fff}
+.panel.dark p{color:#f0d3de}
+.panel p{color:var(--muted);margin-bottom:22px}
+.panel.dark .btn{background:#fff;color:var(--plum)}
+.contact{text-align:center}
+.contact .sub{margin:0 auto 34px}
+.phone{font-family:'Fraunces',serif;font-size:clamp(32px,6vw,54px);color:var(--plum);text-decoration:none;font-weight:700;display:inline-block;margin-bottom:12px}
+.site{display:block;color:var(--plum2);font-weight:500;margin-bottom:30px}
+.place{display:inline-block;background:var(--blush);color:var(--plum);border-radius:999px;padding:8px 18px;font-weight:500;font-size:15px}
+footer{background:var(--ink);color:#cdb8c3;text-align:center;padding:30px 20px;font-size:14px}
+footer strong{color:#fff;font-family:'Fraunces',serif;font-size:18px;display:block;margin-bottom:4px}
+@media(max-width:860px){
+.hero{padding:56px 0 40px}
+.hero .wrap,.split .wrap{grid-template-columns:1fr}
+.art{height:300px;max-width:380px;margin:0 auto;width:100%}
+.p1{width:84px;height:130px}.p2{width:96px;height:150px}.p3{width:80px;height:126px}.p4{width:72px;height:112px;top:170px}.p5{width:68px;height:106px;top:180px}
+.cards{grid-template-columns:1fr}
+section{padding:60px 0}
+nav{display:none}
+}
+@media(max-width:480px){.btn{width:100%;text-align:center}.panel{padding:30px 24px}}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Alice Nails.</div>
+<header><div class="wrap">
+<a class="logo" href="#top"><i></i>Alice Nails</a>
+<nav><a href="#care">Our Care</a><a href="#visit">Hours &amp; Groups</a><a href="#contact">Contact</a></nav>
+<a class="btn btn-p" href="tel:+16166626991">Call Now</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<p class="eyebrow">Nail Salon &middot; Hudsonville, MI</p>
+<h1>Beautiful nails, <em>made</em> for you.</h1>
+<p class="lead">Treat yourself to a relaxing visit at Alice Nails. Sit back and unwind while we pamper your hands and feet with friendly, careful attention.</p>
+<div class="ctas">
+<a class="btn btn-p" href="tel:+16166626991">Call (616) 662-6991</a>
+<a class="btn btn-o" href="#visit">Groups &amp; Parties</a>
+</div>
+</div>
+<div class="art" aria-hidden="true"><span class="polish p1"></span><span class="polish p2"></span><span class="polish p3"></span><span class="polish p4"></span><span class="polish p5"></span></div>
+</div></section>
+
+<section id="care"><div class="wrap">
+<p class="eyebrow">Why Visit</p>
+<h2>A little time just for you</h2>
+<p class="sub">Your local Hudsonville nail salon is a spot to relax, refresh and leave feeling polished.</p>
+<div class="cards">
+<div class="card"><div class="dot"></div><h3>Relax &amp; Unwind</h3><p>Take a break from a busy day and enjoy a calm, welcoming place to be pampered.</p></div>
+<div class="card"><div class="dot"></div><h3>Care in Every Detail</h3><p>Neat, tidy nails come from patience and attention, and we take our time to get it right.</p></div>
+<div class="card"><div class="dot"></div><h3>Find Your Colour</h3><p>Soft and classic or bold and bright, pick the look that feels like you.</p></div>
+</div>
+</div></section>
+
+<section class="split" id="visit"><div class="wrap">
+<div class="panel">
+<p class="eyebrow">Store Hours</p>
+<h2>Plan your visit</h2>
+<p>Hours can change with holidays and seasons, so give us a quick call for today's hours and to check availability before you come in.</p>
+<a class="btn btn-p" href="tel:+16166626991">Call for Hours</a>
+</div>
+<div class="panel dark">
+<p class="eyebrow" style="color:var(--rose)">Groups / Parties</p>
+<h2>Bring your friends</h2>
+<p>Getting your nails done is even better together. Celebrating something or planning a get-together? Call to ask about booking for your group.</p>
+<a class="btn" href="tel:+16166626991">Ask About Groups</a>
+</div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<p class="eyebrow">Contacts</p>
+<h2>Ready for fresh nails?</h2>
+<p class="sub">Give us a call. We'd love to hear from you.</p>
+<a class="phone" href="tel:+16166626991">(616) 662-6991</a>
+<a class="site" href="https://www.alicenails.com/">www.alicenails.com</a>
+<span class="place">Hudsonville, Michigan</span>
+</div></section>
+</main>
+<footer><strong>Alice Nails</strong>Nail salon in Hudsonville, MI &middot; <a href="tel:+16166626991">(616) 662-6991</a></footer>
+</body>
+</html>
