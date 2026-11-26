@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Interwest Electronics | Electronics Repair in Salt Lake City, UT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d1b2a;--navy:#13263b;--panel:#1b3350;--amber:#ffb347;--amber2:#ff8f3c;--teal:#4fd1c5;--paper:#f6f4ef;--text:#1f2a36;--muted:#5a6675}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+.banner{background:#000;color:#e9e9e9;text-align:center;font-size:13px;padding:7px 14px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.nav{background:var(--ink);color:#fff}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:20px;text-decoration:none}
+.chip{width:30px;height:30px;border:2px solid var(--amber);border-radius:6px;position:relative;flex:none}
+.chip:before{content:"";position:absolute;inset:6px;background:var(--amber);border-radius:2px}
+.chip:after{content:"";position:absolute;left:-7px;right:-7px;top:50%;height:2px;background:var(--amber);transform:translateY(-50%);z-index:-1}
+.nav-call{background:var(--amber);color:var(--ink);text-decoration:none;font-weight:600;padding:9px 16px;border-radius:999px;font-size:15px;white-space:nowrap}
+.hero{background:radial-gradient(circle at 80% 20%,#22466d 0,transparent 55%),linear-gradient(160deg,var(--ink),var(--navy));color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-top:84px;padding-bottom:96px}
+.eyebrow{display:inline-block;color:var(--teal);font-weight:600;font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-size:clamp(36px,6vw,62px);margin-bottom:20px}
+.hero h1 span{color:var(--amber)}
+.hero p{font-size:19px;color:#cfd9e4;max-width:540px;margin-bottom:32px}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:15px 26px;border-radius:10px;font-size:17px}
+.btn-primary{background:linear-gradient(135deg,var(--amber),var(--amber2));color:var(--ink);box-shadow:0 10px 30px rgba(255,143,60,.3)}
+.btn-ghost{border:2px solid rgba(255,255,255,.35);color:#fff}
+.board{aspect-ratio:1;max-width:340px;width:100%;justify-self:center;background:#0f5446;border-radius:22px;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.4),inset 0 0 0 10px #0c4639;
+background-image:linear-gradient(90deg,transparent 48%,rgba(255,200,90,.55) 48%,rgba(255,200,90,.55) 52%,transparent 52%),linear-gradient(0deg,transparent 48%,rgba(255,200,90,.55) 48%,rgba(255,200,90,.55) 52%,transparent 52%);background-size:100% 100%;background-color:#0f5446}
+.board .ic{position:absolute;inset:32%;background:#111;border-radius:8px;box-shadow:0 0 0 4px #222}
+.board .ic:after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#333;top:10px;left:10px}
+.board .dot{position:absolute;width:18px;height:18px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 5px rgba(255,179,71,.25)}
+.d1{top:14%;left:14%}.d2{top:14%;right:14%}.d3{bottom:14%;left:14%}.d4{bottom:14%;right:14%}
+.led{position:absolute;top:22px;right:50%;width:10px;height:10px;border-radius:50%;background:var(--teal);box-shadow:0 0 14px var(--teal)}
+section{padding:84px 0}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head .eyebrow{color:#1a8f84}
+.section-head h2{font-size:clamp(28px,4vw,40px);color:var(--ink);margin-bottom:12px}
+.section-head p{color:var(--muted);font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:16px;padding:30px;border:1px solid #e6e1d6;box-shadow:0 6px 20px rgba(13,27,42,.05)}
+.icon{width:48px;height:48px;border-radius:12px;background:var(--ink);margin-bottom:18px;position:relative}
+.i1:before{content:"";position:absolute;inset:13px 11px;border:3px solid var(--amber);border-radius:3px}
+.i2:before{content:"";position:absolute;left:14px;top:12px;width:20px;height:24px;border:3px solid var(--teal);border-radius:50% 50% 4px 4px}
+.i3:before{content:"";position:absolute;left:12px;top:22px;width:24px;height:4px;background:var(--amber);border-radius:2px;box-shadow:0 -8px 0 var(--teal),0 8px 0 var(--teal)}
+.card h3{font-size:21px;color:var(--ink);margin-bottom:8px}
+.card p{color:var(--muted)}
+.steps{background:var(--ink);color:#fff}
+.steps .section-head h2{color:#fff}
+.steps .section-head p{color:#b9c6d4}
+.steps .section-head .eyebrow{color:var(--teal)}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.step{background:var(--panel);border-radius:16px;padding:30px;border-top:4px solid var(--amber)}
+.step:before{counter-increment:s;content:"0" counter(s);font-family:"Space Grotesk",sans-serif;font-size:38px;font-weight:700;color:var(--amber);display:block;margin-bottom:8px}
+.step h3{font-size:20px;margin-bottom:8px}
+.step p{color:#c4d0dc}
+.local{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.local h2{font-size:clamp(28px,4vw,40px);color:var(--ink);margin-bottom:14px}
+.local p{color:var(--muted);font-size:18px;margin-bottom:14px}
+.mtn{height:240px;border-radius:20px;background:linear-gradient(180deg,#ffd9a8,#ffb98a);position:relative;overflow:hidden}
+.mtn:before{content:"";position:absolute;left:-10%;bottom:0;width:70%;height:75%;background:#2a4a6b;clip-path:polygon(0 100%,50% 0,100% 100%)}
+.mtn:after{content:"";position:absolute;right:-10%;bottom:0;width:80%;height:60%;background:var(--navy);clip-path:polygon(0 100%,55% 0,100% 100%)}
+.sun{position:absolute;top:34px;right:60px;width:56px;height:56px;border-radius:50%;background:#fff3dc}
+.contact{background:linear-gradient(135deg,var(--amber),var(--amber2));text-align:center}
+.contact h2{font-size:clamp(30px,5vw,46px);color:var(--ink);margin-bottom:12px}
+.contact p{color:#3b2a14;font-size:19px;margin-bottom:30px}
+.phone{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(24px,5vw,34px);padding:18px 34px;border-radius:14px}
+.site{display:block;margin-top:22px;color:var(--ink);font-weight:600}
+footer{background:#08121d;color:#9fb0c2;font-size:14px;padding:30px 0;text-align:center}
+footer p+p{margin-top:6px}
+@media(max-width:860px){
+.hero .wrap{grid-template-columns:1fr;padding-top:56px;padding-bottom:64px}
+.board{max-width:240px}
+.cards,.step-grid,.local{grid-template-columns:1fr}
+section{padding:60px 0}
+}
+@media(max-width:420px){.logo{font-size:17px}.nav-call{padding:8px 12px;font-size:14px}.btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Interwest Electronics.</div>
+<header class="nav"><div class="wrap">
+<a class="logo" href="#top"><span class="chip"></span>Interwest Electronics</a>
+<a class="nav-call" href="tel:+18012665301">Call (801) 266-5301</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<span class="eyebrow">Electronics Repair · Salt Lake City, UT</span>
+<h1>Your electronics, <span>back in working order.</span></h1>
+<p>Interwest Electronics is a local electronics repair shop in Salt Lake City. Before you replace something, give us a call and talk it over with people who know electronics.</p>
+<div class="btns">
+<a class="btn btn-primary" href="tel:+18012665301">Call (801) 266-5301</a>
+<a class="btn btn-ghost" href="#how">How it works</a>
+</div>
+</div>
+<div class="board" aria-hidden="true"><span class="led"></span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span><div class="ic"></div></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Why repair locally</span>
+<h2>Repair first, replace only when you have to</h2>
+<p>A good repair can keep the equipment you already know and rely on running for longer.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="icon i1"></div><h3>Talk to a real person</h3><p>Call and describe the problem. You'll get a clear idea of what to do next before you bring anything in.</p></div>
+<div class="card"><div class="icon i2"></div><h3>Careful diagnosis</h3><p>Electronics problems aren't always what they seem. Proper troubleshooting finds the actual cause, not just the symptom.</p></div>
+<div class="card"><div class="icon i3"></div><h3>Less waste</h3><p>Fixing a device keeps it in use and out of the landfill, and it often makes more sense than buying new.</p></div>
+</div>
+</div></section>
+
+<section class="steps" id="how"><div class="wrap">
+<div class="section-head">
+<span class="eyebrow">How it works</span>
+<h2>Three simple steps</h2>
+<p>Getting started takes one phone call.</p>
+</div>
+<div class="step-grid">
+<div class="step"><h3>Call the shop</h3><p>Tell us what the device is and what it's doing (or not doing).</p></div>
+<div class="step"><h3>Get it looked at</h3><p>We'll find out what's wrong and talk you through your options.</p></div>
+<div class="step"><h3>Back in action</h3><p>Pick up your electronics and get back to using them.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap local">
+<div>
+<span class="eyebrow" style="color:#1a8f84">Proudly local</span>
+<h2>Serving Salt Lake City</h2>
+<p>Interwest Electronics is part of the Salt Lake City community, so local customers get personal service from people close to home.</p>
+<p>Not sure if your device can be repaired? The quickest way to find out is to call.</p>
+</div>
+<div class="mtn" aria-hidden="true"><span class="sun"></span></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2>Ready to get it fixed?</h2>
+<p>Call Interwest Electronics and tell us what's going on.</p>
+<a class="phone" href="tel:+18012665301">(801) 266-5301</a>
+<a class="site" href="https://www.interwestelectronics.com/">interwestelectronics.com</a>
+</div></section>
+</main>
+<footer><div class="wrap">
+<p>Interwest Electronics · Electronics Repair · Salt Lake City, UT</p>
+<p>Free sample concept by Brainsmith Sitecraft. Not the official website of Interwest Electronics.</p>
+</div></footer>
+</body>
+</html>

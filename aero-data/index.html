@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Aero-Data | Surveying in Louisiana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f1f2e;--navy:#13324a;--teal:#1f7a74;--sun:#f2a541;--paper:#f6f3ec;--line:#d9d2c3;--muted:#4a5a68}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.15}
+a{color:inherit}
+.banner{background:var(--ink);color:#e8e2d4;font-size:13.5px;text-align:center;padding:8px 16px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{background:var(--navy);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:16px}
+.logo{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:.5px;display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark{width:30px;height:30px;border:2px solid var(--sun);border-radius:50%;position:relative}
+.mark:before,.mark:after{content:"";position:absolute;background:var(--sun)}
+.mark:before{left:50%;top:-6px;bottom:-6px;width:2px;margin-left:-1px}
+.mark:after{top:50%;left:-6px;right:-6px;height:2px;margin-top:-1px}
+.nav a.call{background:var(--sun);color:var(--ink);text-decoration:none;font-weight:600;padding:10px 18px;border-radius:999px;font-size:15px;white-space:nowrap}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:70px 0 100px}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:44px 44px}
+.contours{position:absolute;right:-180px;top:50%;width:640px;height:640px;transform:translateY(-50%);border-radius:50%;box-shadow:0 0 0 1px rgba(242,165,65,.35),0 0 0 40px var(--navy),0 0 0 41px rgba(242,165,65,.28),0 0 0 80px var(--navy),0 0 0 81px rgba(242,165,65,.2),0 0 0 120px var(--navy),0 0 0 121px rgba(242,165,65,.14);background:radial-gradient(circle,rgba(31,122,116,.45) 0 18%,transparent 18.5% 30%,rgba(31,122,116,.25) 30.5% 31%,transparent 31.5% 46%,rgba(255,255,255,.1) 46.5% 47%,transparent 47.5%)}
+.hero .wrap{position:relative}
+.tag{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--sun);font-weight:600;border:1px solid rgba(242,165,65,.5);padding:6px 12px;border-radius:4px;margin-bottom:22px}
+.hero h1{font-size:clamp(38px,7vw,68px);max-width:720px;margin-bottom:20px}
+.hero h1 span{color:var(--sun)}
+.hero p{font-size:19px;max-width:560px;color:#d3dde6;margin-bottom:32px}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:15px 26px;border-radius:8px;font-size:17px}
+.btn.primary{background:var(--sun);color:var(--ink)}
+.btn.ghost{border:2px solid rgba(255,255,255,.5);color:#fff}
+.btn:hover{filter:brightness(1.08)}
+.coords{margin-top:44px;font-family:"Space Grotesk",sans-serif;font-size:14px;color:#9fb3c4;letter-spacing:1px}
+section{padding:80px 0}
+.eyebrow{color:var(--teal);font-weight:600;font-size:14px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(28px,4.5vw,40px);margin-bottom:16px;color:var(--navy)}
+.lead{color:var(--muted);max-width:640px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:40px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;position:relative}
+.card .ic{width:46px;height:46px;border-radius:10px;background:var(--navy);margin-bottom:18px;position:relative}
+.ic.a:after{content:"";position:absolute;inset:12px;border:2px solid var(--sun);border-radius:50%}
+.ic.b:after{content:"";position:absolute;left:11px;right:11px;top:22px;height:2px;background:var(--sun);box-shadow:0 -8px 0 var(--sun),0 8px 0 var(--sun)}
+.ic.c:after{content:"";position:absolute;left:14px;top:12px;width:16px;height:20px;border:2px solid var(--sun);border-top:none;border-right:none;transform:rotate(-45deg)}
+.card h3{font-size:21px;margin-bottom:8px;color:var(--navy)}
+.card p{color:var(--muted);font-size:16px}
+.soon{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.panel{background:var(--teal);color:#fff;border-radius:16px;padding:36px;position:relative;overflow:hidden}
+.panel:after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;border:2px solid rgba(255,255,255,.25);box-shadow:0 0 0 24px rgba(255,255,255,.05)}
+.panel h3{font-size:26px;margin-bottom:10px}
+.panel p{color:#e2f1ef}
+.steps{list-style:none;margin-top:26px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;margin-bottom:18px;color:var(--muted)}
+.steps li:before{content:counter(s,decimal-leading-zero);font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--sun);background:var(--navy);min-width:42px;height:42px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.steps strong{color:var(--ink);display:block}
+.contact{background:var(--ink);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .lead{color:#c3ced8;margin:0 auto 34px}
+.phone{font-family:"Space Grotesk",sans-serif;font-size:clamp(32px,6vw,52px);font-weight:700;color:var(--sun);text-decoration:none;display:inline-block;margin-bottom:24px}
+.site{display:block;color:#c3ced8;margin-top:22px}
+footer{background:#0a1520;color:#8a9aa8;text-align:center;font-size:14px;padding:24px 16px}
+@media(max-width:800px){.split{grid-template-columns:1fr}.contours{width:420px;height:420px;right:-220px;opacity:.6}.hero{padding:50px 0 70px}section{padding:60px 0}.nav a.call{padding:9px 14px;font-size:14px}}
+</style>
+</head>
+<body>
+<div class="banner">Free sample concept by Brainsmith Sitecraft. Not the official website of Aero-Data.</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#top"><span class="mark"></span>Aero-Data</a>
+<a class="call" href="tel:+12257675725">Call (225) 767-5725</a>
+</div>
+</header>
+<main id="top">
+<div class="hero">
+<div class="contours"></div>
+<div class="wrap">
+<span class="tag">Surveying &middot; Louisiana</span>
+<h1>Accurate data for the <span>ground you build on.</span></h1>
+<p>Aero-Data is a surveying business serving Louisiana. Whatever your project needs, start with a conversation and clear answers.</p>
+<div class="btns">
+<a class="btn primary" href="tel:+12257675725">Call (225) 767-5725</a>
+<a class="btn ghost" href="#contact">Contact Us</a>
+</div>
+<div class="coords">LA &nbsp;/&nbsp; MEASURE &middot; MAP &middot; DOCUMENT</div>
+</div>
+</div>
+
+<section>
+<div class="wrap">
+<div class="eyebrow">Why a survey matters</div>
+<h2>Good projects start with good measurements</h2>
+<p class="lead">Buying, building, or planning, a professional survey gives you a clear, reliable picture of the land before you commit time and money.</p>
+<div class="grid">
+<div class="card"><div class="ic a"></div><h3>Precision</h3><p>Careful measurement and attention to detail, so the information you rely on is right.</p></div>
+<div class="card"><div class="ic b"></div><h3>Clear records</h3><p>Results documented in a way that owners, builders and professionals can understand and use.</p></div>
+<div class="card"><div class="ic c"></div><h3>Straight answers</h3><p>Talk through your project, ask questions, and know what to expect before work begins.</p></div>
+</div>
+</div>
+</section>
+
+<section class="soon">
+<div class="wrap split">
+<div>
+<div class="eyebrow">Getting started</div>
+<h2>Simple from the first call</h2>
+<p class="lead">The easiest way to begin is to pick up the phone.</p>
+<ul class="steps">
+<li><div><strong>Call Aero-Data</strong>Tell us about your property and what you are hoping to learn or plan.</div></li>
+<li><div><strong>Talk it through</strong>Get a sense of what your project involves and the next steps.</div></li>
+<li><div><strong>Move forward with confidence</strong>Make decisions based on reliable information about your land.</div></li>
+</ul>
+</div>
+<div class="panel">
+<h3>Launching Soon</h3>
+<p>A new Aero-Data website is on the way. In the meantime, the team is just a phone call away.</p>
+<p style="margin-top:22px"><a class="btn primary" href="tel:+12257675725" style="position:relative;z-index:1">Call now</a></p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<div class="eyebrow" style="color:var(--sun)">Contact Us</div>
+<h2>Let's talk about your project</h2>
+<p class="lead">Give Aero-Data a call to discuss your surveying needs in Louisiana.</p>
+<a class="phone" href="tel:+12257675725">(225) 767-5725</a><br>
+<a class="btn primary" href="tel:+12257675725">Tap to call</a>
+<a class="site" href="https://aero-data.com/">aero-data.com</a>
+</div>
+</section>
+</main>
+<footer>&copy; Aero-Data &middot; Louisiana &middot; Sample concept by Brainsmith Sitecraft</footer>
+</body>
+</html>
